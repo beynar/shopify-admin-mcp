@@ -2,6 +2,8 @@
 
 Token-efficient Model Context Protocol server for the Shopify Admin GraphQL API.
 
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/beynar/shopify-admin-mcp)
+
 This server keeps the Cloudflare Code Mode shape, but swaps the Cloudflare OpenAPI/R2 pipeline for an asset-backed Shopify skill corpus:
 
 - `search` lets agents search bundled Shopify docs and related types
@@ -133,6 +135,21 @@ assets/shopify-graphql/
 ## Deployment
 
 Wrangler environments are defined in [wrangler.jsonc](/Users/arnaud/code/shopify-mcp/wrangler.jsonc).
+
+One-click import:
+
+- [Deploy to Cloudflare](https://deploy.workers.cloudflare.com/?url=https://github.com/beynar/shopify-admin-mcp)
+
+Cloudflare deploy buttons require a public GitHub or GitLab repository and use the source repo's Wrangler config to provision resources and configure the Worker. Source: [Cloudflare deploy buttons docs](https://developers.cloudflare.com/workers/platform/deploy-buttons/).
+
+Important:
+
+- This project depends on the `worker_loader` binding for dynamic code execution.
+- Deployments only succeed on Cloudflare accounts that have Dynamic Worker Loaders enabled.
+- You still need to provide real Shopify credentials during setup:
+  - `SHOPIFY_SHOP_DOMAIN`
+  - `SHOPIFY_ADMIN_API_VERSION`
+  - `SHOPIFY_ADMIN_ACCESS_TOKEN`
 
 Typical flow:
 
