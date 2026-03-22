@@ -15,11 +15,6 @@
 			"enabled": true
 		}
 	},
-	"vars": {
-		"SHOPIFY_SHOP_DOMAIN": "example.myshopify.com",
-		"SHOPIFY_ADMIN_API_VERSION": "2026-01",
-		"SHOPIFY_ADMIN_ACCESS_TOKEN": "replace-me"
-	},
 	"assets": {
 		"binding": "ASSETS",
 		"directory": "./assets"
@@ -53,12 +48,7 @@
 					"service": "shopify-admin-mcp-staging",
 					"entrypoint": "GlobalOutbound"
 				}
-			],
-			"vars": {
-				"SHOPIFY_SHOP_DOMAIN": "example.myshopify.com",
-				"SHOPIFY_ADMIN_API_VERSION": "2026-01",
-				"SHOPIFY_ADMIN_ACCESS_TOKEN": "replace-me"
-			}
+			]
 		},
 		"production": {
 			"name": "shopify-admin-mcp",
@@ -73,12 +63,7 @@
 					"service": "shopify-admin-mcp",
 					"entrypoint": "GlobalOutbound"
 				}
-			],
-			"vars": {
-				"SHOPIFY_SHOP_DOMAIN": "example.myshopify.com",
-				"SHOPIFY_ADMIN_API_VERSION": "2026-01",
-				"SHOPIFY_ADMIN_ACCESS_TOKEN": "replace-me"
-			}
+			]
 		},
 		"beynar": {
 			"name": "mcp-shopify-test",
