@@ -1,0 +1,178 @@
+{
+  "AppPurchase": {
+    "description": "Services and features purchased once by the store.",
+    "kind": "INTERFACE"
+  },
+  "BasePaymentDetails": {
+    "description": "Generic payment details that are related to a transaction.",
+    "kind": "INTERFACE"
+  },
+  "CalculatedDiscountApplication": {
+    "description": "A [discount application](https://shopify.dev/api/admin-graphql/latest/interfaces/discountapplication) involved in order editing that might be newly added or have new changes applied.",
+    "kind": "INTERFACE"
+  },
+  "CalculatedReturnFee": {
+    "description": "A calculated return fee.",
+    "kind": "INTERFACE"
+  },
+  "Catalog": {
+    "description": "A list of products with publishing and pricing information.",
+    "kind": "INTERFACE"
+  },
+  "CheckoutBrandingFont": {
+    "description": "A font.",
+    "kind": "INTERFACE"
+  },
+  "CommentEventSubject": {
+    "description": "The subject line of a comment event.",
+    "kind": "INTERFACE"
+  },
+  "CustomerAccountPage": {
+    "description": "A customer account page.",
+    "kind": "INTERFACE"
+  },
+  "CustomerMoment": {
+    "description": "Represents a session preceding an order, often used for building a timeline of events leading to an order.",
+    "kind": "INTERFACE"
+  },
+  "DiscountApplication": {
+    "description": "Discount applications capture the intentions of a discount source at",
+    "kind": "INTERFACE"
+  },
+  "DisplayableError": {
+    "description": "Represents an error in the input of a mutation.",
+    "kind": "INTERFACE"
+  },
+  "DraftOrderWarning": {
+    "description": "A warning that is displayed to the merchant when a change is made to a draft order.",
+    "kind": "INTERFACE"
+  },
+  "Event": {
+    "description": "Events chronicle resource activities such as the creation of an article, the fulfillment of an order, or the",
+    "kind": "INTERFACE"
+  },
+  "Fee": {
+    "description": "A additional cost, charged by the merchant, on an order. Examples include return shipping fees and restocking fees.",
+    "kind": "INTERFACE"
+  },
+  "File": {
+    "description": "A file interface.",
+    "kind": "INTERFACE"
+  },
+  "GiftCardTransaction": {
+    "description": "Interface for a gift card transaction.",
+    "kind": "INTERFACE"
+  },
+  "HasCompareDigest": {
+    "description": "Represents a summary of the current version of data in a resource.",
+    "kind": "INTERFACE"
+  },
+  "HasEvents": {
+    "description": "Represents an object that has a list of events.",
+    "kind": "INTERFACE"
+  },
+  "HasLocalizationExtensions": {
+    "description": "Localization extensions associated with the specified resource. For example, the tax id for government invoice.",
+    "kind": "INTERFACE"
+  },
+  "HasLocalizedFields": {
+    "description": "Localized fields associated with the specified resource.",
+    "kind": "INTERFACE"
+  },
+  "HasMetafieldDefinitions": {
+    "description": "Resources that metafield definitions can be applied to.",
+    "kind": "INTERFACE"
+  },
+  "HasMetafields": {
+    "description": "Represents information about the metafields associated to the specified resource.",
+    "kind": "INTERFACE"
+  },
+  "HasPublishedTranslations": {
+    "description": "Published translations associated with the resource.",
+    "kind": "INTERFACE"
+  },
+  "HasStoreCreditAccounts": {
+    "description": "Represents information about the store credit accounts associated to the specified owner.",
+    "kind": "INTERFACE"
+  },
+  "JobResult": {
+    "description": "A job corresponds to some long running task that the client should poll for status.",
+    "kind": "INTERFACE"
+  },
+  "LegacyInteroperability": {
+    "description": "Interoperability metadata for types that directly correspond to a REST Admin API resource.",
+    "kind": "INTERFACE"
+  },
+  "MarketRegion": {
+    "description": "A geographic region which comprises a market.",
+    "kind": "INTERFACE"
+  },
+  "Media": {
+    "description": "Represents a media interface.",
+    "kind": "INTERFACE"
+  },
+  "Navigable": {
+    "description": "A default cursor that you can use in queries to paginate your results. Each edge in a connection can",
+    "kind": "INTERFACE"
+  },
+  "Node": {
+    "description": "An object with an ID field to support global identification, in accordance with the",
+    "kind": "INTERFACE"
+  },
+  "OnlineStorePreviewable": {
+    "description": "Online Store preview URL of the object.",
+    "kind": "INTERFACE"
+  },
+  "ProductOperation": {
+    "description": "An interface representing asynchronous operations on products. Tracks the status and details of background product mutations like `productSet`, `productDelete`, `productDuplicate`, and `productBundle`",
+    "kind": "INTERFACE"
+  },
+  "Publishable": {
+    "description": "Represents a resource that can be published to a channel.",
+    "kind": "INTERFACE"
+  },
+  "ResourceOperation": {
+    "description": "Represents a merchandising background operation interface.",
+    "kind": "INTERFACE"
+  },
+  "ReturnLineItemType": {
+    "description": "A return line item of any type.",
+    "kind": "INTERFACE"
+  },
+  "Sale": {
+    "description": "An individual sale record associated with a sales agreement. Every money value in an order's sales data is represented in the currency's smallest unit. When amounts are divided across multiple line it",
+    "kind": "INTERFACE"
+  },
+  "SalesAgreement": {
+    "description": "A contract between a merchant and a customer to do business. Shopify creates a sales agreement whenever an order is placed, edited, or refunded. A sales agreement has one or more sales records, which ",
+    "kind": "INTERFACE"
+  },
+  "SegmentFilter": {
+    "description": "The filters used in segment queries associated with a shop.",
+    "kind": "INTERFACE"
+  },
+  "SellingPlanPricingPolicyBase": {
+    "description": "Represents selling plan pricing policy common fields.",
+    "kind": "INTERFACE"
+  },
+  "ShopifyPaymentsChargeStatementDescriptor": {
+    "description": "The charge descriptors for a payments account.",
+    "kind": "INTERFACE"
+  },
+  "StoreCreditAccountTransaction": {
+    "description": "Interface for a store credit account transaction.",
+    "kind": "INTERFACE"
+  },
+  "SubscriptionBillingAttemptProcessingError": {
+    "description": "An error that prevented a billing attempt.",
+    "kind": "INTERFACE"
+  },
+  "SubscriptionContractBase": {
+    "description": "Represents subscription contract common fields.",
+    "kind": "INTERFACE"
+  },
+  "SuggestedRefundMethod": {
+    "description": "Generic attributes of a suggested refund method.",
+    "kind": "INTERFACE"
+  }
+}

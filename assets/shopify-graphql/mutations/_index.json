@@ -1,0 +1,1982 @@
+{
+  "abandonmentEmailStateUpdate": {
+    "description": "Updates the email state value for an abandonment.",
+    "returns": "AbandonmentEmailStateUpdatePayload"
+  },
+  "abandonmentUpdateActivitiesDeliveryStatuses": {
+    "description": "Updates the marketing activities delivery statuses for an abandonment.",
+    "returns": "AbandonmentUpdateActivitiesDeliveryStatusesPayload"
+  },
+  "appPurchaseOneTimeCreate": {
+    "description": "Creates a one-time charge for app features or services that don't require recurring billing. This mutation is ideal for apps that sell individual features, premium content, or services on a per-use ba",
+    "returns": "AppPurchaseOneTimeCreatePayload"
+  },
+  "appRevokeAccessScopes": {
+    "description": "Revokes previously granted access scopes from an app installation, allowing merchants to reduce an app's permissions without completely uninstalling it. This provides granular control over what data a",
+    "returns": "AppRevokeAccessScopesPayload"
+  },
+  "appSubscriptionCancel": {
+    "description": "Cancels an active app subscription, stopping future billing cycles. The cancellation behavior depends on the `replacementBehavior` setting - it can either disable auto-renewal (allowing the subscripti",
+    "returns": "AppSubscriptionCancelPayload"
+  },
+  "appSubscriptionCreate": {
+    "description": "Creates a recurring or usage-based [`AppSubscription`](https://shopify.dev/docs/api/admin-graphql/latest/objects/AppSubscription) that charges merchants for app features and services. The subscription",
+    "returns": "AppSubscriptionCreatePayload"
+  },
+  "appSubscriptionLineItemUpdate": {
+    "description": "Updates the capped amount on usage-based billing for an [`AppSubscriptionLineItem`](https://shopify.dev/docs/api/admin-graphql/latest/objects/AppSubscriptionLineItem). Enables you to modify the maximu",
+    "returns": "AppSubscriptionLineItemUpdatePayload"
+  },
+  "appSubscriptionTrialExtend": {
+    "description": "Extends the trial period for an existing app subscription. Trial extensions give merchants additional time to use the app before committing to paid billing.",
+    "returns": "AppSubscriptionTrialExtendPayload"
+  },
+  "appUninstall": {
+    "description": "Uninstalls an [`App`](https://shopify.dev/docs/api/admin-graphql/latest/objects/App) from a shop. Apps use this mutation to uninstall themselves programmatically, removing their [`AppInstallation`](ht",
+    "returns": "AppUninstallPayload"
+  },
+  "appUsageRecordCreate": {
+    "description": "Creates a usage charge for an app subscription with usage-based pricing. The charge counts toward the capped amount limit set when creating the subscription.",
+    "returns": "AppUsageRecordCreatePayload"
+  },
+  "articleCreate": {
+    "description": "Creates an [`Article`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Article). Articles are content pieces that include a title, body text, and author information.",
+    "returns": "ArticleCreatePayload"
+  },
+  "articleDelete": {
+    "description": "Permanently deletes a blog article from a shop's blog. This mutation removes the article and all associated metadata.",
+    "returns": "ArticleDeletePayload"
+  },
+  "articleUpdate": {
+    "description": "Updates an existing [`Article`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Article). You can modify the article's content, metadata, publication status, and associated properties like a",
+    "returns": "ArticleUpdatePayload"
+  },
+  "backupRegionUpdate": {
+    "description": "Update the backup region that is used when we have no better signal of what region a buyer is in.",
+    "returns": "BackupRegionUpdatePayload"
+  },
+  "blogCreate": {
+    "description": "Creates a new blog within a shop, establishing a container for organizing articles.",
+    "returns": "BlogCreatePayload"
+  },
+  "blogDelete": {
+    "description": "Permanently deletes a blog from a shop. This mutation removes the blog container and its organizational structure.",
+    "returns": "BlogDeletePayload"
+  },
+  "blogUpdate": {
+    "description": "Updates an existing blog's configuration and settings. This mutation allows merchants to modify blog properties to keep their content strategy current.",
+    "returns": "BlogUpdatePayload"
+  },
+  "bulkOperationCancel": {
+    "description": "Starts the cancelation process of a running bulk operation.",
+    "returns": "BulkOperationCancelPayload"
+  },
+  "bulkOperationRunMutation": {
+    "description": "Creates and runs a [bulk operation](https://shopify.dev/docs/api/admin-graphql/latest/objects/BulkOperation) to import data asynchronously. This mutation executes a specified GraphQL mutation multiple",
+    "returns": "BulkOperationRunMutationPayload"
+  },
+  "bulkOperationRunQuery": {
+    "description": "Creates and runs a [bulk operation](https://shopify.dev/docs/api/admin-graphql/latest/objects/BulkOperation) to fetch data asynchronously. The operation processes your GraphQL query in the background ",
+    "returns": "BulkOperationRunQueryPayload"
+  },
+  "bulkProductResourceFeedbackCreate": {
+    "description": "Creates product feedback for multiple products.",
+    "returns": "BulkProductResourceFeedbackCreatePayload"
+  },
+  "carrierServiceCreate": {
+    "description": "Creates a carrier service that provides real-time shipping rates to Shopify. Carrier services provide real-time shipping rates from external providers like FedEx, UPS, or custom shipping solutions. Th",
+    "returns": "CarrierServiceCreatePayload"
+  },
+  "carrierServiceDelete": {
+    "description": "Removes an existing carrier service.",
+    "returns": "CarrierServiceDeletePayload"
+  },
+  "carrierServiceUpdate": {
+    "description": "Updates a carrier service. Only the app that creates a carrier service can update it.",
+    "returns": "CarrierServiceUpdatePayload"
+  },
+  "cartTransformCreate": {
+    "description": "Creates a cart transform function that lets merchants customize how products are bundled and presented during checkout. This gives merchants powerful control over their merchandising strategy by allow",
+    "returns": "CartTransformCreatePayload"
+  },
+  "cartTransformDelete": {
+    "description": "Removes an existing cart transform function from the merchant's store, disabling any customized bundle or cart modification logic it provided. This mutation persistently deletes the transform configur",
+    "returns": "CartTransformDeletePayload"
+  },
+  "catalogContextUpdate": {
+    "description": "Modifies which contexts, like [markets](https://shopify.dev/docs/api/admin-graphql/latest/objects/Market) or B2B [company locations](https://shopify.dev/docs/api/admin-graphql/latest/objects/CompanyLo",
+    "returns": "CatalogContextUpdatePayload"
+  },
+  "catalogCreate": {
+    "description": "Creates a [`Catalog`](https://shopify.dev/docs/api/admin-graphql/latest/interfaces/Catalog) that controls product availability and pricing for specific contexts like [markets](https://shopify.dev/docs",
+    "returns": "CatalogCreatePayload"
+  },
+  "catalogDelete": {
+    "description": "Delete a catalog.",
+    "returns": "CatalogDeletePayload"
+  },
+  "catalogUpdate": {
+    "description": "Updates an existing [catalog's](https://shopify.dev/docs/api/admin-graphql/latest/interfaces/Catalog) configuration. Catalogs control product publishing and pricing for specific contexts like [markets",
+    "returns": "CatalogUpdatePayload"
+  },
+  "checkoutBrandingUpsert": {
+    "description": "Updates the visual branding for a [`CheckoutProfile`](https://shopify.dev/docs/api/admin-graphql/latest/objects/CheckoutProfile), customizing how checkout displays to customers. Creates new branding s",
+    "returns": "CheckoutBrandingUpsertPayload"
+  },
+  "collectionAddProducts": {
+    "description": "Adds multiple products to an existing collection in a single operation. This mutation provides an efficient way to bulk-manage collection membership without individual product updates.",
+    "returns": "CollectionAddProductsPayload"
+  },
+  "collectionAddProductsV2": {
+    "description": "Adds products to a [`Collection`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Collection) asynchronously and returns a [`Job`](https://shopify.dev/docs/api/admin-graphql/latest/objects/J",
+    "returns": "CollectionAddProductsV2Payload"
+  },
+  "collectionCreate": {
+    "description": "Creates a [collection](https://shopify.dev/docs/api/admin-graphql/latest/objects/Collection)",
+    "returns": "CollectionCreatePayload"
+  },
+  "collectionDelete": {
+    "description": "Deletes a collection and removes it permanently from the store. This operation cannot be undone and will remove the collection from all sales channels where it was published.",
+    "returns": "CollectionDeletePayload"
+  },
+  "collectionDuplicate": {
+    "description": "Duplicates a [collection](https://shopify.dev/docs/api/admin-graphql/latest/objects/Collection).",
+    "returns": "CollectionDuplicatePayload"
+  },
+  "collectionPublish": {
+    "description": "Publishes a collection to a channel.",
+    "returns": "CollectionPublishPayload"
+  },
+  "collectionRemoveProducts": {
+    "description": "Removes multiple products from a collection in a single operation. This mutation can process large product sets (up to 250 products) and may take significant time to complete for collections with many",
+    "returns": "CollectionRemoveProductsPayload"
+  },
+  "collectionReorderProducts": {
+    "description": "Asynchronously reorders products within a specified collection. Instead of returning an updated collection, this mutation returns a job, which should be [polled](https://shopify.dev/api/admin-graphql/",
+    "returns": "CollectionReorderProductsPayload"
+  },
+  "collectionUnpublish": {
+    "description": "Unpublishes a collection.",
+    "returns": "CollectionUnpublishPayload"
+  },
+  "collectionUpdate": {
+    "description": "Updates a [collection](https://shopify.dev/docs/api/admin-graphql/latest/objects/Collection),",
+    "returns": "CollectionUpdatePayload"
+  },
+  "combinedListingUpdate": {
+    "description": "Add, remove and update `CombinedListing`s of a given Product.",
+    "returns": "CombinedListingUpdatePayload"
+  },
+  "commentApprove": {
+    "description": "Approves a pending comment, making it visible to store visitors on the associated blog article.",
+    "returns": "CommentApprovePayload"
+  },
+  "commentDelete": {
+    "description": "Permanently removes a comment from a blog article.",
+    "returns": "CommentDeletePayload"
+  },
+  "commentNotSpam": {
+    "description": "Reverses a spam classification on a comment, restoring it to normal moderation status. This mutation allows merchants to change their decision when a comment has been manually marked as spam.",
+    "returns": "CommentNotSpamPayload"
+  },
+  "commentSpam": {
+    "description": "Marks a comment as spam, removing it from public view. This mutation enables merchants to quickly handle unwanted promotional content, malicious links, or other spam that appears in blog discussions.",
+    "returns": "CommentSpamPayload"
+  },
+  "companiesDelete": {
+    "description": "Deletes a list of companies.",
+    "returns": "CompaniesDeletePayload"
+  },
+  "companyAddressDelete": {
+    "description": "Deletes a company address.",
+    "returns": "CompanyAddressDeletePayload"
+  },
+  "companyAssignCustomerAsContact": {
+    "description": "Adds an existing [`Customer`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Customer) as a contact to a [`Company`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Company).  Com",
+    "returns": "CompanyAssignCustomerAsContactPayload"
+  },
+  "companyAssignMainContact": {
+    "description": "Assigns the main contact for the company.",
+    "returns": "CompanyAssignMainContactPayload"
+  },
+  "companyContactAssignRole": {
+    "description": "Assigns a role to a contact for a location.",
+    "returns": "CompanyContactAssignRolePayload"
+  },
+  "companyContactAssignRoles": {
+    "description": "Assigns roles on a company contact.",
+    "returns": "CompanyContactAssignRolesPayload"
+  },
+  "companyContactCreate": {
+    "description": "Creates a company contact and the associated customer.",
+    "returns": "CompanyContactCreatePayload"
+  },
+  "companyContactDelete": {
+    "description": "Deletes a company contact.",
+    "returns": "CompanyContactDeletePayload"
+  },
+  "companyContactRemoveFromCompany": {
+    "description": "Removes a company contact from a Company.",
+    "returns": "CompanyContactRemoveFromCompanyPayload"
+  },
+  "companyContactRevokeRole": {
+    "description": "Revokes a role on a company contact.",
+    "returns": "CompanyContactRevokeRolePayload"
+  },
+  "companyContactRevokeRoles": {
+    "description": "Revokes roles on a company contact.",
+    "returns": "CompanyContactRevokeRolesPayload"
+  },
+  "companyContactSendWelcomeEmail": {
+    "description": "Sends the company contact a welcome email.",
+    "returns": "CompanyContactSendWelcomeEmailPayload"
+  },
+  "companyContactUpdate": {
+    "description": "Updates a company contact.",
+    "returns": "CompanyContactUpdatePayload"
+  },
+  "companyContactsDelete": {
+    "description": "Deletes one or more company contacts.",
+    "returns": "CompanyContactsDeletePayload"
+  },
+  "companyCreate": {
+    "description": "Creates a [`Company`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Company) for B2B commerce. This mutation creates the company and can optionally create an initial [`CompanyContact`](htt",
+    "returns": "CompanyCreatePayload"
+  },
+  "companyDelete": {
+    "description": "Deletes a company.",
+    "returns": "CompanyDeletePayload"
+  },
+  "companyLocationAssignAddress": {
+    "description": "Updates an address on a company location.",
+    "returns": "CompanyLocationAssignAddressPayload"
+  },
+  "companyLocationAssignRoles": {
+    "description": "Assigns roles on a company location.",
+    "returns": "CompanyLocationAssignRolesPayload"
+  },
+  "companyLocationAssignStaffMembers": {
+    "description": "Creates one or more mappings between a staff member at a shop and a company location.",
+    "returns": "CompanyLocationAssignStaffMembersPayload"
+  },
+  "companyLocationAssignTaxExemptions": {
+    "description": "Assigns tax exemptions to the company location.",
+    "returns": "CompanyLocationAssignTaxExemptionsPayload"
+  },
+  "companyLocationCreate": {
+    "description": "Creates a new location for a [`Company`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Company). Company locations are branches or offices where B2B customers can place orders with specifi",
+    "returns": "CompanyLocationCreatePayload"
+  },
+  "companyLocationCreateTaxRegistration": {
+    "description": "Creates a tax registration for a company location.",
+    "returns": "CompanyLocationCreateTaxRegistrationPayload"
+  },
+  "companyLocationDelete": {
+    "description": "Deletes a company location.",
+    "returns": "CompanyLocationDeletePayload"
+  },
+  "companyLocationRemoveStaffMembers": {
+    "description": "Deletes one or more existing mappings between a staff member at a shop and a company location.",
+    "returns": "CompanyLocationRemoveStaffMembersPayload"
+  },
+  "companyLocationRevokeRoles": {
+    "description": "Revokes roles on a company location.",
+    "returns": "CompanyLocationRevokeRolesPayload"
+  },
+  "companyLocationRevokeTaxExemptions": {
+    "description": "Revokes tax exemptions from the company location.",
+    "returns": "CompanyLocationRevokeTaxExemptionsPayload"
+  },
+  "companyLocationRevokeTaxRegistration": {
+    "description": "Revokes tax registration on a company location.",
+    "returns": "CompanyLocationRevokeTaxRegistrationPayload"
+  },
+  "companyLocationTaxSettingsUpdate": {
+    "description": "Sets the tax settings for a company location.",
+    "returns": "CompanyLocationTaxSettingsUpdatePayload"
+  },
+  "companyLocationUpdate": {
+    "description": "Updates a company location's information and B2B checkout settings. Company locations are branches or offices where [`CompanyContact`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Company",
+    "returns": "CompanyLocationUpdatePayload"
+  },
+  "companyLocationsDelete": {
+    "description": "Deletes a list of company locations.",
+    "returns": "CompanyLocationsDeletePayload"
+  },
+  "companyRevokeMainContact": {
+    "description": "Revokes the main contact from the company.",
+    "returns": "CompanyRevokeMainContactPayload"
+  },
+  "companyUpdate": {
+    "description": "Updates a [`Company`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Company) with new information. Companies represent business customers that can have multiple contacts and locations with",
+    "returns": "CompanyUpdatePayload"
+  },
+  "consentPolicyUpdate": {
+    "description": "Update or create consent policies in bulk.",
+    "returns": "ConsentPolicyUpdatePayload"
+  },
+  "customerAddTaxExemptions": {
+    "description": "Add tax exemptions for the customer.",
+    "returns": "CustomerAddTaxExemptionsPayload"
+  },
+  "customerAddressCreate": {
+    "description": "Creates a new [`MailingAddress`](https://shopify.dev/docs/api/admin-graphql/latest/objects/MailingAddress) for a [`Customer`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Customer). You c",
+    "returns": "CustomerAddressCreatePayload"
+  },
+  "customerAddressDelete": {
+    "description": "Deletes a customer's address.",
+    "returns": "CustomerAddressDeletePayload"
+  },
+  "customerAddressUpdate": {
+    "description": "Updates a [`Customer`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Customer)'s [`MailingAddress`](https://shopify.dev/docs/api/admin-graphql/latest/objects/MailingAddress). You can modif",
+    "returns": "CustomerAddressUpdatePayload"
+  },
+  "customerCancelDataErasure": {
+    "description": "Cancels a pending erasure of a customer's data. Read more [here](https://help.shopify.com/manual/privacy-and-security/privacy/processing-customer-data-requests#cancel-customer-data-erasure).",
+    "returns": "CustomerCancelDataErasurePayload"
+  },
+  "customerCreate": {
+    "description": "Creates a new [`Customer`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Customer) in the store.",
+    "returns": "CustomerCreatePayload"
+  },
+  "customerDelete": {
+    "description": "Deletes a [`Customer`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Customer) from the store. You can only delete customers who haven't placed any [orders](https://shopify.dev/docs/api/ad",
+    "returns": "CustomerDeletePayload"
+  },
+  "customerEmailMarketingConsentUpdate": {
+    "description": "Updates a [`Customer`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Customer)'s email marketing consent information. The customer must have an email address to update their consent. Recor",
+    "returns": "CustomerEmailMarketingConsentUpdatePayload"
+  },
+  "customerGenerateAccountActivationUrl": {
+    "description": "Generates a one-time activation URL for a [`Customer`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Customer) whose legacy customer account isn't yet enabled. Use this after importing cus",
+    "returns": "CustomerGenerateAccountActivationUrlPayload"
+  },
+  "customerMerge": {
+    "description": "Merges two customers.",
+    "returns": "CustomerMergePayload"
+  },
+  "customerPaymentMethodCreateFromDuplicationData": {
+    "description": "Creates a vaulted payment method for a customer from duplication data.",
+    "returns": "CustomerPaymentMethodCreateFromDuplicationDataPayload"
+  },
+  "customerPaymentMethodCreditCardCreate": {
+    "description": "Creates a credit card payment method for a customer using a session id.",
+    "returns": "CustomerPaymentMethodCreditCardCreatePayload"
+  },
+  "customerPaymentMethodCreditCardUpdate": {
+    "description": "Updates the credit card payment method for a customer.",
+    "returns": "CustomerPaymentMethodCreditCardUpdatePayload"
+  },
+  "customerPaymentMethodGetDuplicationData": {
+    "description": "Returns encrypted data that can be used to duplicate the payment method in another shop within the same organization.",
+    "returns": "CustomerPaymentMethodGetDuplicationDataPayload"
+  },
+  "customerPaymentMethodGetUpdateUrl": {
+    "description": "Returns a URL that allows the customer to update a specific payment method.",
+    "returns": "CustomerPaymentMethodGetUpdateUrlPayload"
+  },
+  "customerPaymentMethodPaypalBillingAgreementCreate": {
+    "description": "Creates a PayPal billing agreement for a customer.",
+    "returns": "CustomerPaymentMethodPaypalBillingAgreementCreatePayload"
+  },
+  "customerPaymentMethodPaypalBillingAgreementUpdate": {
+    "description": "Updates a PayPal billing agreement for a customer.",
+    "returns": "CustomerPaymentMethodPaypalBillingAgreementUpdatePayload"
+  },
+  "customerPaymentMethodRemoteCreate": {
+    "description": "Creates a customer payment method using identifiers from remote payment gateways like Stripe, Authorize.Net, or Braintree. Imports existing payment methods from external gateways and associates them w",
+    "returns": "CustomerPaymentMethodRemoteCreatePayload"
+  },
+  "customerPaymentMethodRevoke": {
+    "description": "Revokes a customer's payment method.",
+    "returns": "CustomerPaymentMethodRevokePayload"
+  },
+  "customerPaymentMethodSendUpdateEmail": {
+    "description": "Sends a link to the customer so they can update a specific payment method.",
+    "returns": "CustomerPaymentMethodSendUpdateEmailPayload"
+  },
+  "customerRemoveTaxExemptions": {
+    "description": "Remove tax exemptions from a customer.",
+    "returns": "CustomerRemoveTaxExemptionsPayload"
+  },
+  "customerReplaceTaxExemptions": {
+    "description": "Replace tax exemptions for a customer.",
+    "returns": "CustomerReplaceTaxExemptionsPayload"
+  },
+  "customerRequestDataErasure": {
+    "description": "Enqueues a request to erase customer's data. Read more [here](https://help.shopify.com/manual/privacy-and-security/privacy/processing-customer-data-requests#erase-customer-personal-data).",
+    "returns": "CustomerRequestDataErasurePayload"
+  },
+  "customerSegmentMembersQueryCreate": {
+    "description": "Creates a customer segment members query.",
+    "returns": "CustomerSegmentMembersQueryCreatePayload"
+  },
+  "customerSendAccountInviteEmail": {
+    "description": "Sends an email invitation for a customer to create a legacy customer account. The invitation lets customers set up their password and activate their account in the online store.",
+    "returns": "CustomerSendAccountInviteEmailPayload"
+  },
+  "customerSet": {
+    "description": "Creates or updates a customer in a single mutation.",
+    "returns": "CustomerSetPayload"
+  },
+  "customerSmsMarketingConsentUpdate": {
+    "description": "Updates a [customer](https://shopify.dev/docs/api/admin-graphql/latest/objects/Customer)'s SMS marketing consent information. The customer must have a phone number on their account to receive SMS mark",
+    "returns": "CustomerSmsMarketingConsentUpdatePayload"
+  },
+  "customerUpdate": {
+    "description": "Updates a [`Customer`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Customer)'s attributes including personal information and [`tax exemptions`](https://shopify.dev/docs/api/admin-graphql",
+    "returns": "CustomerUpdatePayload"
+  },
+  "customerUpdateDefaultAddress": {
+    "description": "Updates a customer's default address.",
+    "returns": "CustomerUpdateDefaultAddressPayload"
+  },
+  "dataSaleOptOut": {
+    "description": "Opt out a customer from data sale.",
+    "returns": "DataSaleOptOutPayload"
+  },
+  "delegateAccessTokenCreate": {
+    "description": "Creates a [`DelegateAccessToken`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DelegateAccessToken) with a subset of the parent token's permissions.",
+    "returns": "DelegateAccessTokenCreatePayload"
+  },
+  "delegateAccessTokenDestroy": {
+    "description": "Destroys a delegate access token.",
+    "returns": "DelegateAccessTokenDestroyPayload"
+  },
+  "deliveryCustomizationActivation": {
+    "description": "Activates and deactivates delivery customizations.",
+    "returns": "DeliveryCustomizationActivationPayload"
+  },
+  "deliveryCustomizationCreate": {
+    "description": "Creates a delivery customization.",
+    "returns": "DeliveryCustomizationCreatePayload"
+  },
+  "deliveryCustomizationDelete": {
+    "description": "Creates a delivery customization.",
+    "returns": "DeliveryCustomizationDeletePayload"
+  },
+  "deliveryCustomizationUpdate": {
+    "description": "Updates a delivery customization.",
+    "returns": "DeliveryCustomizationUpdatePayload"
+  },
+  "deliveryProfileCreate": {
+    "description": "Creates a [`DeliveryProfile`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DeliveryProfile) that defines shipping rates for specific products and locations.",
+    "returns": "DeliveryProfileCreatePayload"
+  },
+  "deliveryProfileRemove": {
+    "description": "Enqueue the removal of a delivery profile.",
+    "returns": "DeliveryProfileRemovePayload"
+  },
+  "deliveryProfileUpdate": {
+    "description": "Updates a [`DeliveryProfile`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DeliveryProfile)'s configuration, including its shipping zones, rates, and associated products.",
+    "returns": "DeliveryProfileUpdatePayload"
+  },
+  "deliveryPromiseParticipantsUpdate": {
+    "description": "Updates the delivery promise participants by adding or removing owners based on a branded promise handle.",
+    "returns": "DeliveryPromiseParticipantsUpdatePayload"
+  },
+  "deliveryPromiseProviderUpsert": {
+    "description": "Creates or updates a delivery promise provider. Currently restricted to select approved delivery promise partners.",
+    "returns": "DeliveryPromiseProviderUpsertPayload"
+  },
+  "deliverySettingUpdate": {
+    "description": "Set the delivery settings for a shop.",
+    "returns": "DeliverySettingUpdatePayload"
+  },
+  "deliveryShippingOriginAssign": {
+    "description": "Assigns a location as the shipping origin while using legacy compatibility mode for multi-location delivery profiles.",
+    "returns": "DeliveryShippingOriginAssignPayload"
+  },
+  "discountAutomaticActivate": {
+    "description": "Activates an automatic discount.",
+    "returns": "DiscountAutomaticActivatePayload"
+  },
+  "discountAutomaticAppCreate": {
+    "description": "Creates an automatic discount that's managed by an app.",
+    "returns": "DiscountAutomaticAppCreatePayload"
+  },
+  "discountAutomaticAppUpdate": {
+    "description": "Updates an existing automatic discount that's managed by an app using",
+    "returns": "DiscountAutomaticAppUpdatePayload"
+  },
+  "discountAutomaticBasicCreate": {
+    "description": "Creates an",
+    "returns": "DiscountAutomaticBasicCreatePayload"
+  },
+  "discountAutomaticBasicUpdate": {
+    "description": "Updates an existing",
+    "returns": "DiscountAutomaticBasicUpdatePayload"
+  },
+  "discountAutomaticBulkDelete": {
+    "description": "Deletes multiple automatic discounts in a single operation, providing efficient bulk management for stores with extensive discount catalogs. This mutation processes deletions asynchronously to handle ",
+    "returns": "DiscountAutomaticBulkDeletePayload"
+  },
+  "discountAutomaticBxgyCreate": {
+    "description": "Creates a",
+    "returns": "DiscountAutomaticBxgyCreatePayload"
+  },
+  "discountAutomaticBxgyUpdate": {
+    "description": "Updates an existing",
+    "returns": "DiscountAutomaticBxgyUpdatePayload"
+  },
+  "discountAutomaticDeactivate": {
+    "description": "Deactivates an automatic discount.",
+    "returns": "DiscountAutomaticDeactivatePayload"
+  },
+  "discountAutomaticDelete": {
+    "description": "Deletes an existing automatic discount from the store, permanently removing it from all future order calculations. This mutation provides a clean way to remove promotional campaigns that are no longer",
+    "returns": "DiscountAutomaticDeletePayload"
+  },
+  "discountAutomaticFreeShippingCreate": {
+    "description": "Creates automatic free shipping discounts that apply to qualifying orders without requiring discount codes. These promotions automatically activate when customers meet specified criteria, streamlining",
+    "returns": "DiscountAutomaticFreeShippingCreatePayload"
+  },
+  "discountAutomaticFreeShippingUpdate": {
+    "description": "Updates existing automatic free shipping discounts, allowing merchants to modify promotion criteria, shipping destinations, and eligibility requirements without recreating the entire discount structur",
+    "returns": "DiscountAutomaticFreeShippingUpdatePayload"
+  },
+  "discountCodeActivate": {
+    "description": "Activates a previously created code discount, making it available for customers to use during checkout. This mutation transitions inactive discount codes into an active state where they can be applied",
+    "returns": "DiscountCodeActivatePayload"
+  },
+  "discountCodeAppCreate": {
+    "description": "Creates a code discount. The discount type must be provided by an app extension that uses [Shopify Functions](https://shopify.dev/docs/apps/build/functions). Functions can implement [order](https://sh",
+    "returns": "DiscountCodeAppCreatePayload"
+  },
+  "discountCodeAppUpdate": {
+    "description": "Updates a code discount, where the discount type is provided by an app extension that uses [Shopify Functions](https://shopify.dev/docs/apps/build/functions). Use this mutation when you need advanced,",
+    "returns": "DiscountCodeAppUpdatePayload"
+  },
+  "discountCodeBasicCreate": {
+    "description": "Creates an [amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount) that's applied on a cart and at checkout when a customer enters a code. Amount off di",
+    "returns": "DiscountCodeBasicCreatePayload"
+  },
+  "discountCodeBasicUpdate": {
+    "description": "Updates an [amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount) that's applied on a cart and at checkout when a customer enters a code. Amount off di",
+    "returns": "DiscountCodeBasicUpdatePayload"
+  },
+  "discountCodeBulkActivate": {
+    "description": "Activates multiple [code discounts](https://help.shopify.com/manual/discounts/discount-types#discount-codes) asynchronously using one of the following:",
+    "returns": "DiscountCodeBulkActivatePayload"
+  },
+  "discountCodeBulkDeactivate": {
+    "description": "Deactivates multiple [code-based discounts](https://help.shopify.com/manual/discounts/discount-types#discount-codes) asynchronously using one of the following:",
+    "returns": "DiscountCodeBulkDeactivatePayload"
+  },
+  "discountCodeBulkDelete": {
+    "description": "Deletes multiple [code-based discounts](https://help.shopify.com/manual/discounts/discount-types#discount-codes) asynchronously using one of the following:",
+    "returns": "DiscountCodeBulkDeletePayload"
+  },
+  "discountCodeBxgyCreate": {
+    "description": "Creates a",
+    "returns": "DiscountCodeBxgyCreatePayload"
+  },
+  "discountCodeBxgyUpdate": {
+    "description": "Updates a",
+    "returns": "DiscountCodeBxgyUpdatePayload"
+  },
+  "discountCodeDeactivate": {
+    "description": "Temporarily suspends a code discount without permanently removing it from the store. Deactivation allows merchants to pause promotional campaigns while preserving the discount configuration for potent",
+    "returns": "DiscountCodeDeactivatePayload"
+  },
+  "discountCodeDelete": {
+    "description": "Removes a code discount from the store, making it permanently unavailable for customer use. This mutation provides a clean way to eliminate discount codes that are no longer needed or have been replac",
+    "returns": "DiscountCodeDeletePayload"
+  },
+  "discountCodeFreeShippingCreate": {
+    "description": "Creates an [free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping) that's applied on a cart and at checkout when a customer enters a code.",
+    "returns": "DiscountCodeFreeShippingCreatePayload"
+  },
+  "discountCodeFreeShippingUpdate": {
+    "description": "Updates a [free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping) that's applied on a cart and at checkout when a customer enters a code.",
+    "returns": "DiscountCodeFreeShippingUpdatePayload"
+  },
+  "discountCodeRedeemCodeBulkDelete": {
+    "description": "Asynchronously delete",
+    "returns": "DiscountCodeRedeemCodeBulkDeletePayload"
+  },
+  "discountRedeemCodeBulkAdd": {
+    "description": "Asynchronously add",
+    "returns": "DiscountRedeemCodeBulkAddPayload"
+  },
+  "disputeEvidenceUpdate": {
+    "description": "Updates a dispute evidence.",
+    "returns": "DisputeEvidenceUpdatePayload"
+  },
+  "draftOrderBulkAddTags": {
+    "description": "Adds tags to multiple draft orders.",
+    "returns": "DraftOrderBulkAddTagsPayload"
+  },
+  "draftOrderBulkDelete": {
+    "description": "Deletes multiple draft orders.",
+    "returns": "DraftOrderBulkDeletePayload"
+  },
+  "draftOrderBulkRemoveTags": {
+    "description": "Removes tags from multiple draft orders.",
+    "returns": "DraftOrderBulkRemoveTagsPayload"
+  },
+  "draftOrderCalculate": {
+    "description": "Calculates the properties of a [`DraftOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DraftOrder) without creating it. Returns pricing information including [`CalculatedDraftOrderLin",
+    "returns": "DraftOrderCalculatePayload"
+  },
+  "draftOrderComplete": {
+    "description": "Completes a [draft order](https://shopify.dev/docs/api/admin-graphql/latest/objects/DraftOrder) and",
+    "returns": "DraftOrderCompletePayload"
+  },
+  "draftOrderCreate": {
+    "description": "Creates a [draft order](https://shopify.dev/docs/api/admin-graphql/latest/objects/DraftOrder)",
+    "returns": "DraftOrderCreatePayload"
+  },
+  "draftOrderCreateFromOrder": {
+    "description": "Creates a draft order from order.",
+    "returns": "DraftOrderCreateFromOrderPayload"
+  },
+  "draftOrderDelete": {
+    "description": "Deletes a draft order.",
+    "returns": "DraftOrderDeletePayload"
+  },
+  "draftOrderDuplicate": {
+    "description": "Duplicates a draft order.",
+    "returns": "DraftOrderDuplicatePayload"
+  },
+  "draftOrderInvoicePreview": {
+    "description": "Previews a draft order invoice email.",
+    "returns": "DraftOrderInvoicePreviewPayload"
+  },
+  "draftOrderInvoiceSend": {
+    "description": "Sends an invoice email for a [`DraftOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DraftOrder). The invoice includes a secure checkout link for reviewing and paying for the order. U",
+    "returns": "DraftOrderInvoiceSendPayload"
+  },
+  "draftOrderUpdate": {
+    "description": "Updates a draft order.",
+    "returns": "DraftOrderUpdatePayload"
+  },
+  "eventBridgeServerPixelUpdate": {
+    "description": "Updates the server pixel to connect to an EventBridge endpoint.",
+    "returns": "EventBridgeServerPixelUpdatePayload"
+  },
+  "eventBridgeWebhookSubscriptionCreate": {
+    "description": "Creates a webhook subscription that notifies your [`App`](https://shopify.dev/docs/api/admin-graphql/latest/objects/App) when specific events occur in a shop. Webhooks push event data to your endpoint",
+    "returns": "EventBridgeWebhookSubscriptionCreatePayload"
+  },
+  "eventBridgeWebhookSubscriptionUpdate": {
+    "description": "Updates an Amazon EventBridge webhook subscription.",
+    "returns": "EventBridgeWebhookSubscriptionUpdatePayload"
+  },
+  "fileAcknowledgeUpdateFailed": {
+    "description": "Acknowledges file update failure by resetting FAILED status to READY and clearing any media errors.",
+    "returns": "FileAcknowledgeUpdateFailedPayload"
+  },
+  "fileCreate": {
+    "description": "Creates file assets for a store from external URLs or files that were previously uploaded using the",
+    "returns": "FileCreatePayload"
+  },
+  "fileDelete": {
+    "description": "Deletes file assets that were previously uploaded to your store.",
+    "returns": "FileDeletePayload"
+  },
+  "fileUpdate": {
+    "description": "Updates properties, content, and metadata associated with an existing file asset that has already been uploaded to Shopify.",
+    "returns": "FileUpdatePayload"
+  },
+  "flowGenerateSignature": {
+    "description": "Generates a signature for a Flow action payload.",
+    "returns": "FlowGenerateSignaturePayload"
+  },
+  "flowTriggerReceive": {
+    "description": "Triggers any workflows that begin with the trigger specified in the request body. To learn more, refer to [_Create Shopify Flow triggers_](https://shopify.dev/apps/flow/triggers).",
+    "returns": "FlowTriggerReceivePayload"
+  },
+  "fulfillmentCancel": {
+    "description": "Cancels an existing [`Fulfillment`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Fulfillment) and reverses its effects on associated [`FulfillmentOrder`](https://shopify.dev/docs/api/admi",
+    "returns": "FulfillmentCancelPayload"
+  },
+  "fulfillmentConstraintRuleCreate": {
+    "description": "Creates a fulfillment constraint rule and its metafield.",
+    "returns": "FulfillmentConstraintRuleCreatePayload"
+  },
+  "fulfillmentConstraintRuleDelete": {
+    "description": "Deletes a fulfillment constraint rule and its metafields.",
+    "returns": "FulfillmentConstraintRuleDeletePayload"
+  },
+  "fulfillmentConstraintRuleUpdate": {
+    "description": "Update a fulfillment constraint rule.",
+    "returns": "FulfillmentConstraintRuleUpdatePayload"
+  },
+  "fulfillmentCreate": {
+    "description": "Creates a fulfillment for one or more [`FulfillmentOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentOrder) objects. The fulfillment orders are associated with the same [`Or",
+    "returns": "FulfillmentCreatePayload"
+  },
+  "fulfillmentCreateV2": {
+    "description": "Creates a fulfillment for one or many fulfillment orders.",
+    "returns": "FulfillmentCreateV2Payload"
+  },
+  "fulfillmentEventCreate": {
+    "description": "Creates a [`FulfillmentEvent`](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentEvent) to track the shipment status and location of items that have shipped. Events capture status u",
+    "returns": "FulfillmentEventCreatePayload"
+  },
+  "fulfillmentOrderAcceptCancellationRequest": {
+    "description": "Accept a cancellation request sent to a fulfillment service for a fulfillment order.",
+    "returns": "FulfillmentOrderAcceptCancellationRequestPayload"
+  },
+  "fulfillmentOrderAcceptFulfillmentRequest": {
+    "description": "Accepts a fulfillment request that the fulfillment service has received for a [`FulfillmentOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentOrder) which signals that the fu",
+    "returns": "FulfillmentOrderAcceptFulfillmentRequestPayload"
+  },
+  "fulfillmentOrderCancel": {
+    "description": "Cancels a [`FulfillmentOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentOrder) and creates a replacement fulfillment order to represent the work left to be done. The origin",
+    "returns": "FulfillmentOrderCancelPayload"
+  },
+  "fulfillmentOrderClose": {
+    "description": "Marks an in-progress fulfillment order as incomplete,",
+    "returns": "FulfillmentOrderClosePayload"
+  },
+  "fulfillmentOrderHold": {
+    "description": "Applies a fulfillment hold on a fulfillment order.",
+    "returns": "FulfillmentOrderHoldPayload"
+  },
+  "fulfillmentOrderLineItemsPreparedForPickup": {
+    "description": "Marks [fulfillment order line items](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentOrderLineItem) as ready for customer pickup. When executed, this mutation automatically sends ",
+    "returns": "FulfillmentOrderLineItemsPreparedForPickupPayload"
+  },
+  "fulfillmentOrderMerge": {
+    "description": "Merges a set or multiple sets of fulfillment orders together into one based on",
+    "returns": "FulfillmentOrderMergePayload"
+  },
+  "fulfillmentOrderMove": {
+    "description": "Changes the location which is assigned to fulfill a number of unfulfilled fulfillment order line items.",
+    "returns": "FulfillmentOrderMovePayload"
+  },
+  "fulfillmentOrderOpen": {
+    "description": "Marks a scheduled fulfillment order as open.",
+    "returns": "FulfillmentOrderOpenPayload"
+  },
+  "fulfillmentOrderRejectCancellationRequest": {
+    "description": "Rejects a cancellation request sent to a fulfillment service for a fulfillment order.",
+    "returns": "FulfillmentOrderRejectCancellationRequestPayload"
+  },
+  "fulfillmentOrderRejectFulfillmentRequest": {
+    "description": "Rejects a fulfillment request sent to a fulfillment service for a fulfillment order.",
+    "returns": "FulfillmentOrderRejectFulfillmentRequestPayload"
+  },
+  "fulfillmentOrderReleaseHold": {
+    "description": "Releases the fulfillment hold on a fulfillment order.",
+    "returns": "FulfillmentOrderReleaseHoldPayload"
+  },
+  "fulfillmentOrderReschedule": {
+    "description": "Reschedules a scheduled fulfillment order.",
+    "returns": "FulfillmentOrderReschedulePayload"
+  },
+  "fulfillmentOrderSplit": {
+    "description": "Splits [`FulfillmentOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentOrder) objects by moving the specified [`LineItem`](https://shopify.dev/docs/api/admin-graphql/latest/o",
+    "returns": "FulfillmentOrderSplitPayload"
+  },
+  "fulfillmentOrderSubmitCancellationRequest": {
+    "description": "Sends a cancellation request to the fulfillment service of a fulfillment order.",
+    "returns": "FulfillmentOrderSubmitCancellationRequestPayload"
+  },
+  "fulfillmentOrderSubmitFulfillmentRequest": {
+    "description": "Sends a fulfillment request to the fulfillment service assigned to a [`FulfillmentOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentOrder). The fulfillment service must then",
+    "returns": "FulfillmentOrderSubmitFulfillmentRequestPayload"
+  },
+  "fulfillmentOrdersReroute": {
+    "description": "Route the fulfillment orders to an alternative location, according to the shop's order routing settings. This involves:",
+    "returns": "FulfillmentOrdersReroutePayload"
+  },
+  "fulfillmentOrdersSetFulfillmentDeadline": {
+    "description": "Sets the latest date and time by which the fulfillment orders need to be fulfilled.",
+    "returns": "FulfillmentOrdersSetFulfillmentDeadlinePayload"
+  },
+  "fulfillmentServiceCreate": {
+    "description": "Creates a fulfillment service.",
+    "returns": "FulfillmentServiceCreatePayload"
+  },
+  "fulfillmentServiceDelete": {
+    "description": "Deletes a fulfillment service.",
+    "returns": "FulfillmentServiceDeletePayload"
+  },
+  "fulfillmentServiceUpdate": {
+    "description": "Updates the [`FulfillmentService`](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentService) configuration, including its name, callback URL, and operational settings.",
+    "returns": "FulfillmentServiceUpdatePayload"
+  },
+  "fulfillmentTrackingInfoUpdate": {
+    "description": "Updates tracking information for a fulfillment, including the carrier name, tracking numbers, and tracking URLs. You can provide either single or multiple tracking numbers for shipments with multiple ",
+    "returns": "FulfillmentTrackingInfoUpdatePayload"
+  },
+  "fulfillmentTrackingInfoUpdateV2": {
+    "description": "Updates tracking information for a fulfillment.",
+    "returns": "FulfillmentTrackingInfoUpdateV2Payload"
+  },
+  "giftCardCreate": {
+    "description": "Creates a new [`GiftCard`](https://shopify.dev/docs/api/admin-graphql/latest/objects/GiftCard) with a specified initial value. You can assign the gift card to a [`Customer`](https://shopify.dev/docs/a",
+    "returns": "GiftCardCreatePayload"
+  },
+  "giftCardCredit": {
+    "description": "Credit a gift card.",
+    "returns": "GiftCardCreditPayload"
+  },
+  "giftCardDeactivate": {
+    "description": "Deactivate a gift card. A deactivated gift card cannot be used by a customer.",
+    "returns": "GiftCardDeactivatePayload"
+  },
+  "giftCardDebit": {
+    "description": "Debit a gift card.",
+    "returns": "GiftCardDebitPayload"
+  },
+  "giftCardSendNotificationToCustomer": {
+    "description": "Send notification to the customer of a gift card.",
+    "returns": "GiftCardSendNotificationToCustomerPayload"
+  },
+  "giftCardSendNotificationToRecipient": {
+    "description": "Send notification to the recipient of a gift card.",
+    "returns": "GiftCardSendNotificationToRecipientPayload"
+  },
+  "giftCardUpdate": {
+    "description": "Update a gift card.",
+    "returns": "GiftCardUpdatePayload"
+  },
+  "inventoryActivate": {
+    "description": "Activates an inventory item at a [`Location`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Location) by creating an [`InventoryLevel`](https://shopify.dev/docs/api/admin-graphql/latest/ob",
+    "returns": "InventoryActivatePayload"
+  },
+  "inventoryAdjustQuantities": {
+    "description": "Adjusts quantities for inventory items by applying incremental changes at specific locations. Each adjustment modifies the quantity by a delta value rather than setting an absolute amount.",
+    "returns": "InventoryAdjustQuantitiesPayload"
+  },
+  "inventoryBulkToggleActivation": {
+    "description": "Activates or deactivates an inventory item at multiple locations. When you activate an [`InventoryItem`](https://shopify.dev/docs/api/admin-graphql/latest/objects/InventoryItem) at a [`Location`](http",
+    "returns": "InventoryBulkToggleActivationPayload"
+  },
+  "inventoryDeactivate": {
+    "description": "Removes an inventory item's quantities from a location, and turns off inventory at the location.",
+    "returns": "InventoryDeactivatePayload"
+  },
+  "inventoryItemUpdate": {
+    "description": "Updates an [`InventoryItem`](https://shopify.dev/docs/api/admin-graphql/latest/objects/InventoryItem)'s properties including whether inventory is tracked, cost, SKU, and whether shipping is required. ",
+    "returns": "InventoryItemUpdatePayload"
+  },
+  "inventoryMoveQuantities": {
+    "description": "Moves inventory quantities for a single inventory item between different states at a single location. Use this mutation to reallocate inventory across quantity states without moving it between locatio",
+    "returns": "InventoryMoveQuantitiesPayload"
+  },
+  "inventorySetOnHandQuantities": {
+    "description": "Sets an inventory item's on-hand quantities to specific absolute values at designated locations. The mutation takes a reason for tracking purposes and a reference document URI for audit trails.",
+    "returns": "InventorySetOnHandQuantitiesPayload"
+  },
+  "inventorySetQuantities": {
+    "description": "Set quantities of specified name using absolute values. This mutation supports compare-and-set functionality to handle",
+    "returns": "InventorySetQuantitiesPayload"
+  },
+  "inventorySetScheduledChanges": {
+    "description": "Set up scheduled changes of inventory items.",
+    "returns": "InventorySetScheduledChangesPayload"
+  },
+  "inventoryShipmentAddItems": {
+    "description": "Adds items to an inventory shipment.",
+    "returns": "InventoryShipmentAddItemsPayload"
+  },
+  "inventoryShipmentCreate": {
+    "description": "Adds a draft shipment to an inventory transfer.",
+    "returns": "InventoryShipmentCreatePayload"
+  },
+  "inventoryShipmentCreateInTransit": {
+    "description": "Adds an in-transit shipment to an inventory transfer.",
+    "returns": "InventoryShipmentCreateInTransitPayload"
+  },
+  "inventoryShipmentDelete": {
+    "description": "Deletes an inventory shipment. Only draft shipments can be deleted.",
+    "returns": "InventoryShipmentDeletePayload"
+  },
+  "inventoryShipmentMarkInTransit": {
+    "description": "Marks a draft inventory shipment as in transit.",
+    "returns": "InventoryShipmentMarkInTransitPayload"
+  },
+  "inventoryShipmentReceive": {
+    "description": "Receive an inventory shipment.",
+    "returns": "InventoryShipmentReceivePayload"
+  },
+  "inventoryShipmentRemoveItems": {
+    "description": "Remove items from an inventory shipment.",
+    "returns": "InventoryShipmentRemoveItemsPayload"
+  },
+  "inventoryShipmentSetTracking": {
+    "description": "Edits the tracking info on an inventory shipment.",
+    "returns": "InventoryShipmentSetTrackingPayload"
+  },
+  "inventoryShipmentUpdateItemQuantities": {
+    "description": "Updates items on an inventory shipment.",
+    "returns": "InventoryShipmentUpdateItemQuantitiesPayload"
+  },
+  "inventoryTransferCancel": {
+    "description": "Cancels an inventory transfer.",
+    "returns": "InventoryTransferCancelPayload"
+  },
+  "inventoryTransferCreate": {
+    "description": "Creates a draft inventory transfer to move inventory items between [`Location`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Location) objects in your store. The transfer tracks which ite",
+    "returns": "InventoryTransferCreatePayload"
+  },
+  "inventoryTransferCreateAsReadyToShip": {
+    "description": "Creates an inventory transfer in ready to ship.",
+    "returns": "InventoryTransferCreateAsReadyToShipPayload"
+  },
+  "inventoryTransferDelete": {
+    "description": "Deletes an inventory transfer.",
+    "returns": "InventoryTransferDeletePayload"
+  },
+  "inventoryTransferDuplicate": {
+    "description": "This mutation allows duplicating an existing inventory transfer. The duplicated transfer will have the same",
+    "returns": "InventoryTransferDuplicatePayload"
+  },
+  "inventoryTransferEdit": {
+    "description": "Edits an inventory transfer.",
+    "returns": "InventoryTransferEditPayload"
+  },
+  "inventoryTransferMarkAsReadyToShip": {
+    "description": "Sets an inventory transfer to ready to ship.",
+    "returns": "InventoryTransferMarkAsReadyToShipPayload"
+  },
+  "inventoryTransferRemoveItems": {
+    "description": "This mutation allows removing the shippable quantities of line items on a Transfer.",
+    "returns": "InventoryTransferRemoveItemsPayload"
+  },
+  "inventoryTransferSetItems": {
+    "description": "This mutation allows for the setting of line items on a Transfer. Will replace the items already set, if any.",
+    "returns": "InventoryTransferSetItemsPayload"
+  },
+  "locationActivate": {
+    "description": "Activates a location so that you can stock inventory at the location. Refer to the",
+    "returns": "LocationActivatePayload"
+  },
+  "locationAdd": {
+    "description": "Adds a new [`Location`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Location) where you can stock inventory and fulfill orders. Locations represent physical places like warehouses, retai",
+    "returns": "LocationAddPayload"
+  },
+  "locationDeactivate": {
+    "description": "Deactivates a location and moves inventory, pending orders, and moving transfers \" \"to a destination location.",
+    "returns": "LocationDeactivatePayload"
+  },
+  "locationDelete": {
+    "description": "Deletes a location.",
+    "returns": "LocationDeletePayload"
+  },
+  "locationEdit": {
+    "description": "Updates the properties of an existing [`Location`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Location). You can modify the location's name, address, whether it fulfills online orders, ",
+    "returns": "LocationEditPayload"
+  },
+  "locationLocalPickupDisable": {
+    "description": "Disables local pickup for a location.",
+    "returns": "LocationLocalPickupDisablePayload"
+  },
+  "locationLocalPickupEnable": {
+    "description": "Enables local pickup for a location so customers can collect their orders in person. Configures the estimated pickup time that customers see at checkout and optional instructions for finding or access",
+    "returns": "LocationLocalPickupEnablePayload"
+  },
+  "marketCreate": {
+    "description": "Creates a [`Market`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Market) to deliver customized shopping experiences. Markets define various aspects of the buyer experience including pric",
+    "returns": "MarketCreatePayload"
+  },
+  "marketCurrencySettingsUpdate": {
+    "description": "Updates currency settings of a market.",
+    "returns": "MarketCurrencySettingsUpdatePayload"
+  },
+  "marketDelete": {
+    "description": "Deletes a market definition.",
+    "returns": "MarketDeletePayload"
+  },
+  "marketLocalizationsRegister": {
+    "description": "Creates or updates market localizations.",
+    "returns": "MarketLocalizationsRegisterPayload"
+  },
+  "marketLocalizationsRemove": {
+    "description": "Deletes market localizations.",
+    "returns": "MarketLocalizationsRemovePayload"
+  },
+  "marketRegionDelete": {
+    "description": "Deletes a market region.",
+    "returns": "MarketRegionDeletePayload"
+  },
+  "marketRegionsCreate": {
+    "description": "Creates regions that belong to an existing market.",
+    "returns": "MarketRegionsCreatePayload"
+  },
+  "marketRegionsDelete": {
+    "description": "Deletes a list of market regions.",
+    "returns": "MarketRegionsDeletePayload"
+  },
+  "marketUpdate": {
+    "description": "Updates the properties of a market.",
+    "returns": "MarketUpdatePayload"
+  },
+  "marketWebPresenceCreate": {
+    "description": "Creates a web presence for a market.",
+    "returns": "MarketWebPresenceCreatePayload"
+  },
+  "marketWebPresenceDelete": {
+    "description": "Deletes a market web presence.",
+    "returns": "MarketWebPresenceDeletePayload"
+  },
+  "marketWebPresenceUpdate": {
+    "description": "Updates a market web presence.",
+    "returns": "MarketWebPresenceUpdatePayload"
+  },
+  "marketingActivitiesDeleteAllExternal": {
+    "description": "Deletes all external marketing activities. Deletion is performed by a background job, as it may take a bit of time to complete if a large number of activities are to be deleted. Attempting to create o",
+    "returns": "MarketingActivitiesDeleteAllExternalPayload"
+  },
+  "marketingActivityCreate": {
+    "description": "Create new marketing activity. Marketing activity app extensions are deprecated and will be removed in the near future.",
+    "returns": "MarketingActivityCreatePayload"
+  },
+  "marketingActivityCreateExternal": {
+    "description": "Creates a new external marketing activity.",
+    "returns": "MarketingActivityCreateExternalPayload"
+  },
+  "marketingActivityDeleteExternal": {
+    "description": "Deletes an external marketing activity.",
+    "returns": "MarketingActivityDeleteExternalPayload"
+  },
+  "marketingActivityUpdate": {
+    "description": "Updates a marketing activity with the latest information. Marketing activity app extensions are deprecated and will be removed in the near future.",
+    "returns": "MarketingActivityUpdatePayload"
+  },
+  "marketingActivityUpdateExternal": {
+    "description": "Update an external marketing activity.",
+    "returns": "MarketingActivityUpdateExternalPayload"
+  },
+  "marketingActivityUpsertExternal": {
+    "description": "Creates a new external marketing activity or updates an existing one. When optional fields are absent or null, associated information will be removed from an existing marketing activity.",
+    "returns": "MarketingActivityUpsertExternalPayload"
+  },
+  "marketingEngagementCreate": {
+    "description": "Creates a new marketing engagement for a marketing activity or a marketing channel.",
+    "returns": "MarketingEngagementCreatePayload"
+  },
+  "marketingEngagementsDelete": {
+    "description": "Marks channel-level engagement data such that it no longer appears in reports.",
+    "returns": "MarketingEngagementsDeletePayload"
+  },
+  "menuCreate": {
+    "description": "Creates a navigation [`Menu`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Menu) for the online store. Menus organize links that help customers navigate to [collections](https://shopify.d",
+    "returns": "MenuCreatePayload"
+  },
+  "menuDelete": {
+    "description": "Deletes a menu.",
+    "returns": "MenuDeletePayload"
+  },
+  "menuUpdate": {
+    "description": "Updates a [`Menu`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Menu) for display on the storefront. Modifies the menu's title and navigation structure, including nested [`MenuItem`](http",
+    "returns": "MenuUpdatePayload"
+  },
+  "metafieldDefinitionCreate": {
+    "description": "Creates a [`MetafieldDefinition`](https://shopify.dev/docs/api/admin-graphql/current/objects/MetafieldDefinition) that establishes structure and validation rules for metafields. The definition specifi",
+    "returns": "MetafieldDefinitionCreatePayload"
+  },
+  "metafieldDefinitionDelete": {
+    "description": "Deletes a [`MetafieldDefinition`](https://shopify.dev/docs/api/admin-graphql/current/objects/MetafieldDefinition). You can identify the definition by providing either its owner type, namespace, and ke",
+    "returns": "MetafieldDefinitionDeletePayload"
+  },
+  "metafieldDefinitionPin": {
+    "description": "You can organize your metafields in your Shopify admin by pinning/unpinning metafield definitions.",
+    "returns": "MetafieldDefinitionPinPayload"
+  },
+  "metafieldDefinitionUnpin": {
+    "description": "You can organize your metafields in your Shopify admin by pinning/unpinning metafield definitions.",
+    "returns": "MetafieldDefinitionUnpinPayload"
+  },
+  "metafieldDefinitionUpdate": {
+    "description": "Updates a [`MetafieldDefinition`](https://shopify.dev/docs/api/admin-graphql/current/objects/MetafieldDefinition)'s configuration and settings. You can modify the definition's name, description, valid",
+    "returns": "MetafieldDefinitionUpdatePayload"
+  },
+  "metafieldsDelete": {
+    "description": "Deletes [`Metafield`](https://shopify.dev/docs/api/admin-graphql/current/objects/Metafield) objects in bulk by specifying combinations of owner ID, namespace, and key.",
+    "returns": "MetafieldsDeletePayload"
+  },
+  "metafieldsSet": {
+    "description": "Sets metafield values. Metafield values will be set regardless if they were previously created or not.",
+    "returns": "MetafieldsSetPayload"
+  },
+  "metaobjectBulkDelete": {
+    "description": "Asynchronously delete metaobjects and their associated metafields in bulk.",
+    "returns": "MetaobjectBulkDeletePayload"
+  },
+  "metaobjectCreate": {
+    "description": "Creates a metaobject entry based on an existing [`MetaobjectDefinition`](https://shopify.dev/docs/api/admin-graphql/latest/objects/MetaobjectDefinition). The type must match a definition that already ",
+    "returns": "MetaobjectCreatePayload"
+  },
+  "metaobjectDefinitionCreate": {
+    "description": "Creates a metaobject definition that establishes the structure for custom data objects in your store. The definition specifies the fields, data types, and access permissions that all [`Metaobject`](ht",
+    "returns": "MetaobjectDefinitionCreatePayload"
+  },
+  "metaobjectDefinitionDelete": {
+    "description": "Deletes the specified metaobject definition.",
+    "returns": "MetaobjectDefinitionDeletePayload"
+  },
+  "metaobjectDefinitionUpdate": {
+    "description": "Updates a [`MetaobjectDefinition`](https://shopify.dev/docs/api/admin-graphql/latest/objects/MetaobjectDefinition)'s configuration and field structure. You can modify the definition's name, descriptio",
+    "returns": "MetaobjectDefinitionUpdatePayload"
+  },
+  "metaobjectDelete": {
+    "description": "Deletes the specified metaobject and its associated metafields.",
+    "returns": "MetaobjectDeletePayload"
+  },
+  "metaobjectUpdate": {
+    "description": "Updates a [`Metaobject`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Metaobject) with new field values, handle, or capabilities. [Metaobjects](https://shopify.dev/docs/apps/build/custom-",
+    "returns": "MetaobjectUpdatePayload"
+  },
+  "metaobjectUpsert": {
+    "description": "Creates or updates a [`Metaobject`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Metaobject) based on its handle. If a metaobject with the specified handle exists, the mutation updates it",
+    "returns": "MetaobjectUpsertPayload"
+  },
+  "mobilePlatformApplicationCreate": {
+    "description": "Create a mobile platform application.",
+    "returns": "MobilePlatformApplicationCreatePayload"
+  },
+  "mobilePlatformApplicationDelete": {
+    "description": "Delete a mobile platform application.",
+    "returns": "MobilePlatformApplicationDeletePayload"
+  },
+  "mobilePlatformApplicationUpdate": {
+    "description": "Update a mobile platform application.",
+    "returns": "MobilePlatformApplicationUpdatePayload"
+  },
+  "orderCancel": {
+    "description": "Cancels an order, with options for refunding, restocking inventory, and customer notification.",
+    "returns": "OrderCancelPayload"
+  },
+  "orderCapture": {
+    "description": "Captures payment for an authorized transaction on an order. Use this mutation to claim the money that was previously",
+    "returns": "OrderCapturePayload"
+  },
+  "orderClose": {
+    "description": "Marks an open [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order) as closed. A closed order is one where merchants fulfill or cancel all [`LineItem`](https://shopify.dev/docs/ap",
+    "returns": "OrderClosePayload"
+  },
+  "orderCreate": {
+    "description": "Creates an order with attributes such as customer information, line items, and shipping and billing addresses.",
+    "returns": "OrderCreatePayload"
+  },
+  "orderCreateMandatePayment": {
+    "description": "Creates a payment for an [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order) using a stored [`PaymentMandate`](https://shopify.dev/docs/api/admin-graphql/latest/objects/PaymentM",
+    "returns": "OrderCreateMandatePaymentPayload"
+  },
+  "orderCreateManualPayment": {
+    "description": "Records a manual payment for an [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order) that isn't fully paid. Use this mutation to track payments received outside the standard chec",
+    "returns": "OrderCreateManualPaymentPayload"
+  },
+  "orderCustomerRemove": {
+    "description": "Removes customer from an order.",
+    "returns": "OrderCustomerRemovePayload"
+  },
+  "orderCustomerSet": {
+    "description": "Sets a customer on an order.",
+    "returns": "OrderCustomerSetPayload"
+  },
+  "orderDelete": {
+    "description": "Permanently deletes an [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order) from the store.",
+    "returns": "OrderDeletePayload"
+  },
+  "orderEditAddCustomItem": {
+    "description": "Adds a custom line item to an existing [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order). Custom line items represent products or services not in your catalog, such as gift wr",
+    "returns": "OrderEditAddCustomItemPayload"
+  },
+  "orderEditAddLineItemDiscount": {
+    "description": "Applies a discount to a [`LineItem`](https://shopify.dev/docs/api/admin-graphql/latest/objects/LineItem) during an order edit session. The discount can be either a fixed amount or percentage value.",
+    "returns": "OrderEditAddLineItemDiscountPayload"
+  },
+  "orderEditAddShippingLine": {
+    "description": "Adds a custom shipping line to an [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order) during an edit session. Specify the shipping title and price to create a new [`ShippingLine",
+    "returns": "OrderEditAddShippingLinePayload"
+  },
+  "orderEditAddVariant": {
+    "description": "Adds a [`ProductVariant`](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductVariant) as a line item to an [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order) that",
+    "returns": "OrderEditAddVariantPayload"
+  },
+  "orderEditBegin": {
+    "description": "Starts an order editing session that enables you to modify an existing [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order). This mutation creates an [`OrderEditSession`](https:/",
+    "returns": "OrderEditBeginPayload"
+  },
+  "orderEditCommit": {
+    "description": "Applies staged changes from an order editing session to the original order. This finalizes all modifications made during the edit session, including changes to line items, quantities, discounts, and s",
+    "returns": "OrderEditCommitPayload"
+  },
+  "orderEditRemoveDiscount": {
+    "description": "Removes a discount on the current order edit. For more information on how to use the GraphQL Admin API to edit an existing order, refer to [Edit existing orders](https://shopify.dev/apps/fulfillment/o",
+    "returns": "OrderEditRemoveDiscountPayload"
+  },
+  "orderEditRemoveLineItemDiscount": {
+    "description": "Removes a line item discount that was applied as part of an order edit.",
+    "returns": "OrderEditRemoveLineItemDiscountPayload"
+  },
+  "orderEditRemoveShippingLine": {
+    "description": "Removes a shipping line from an existing order. For more information on how to use the GraphQL Admin API to edit an existing order, refer to [Edit existing orders](https://shopify.dev/apps/fulfillment",
+    "returns": "OrderEditRemoveShippingLinePayload"
+  },
+  "orderEditSetQuantity": {
+    "description": "Sets the quantity of a line item on an order that's being edited. Use this mutation to increase, decrease, or remove items by adjusting their quantities.",
+    "returns": "OrderEditSetQuantityPayload"
+  },
+  "orderEditUpdateDiscount": {
+    "description": "Updates a manual line level discount on the current order edit. For more information on how to use the GraphQL Admin API to edit an existing order, refer to [Edit existing orders](https://shopify.dev/",
+    "returns": "OrderEditUpdateDiscountPayload"
+  },
+  "orderEditUpdateShippingLine": {
+    "description": "Updates a shipping line on the current order edit. For more information on how to use the GraphQL Admin API to edit an existing order, refer to [Edit existing orders](https://shopify.dev/apps/fulfillm",
+    "returns": "OrderEditUpdateShippingLinePayload"
+  },
+  "orderInvoiceSend": {
+    "description": "Sends an email invoice for an [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order).",
+    "returns": "OrderInvoiceSendPayload"
+  },
+  "orderMarkAsPaid": {
+    "description": "Marks an order as paid by recording a payment transaction for the outstanding amount.",
+    "returns": "OrderMarkAsPaidPayload"
+  },
+  "orderOpen": {
+    "description": "Opens a closed order.",
+    "returns": "OrderOpenPayload"
+  },
+  "orderRiskAssessmentCreate": {
+    "description": "Create a risk assessment for an order.",
+    "returns": "OrderRiskAssessmentCreatePayload"
+  },
+  "orderUpdate": {
+    "description": "Updates the attributes of an order, such as the customer's email, the shipping address for the order,",
+    "returns": "OrderUpdatePayload"
+  },
+  "pageCreate": {
+    "description": "Creates a [`Page`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Page) for the online store.",
+    "returns": "PageCreatePayload"
+  },
+  "pageDelete": {
+    "description": "Permanently deletes a page from the online store.",
+    "returns": "PageDeletePayload"
+  },
+  "pageUpdate": {
+    "description": "Updates an existing page's content and settings.",
+    "returns": "PageUpdatePayload"
+  },
+  "paymentCustomizationActivation": {
+    "description": "Activates and deactivates payment customizations.",
+    "returns": "PaymentCustomizationActivationPayload"
+  },
+  "paymentCustomizationCreate": {
+    "description": "Creates a payment customization.",
+    "returns": "PaymentCustomizationCreatePayload"
+  },
+  "paymentCustomizationDelete": {
+    "description": "Deletes a payment customization.",
+    "returns": "PaymentCustomizationDeletePayload"
+  },
+  "paymentCustomizationUpdate": {
+    "description": "Updates a payment customization.",
+    "returns": "PaymentCustomizationUpdatePayload"
+  },
+  "paymentReminderSend": {
+    "description": "Sends an email payment reminder for a payment schedule.",
+    "returns": "PaymentReminderSendPayload"
+  },
+  "paymentTermsCreate": {
+    "description": "Create payment terms on an order. To create payment terms on a draft order, use a draft order mutation and include the request with the `DraftOrderInput`.",
+    "returns": "PaymentTermsCreatePayload"
+  },
+  "paymentTermsDelete": {
+    "description": "Delete payment terms for an order. To delete payment terms on a draft order, use a draft order mutation and include the request with the `DraftOrderInput`.",
+    "returns": "PaymentTermsDeletePayload"
+  },
+  "paymentTermsUpdate": {
+    "description": "Update payment terms on an order. To update payment terms on a draft order, use a draft order mutation and include the request with the `DraftOrderInput`.",
+    "returns": "PaymentTermsUpdatePayload"
+  },
+  "priceListCreate": {
+    "description": "Creates a [`PriceList`](https://shopify.dev/docs/api/admin-graphql/latest/objects/PriceList). Price lists enable contextual pricing by defining fixed prices or percentage-based adjustments.",
+    "returns": "PriceListCreatePayload"
+  },
+  "priceListDelete": {
+    "description": "Deletes a price list. For example, you can delete a price list so that it no longer applies for products in the associated market.",
+    "returns": "PriceListDeletePayload"
+  },
+  "priceListFixedPricesAdd": {
+    "description": "Creates or updates fixed prices on a [`PriceList`](https://shopify.dev/docs/api/admin-graphql/latest/objects/PriceList). Use this mutation to set specific prices for [`ProductVariant`](https://shopify",
+    "returns": "PriceListFixedPricesAddPayload"
+  },
+  "priceListFixedPricesByProductUpdate": {
+    "description": "Sets or removes fixed prices for all variants of a [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) on a [`PriceList`](https://shopify.dev/docs/api/admin-graphql/latest/o",
+    "returns": "PriceListFixedPricesByProductUpdatePayload"
+  },
+  "priceListFixedPricesDelete": {
+    "description": "Deletes specific fixed prices from a price list using a product variant ID. You can use the `priceListFixedPricesDelete` mutation to delete a set of fixed prices from a price list. After deleting the ",
+    "returns": "PriceListFixedPricesDeletePayload"
+  },
+  "priceListFixedPricesUpdate": {
+    "description": "Updates fixed prices on a [`PriceList`](https://shopify.dev/docs/api/admin-graphql/latest/objects/PriceList). This mutation lets you add new fixed prices for specific [`ProductVariant`](https://shopif",
+    "returns": "PriceListFixedPricesUpdatePayload"
+  },
+  "priceListUpdate": {
+    "description": "Updates a [`PriceList`](https://shopify.dev/docs/api/admin-graphql/latest/objects/PriceList)'s configuration, including its name, currency, [`Catalog`](https://shopify.dev/docs/api/admin-graphql/lates",
+    "returns": "PriceListUpdatePayload"
+  },
+  "privacyFeaturesDisable": {
+    "description": "Disable a shop's privacy features.",
+    "returns": "PrivacyFeaturesDisablePayload"
+  },
+  "productBundleCreate": {
+    "description": "Creates a product bundle that groups multiple [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) objects together as components. The bundle appears as a single product in t",
+    "returns": "ProductBundleCreatePayload"
+  },
+  "productBundleUpdate": {
+    "description": "Updates a product bundle or componentized product.",
+    "returns": "ProductBundleUpdatePayload"
+  },
+  "productChangeStatus": {
+    "description": "Changes the status of a product. This allows you to set the availability of the product across all channels.",
+    "returns": "ProductChangeStatusPayload"
+  },
+  "productCreate": {
+    "description": "Creates a [product](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product)",
+    "returns": "ProductCreatePayload"
+  },
+  "productCreateMedia": {
+    "description": "Adds media files to a [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product), such as images, videos, or 3D models. Media files enhance product listings by providing visual rep",
+    "returns": "ProductCreateMediaPayload"
+  },
+  "productDelete": {
+    "description": "Permanently deletes a product and all its associated data, including variants, media, publications, and inventory items.",
+    "returns": "ProductDeletePayload"
+  },
+  "productDeleteMedia": {
+    "description": "Deletes media from a [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product), such as images, videos, and 3D models.",
+    "returns": "ProductDeleteMediaPayload"
+  },
+  "productDuplicate": {
+    "description": "Duplicates a product.",
+    "returns": "ProductDuplicatePayload"
+  },
+  "productFeedCreate": {
+    "description": "Creates a product feed for a specific publication.",
+    "returns": "ProductFeedCreatePayload"
+  },
+  "productFeedDelete": {
+    "description": "Deletes a product feed for a specific publication.",
+    "returns": "ProductFeedDeletePayload"
+  },
+  "productFullSync": {
+    "description": "Runs the full product sync for a given shop.",
+    "returns": "ProductFullSyncPayload"
+  },
+  "productJoinSellingPlanGroups": {
+    "description": "Adds multiple selling plan groups to a product.",
+    "returns": "ProductJoinSellingPlanGroupsPayload"
+  },
+  "productLeaveSellingPlanGroups": {
+    "description": "Removes multiple groups from a product.",
+    "returns": "ProductLeaveSellingPlanGroupsPayload"
+  },
+  "productOptionUpdate": {
+    "description": "Updates an [option](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductOption)",
+    "returns": "ProductOptionUpdatePayload"
+  },
+  "productOptionsCreate": {
+    "description": "Creates one or more [options](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductOption)",
+    "returns": "ProductOptionsCreatePayload"
+  },
+  "productOptionsDelete": {
+    "description": "Deletes one or more [options](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductOption)",
+    "returns": "ProductOptionsDeletePayload"
+  },
+  "productOptionsReorder": {
+    "description": "Reorders the [options](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductOption) and",
+    "returns": "ProductOptionsReorderPayload"
+  },
+  "productPublish": {
+    "description": "Publishes a [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) to specified [`Publication`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication) objects.",
+    "returns": "ProductPublishPayload"
+  },
+  "productReorderMedia": {
+    "description": "Reorders [media](https://shopify.dev/docs/api/admin-graphql/latest/interfaces/Media) attached to a product, changing their sequence in product displays. The operation processes asynchronously to handl",
+    "returns": "ProductReorderMediaPayload"
+  },
+  "productSet": {
+    "description": "Performs multiple operations to create or update products in a single request.",
+    "returns": "ProductSetPayload"
+  },
+  "productUnpublish": {
+    "description": "Unpublishes a product.",
+    "returns": "ProductUnpublishPayload"
+  },
+  "productUpdate": {
+    "description": "Updates a [product](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product)",
+    "returns": "ProductUpdatePayload"
+  },
+  "productUpdateMedia": {
+    "description": "Updates properties of media attached to a [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product). You can modify alt text for accessibility or change preview images for existin",
+    "returns": "ProductUpdateMediaPayload"
+  },
+  "productVariantAppendMedia": {
+    "description": "Appends existing media from a product to specific variants of that product, creating associations between media files and particular product options. This allows different variants to showcase relevan",
+    "returns": "ProductVariantAppendMediaPayload"
+  },
+  "productVariantDetachMedia": {
+    "description": "Detaches media from product variants.",
+    "returns": "ProductVariantDetachMediaPayload"
+  },
+  "productVariantJoinSellingPlanGroups": {
+    "description": "Adds multiple selling plan groups to a product variant.",
+    "returns": "ProductVariantJoinSellingPlanGroupsPayload"
+  },
+  "productVariantLeaveSellingPlanGroups": {
+    "description": "Remove multiple groups from a product variant.",
+    "returns": "ProductVariantLeaveSellingPlanGroupsPayload"
+  },
+  "productVariantRelationshipBulkUpdate": {
+    "description": "Creates new bundles, updates component quantities in existing bundles, and removes bundle components for one or multiple [`ProductVariant`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Pr",
+    "returns": "ProductVariantRelationshipBulkUpdatePayload"
+  },
+  "productVariantsBulkCreate": {
+    "description": "Creates multiple [product variants](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductVariant)",
+    "returns": "ProductVariantsBulkCreatePayload"
+  },
+  "productVariantsBulkDelete": {
+    "description": "Deletes multiple variants in a single [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product). Specify the product ID and an array of variant IDs to remove variants in bulk. You",
+    "returns": "ProductVariantsBulkDeletePayload"
+  },
+  "productVariantsBulkReorder": {
+    "description": "Reorders multiple variants in a single product. This mutation can be called directly or via the bulkOperation.",
+    "returns": "ProductVariantsBulkReorderPayload"
+  },
+  "productVariantsBulkUpdate": {
+    "description": "Updates multiple [product variants](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductVariant)",
+    "returns": "ProductVariantsBulkUpdatePayload"
+  },
+  "pubSubServerPixelUpdate": {
+    "description": "Updates the server pixel to connect to a Google PubSub endpoint.",
+    "returns": "PubSubServerPixelUpdatePayload"
+  },
+  "pubSubWebhookSubscriptionCreate": {
+    "description": "Creates a webhook subscription that notifies your [`App`](https://shopify.dev/docs/api/admin-graphql/latest/objects/App) when specific events occur in a shop. Webhooks push event data to your endpoint",
+    "returns": "PubSubWebhookSubscriptionCreatePayload"
+  },
+  "pubSubWebhookSubscriptionUpdate": {
+    "description": "Updates a Google Cloud Pub/Sub webhook subscription.",
+    "returns": "PubSubWebhookSubscriptionUpdatePayload"
+  },
+  "publicationCreate": {
+    "description": "Creates a [`Publication`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication) that controls which [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) and ",
+    "returns": "PublicationCreatePayload"
+  },
+  "publicationDelete": {
+    "description": "Deletes a publication.",
+    "returns": "PublicationDeletePayload"
+  },
+  "publicationUpdate": {
+    "description": "Updates a [`Publication`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication).",
+    "returns": "PublicationUpdatePayload"
+  },
+  "publishablePublish": {
+    "description": "Publishes a resource, such as a [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) or [`Collection`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Collection), ",
+    "returns": "PublishablePublishPayload"
+  },
+  "publishablePublishToCurrentChannel": {
+    "description": "Publishes a resource to the current [`Channel`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Channel) associated with the requesting app. The system determines the current channel by the ",
+    "returns": "PublishablePublishToCurrentChannelPayload"
+  },
+  "publishableUnpublish": {
+    "description": "Unpublishes a resource, such as a [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) or [`Collection`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Collection)",
+    "returns": "PublishableUnpublishPayload"
+  },
+  "publishableUnpublishToCurrentChannel": {
+    "description": "Unpublishes a resource from the current channel. If the resource is a product, then it's visible in the channel only if the product status is `active`.",
+    "returns": "PublishableUnpublishToCurrentChannelPayload"
+  },
+  "quantityPricingByVariantUpdate": {
+    "description": "Updates quantity pricing on a [`PriceList`](https://shopify.dev/docs/api/admin-graphql/latest/objects/PriceList) for specific [`ProductVariant`](https://shopify.dev/docs/api/admin-graphql/latest/objec",
+    "returns": "QuantityPricingByVariantUpdatePayload"
+  },
+  "quantityRulesAdd": {
+    "description": "Creates or updates existing quantity rules on a price list.",
+    "returns": "QuantityRulesAddPayload"
+  },
+  "quantityRulesDelete": {
+    "description": "Deletes specific quantity rules from a price list using a product variant ID.",
+    "returns": "QuantityRulesDeletePayload"
+  },
+  "refundCreate": {
+    "description": "Creates a refund for an order, allowing you to process returns and issue payments back to customers.",
+    "returns": "RefundCreatePayload"
+  },
+  "removeFromReturn": {
+    "description": "Removes return and/or exchange lines from a return.",
+    "returns": "RemoveFromReturnPayload"
+  },
+  "returnApproveRequest": {
+    "description": "Approves a customer's return request.",
+    "returns": "ReturnApproveRequestPayload"
+  },
+  "returnCancel": {
+    "description": "Cancels a return and restores the items back to being fulfilled.",
+    "returns": "ReturnCancelPayload"
+  },
+  "returnClose": {
+    "description": "Indicates a return is complete, either when a refund has been made and items restocked,",
+    "returns": "ReturnClosePayload"
+  },
+  "returnCreate": {
+    "description": "Creates a return from an existing order that has at least one fulfilled",
+    "returns": "ReturnCreatePayload"
+  },
+  "returnDeclineRequest": {
+    "description": "Declines a return on an order.",
+    "returns": "ReturnDeclineRequestPayload"
+  },
+  "returnLineItemRemoveFromReturn": {
+    "description": "Removes return lines from a return.",
+    "returns": "ReturnLineItemRemoveFromReturnPayload"
+  },
+  "returnProcess": {
+    "description": "Processes a return by confirming which items customers return and exchange, handling their disposition, and optionally issuing refunds. This mutation confirms the quantities for [`ReturnLineItem`](htt",
+    "returns": "ReturnProcessPayload"
+  },
+  "returnRefund": {
+    "description": "Creates a refund for items being returned when the return status is `OPEN` or `CLOSED`. This mutation processes the financial aspects of a return by refunding line items, shipping costs, and duties ba",
+    "returns": "ReturnRefundPayload"
+  },
+  "returnReopen": {
+    "description": "Reopens a closed return.",
+    "returns": "ReturnReopenPayload"
+  },
+  "returnRequest": {
+    "description": "Creates a return request that requires merchant approval before processing. The return has its status set to `REQUESTED` and the merchant must approve or decline it.",
+    "returns": "ReturnRequestPayload"
+  },
+  "reverseDeliveryCreateWithShipping": {
+    "description": "Creates a new reverse delivery with associated external shipping information.",
+    "returns": "ReverseDeliveryCreateWithShippingPayload"
+  },
+  "reverseDeliveryShippingUpdate": {
+    "description": "Updates a reverse delivery with associated external shipping information.",
+    "returns": "ReverseDeliveryShippingUpdatePayload"
+  },
+  "reverseFulfillmentOrderDispose": {
+    "description": "Disposes reverse fulfillment order line items.",
+    "returns": "ReverseFulfillmentOrderDisposePayload"
+  },
+  "savedSearchCreate": {
+    "description": "Creates a saved search.",
+    "returns": "SavedSearchCreatePayload"
+  },
+  "savedSearchDelete": {
+    "description": "Delete a saved search.",
+    "returns": "SavedSearchDeletePayload"
+  },
+  "savedSearchUpdate": {
+    "description": "Updates a saved search.",
+    "returns": "SavedSearchUpdatePayload"
+  },
+  "scriptTagCreate": {
+    "description": "<div class=\"note\"><h4>Theme app extensions</h4>",
+    "returns": "ScriptTagCreatePayload"
+  },
+  "scriptTagDelete": {
+    "description": "<div class=\"note\"><h4>Theme app extensions</h4>",
+    "returns": "ScriptTagDeletePayload"
+  },
+  "scriptTagUpdate": {
+    "description": "<div class=\"note\"><h4>Theme app extensions</h4>",
+    "returns": "ScriptTagUpdatePayload"
+  },
+  "segmentCreate": {
+    "description": "Creates a segment.",
+    "returns": "SegmentCreatePayload"
+  },
+  "segmentDelete": {
+    "description": "Deletes a segment.",
+    "returns": "SegmentDeletePayload"
+  },
+  "segmentUpdate": {
+    "description": "Updates a segment.",
+    "returns": "SegmentUpdatePayload"
+  },
+  "sellingPlanGroupAddProductVariants": {
+    "description": "Adds multiple product variants to a selling plan group.",
+    "returns": "SellingPlanGroupAddProductVariantsPayload"
+  },
+  "sellingPlanGroupAddProducts": {
+    "description": "Adds multiple products to a selling plan group.",
+    "returns": "SellingPlanGroupAddProductsPayload"
+  },
+  "sellingPlanGroupCreate": {
+    "description": "Creates a selling plan group that defines how products can be sold and purchased. A selling plan group represents a selling method such as \"Subscribe and save\", \"Pre-order\", or \"Try before you buy\" an",
+    "returns": "SellingPlanGroupCreatePayload"
+  },
+  "sellingPlanGroupDelete": {
+    "description": "Delete a Selling Plan Group. This does not affect subscription contracts.",
+    "returns": "SellingPlanGroupDeletePayload"
+  },
+  "sellingPlanGroupRemoveProductVariants": {
+    "description": "Removes multiple product variants from a selling plan group.",
+    "returns": "SellingPlanGroupRemoveProductVariantsPayload"
+  },
+  "sellingPlanGroupRemoveProducts": {
+    "description": "Removes multiple products from a selling plan group.",
+    "returns": "SellingPlanGroupRemoveProductsPayload"
+  },
+  "sellingPlanGroupUpdate": {
+    "description": "Update a Selling Plan Group.",
+    "returns": "SellingPlanGroupUpdatePayload"
+  },
+  "serverPixelCreate": {
+    "description": "Creates a new unconfigured server pixel. A single server pixel can exist for an app and shop combination. If you call this mutation when a server pixel already exists, then an error will return.",
+    "returns": "ServerPixelCreatePayload"
+  },
+  "serverPixelDelete": {
+    "description": "Deletes the Server Pixel associated with the current app & shop.",
+    "returns": "ServerPixelDeletePayload"
+  },
+  "shippingPackageDelete": {
+    "description": "Deletes a shipping package.",
+    "returns": "ShippingPackageDeletePayload"
+  },
+  "shippingPackageMakeDefault": {
+    "description": "Set a shipping package as the default.",
+    "returns": "ShippingPackageMakeDefaultPayload"
+  },
+  "shippingPackageUpdate": {
+    "description": "Updates a shipping package.",
+    "returns": "ShippingPackageUpdatePayload"
+  },
+  "shopLocaleDisable": {
+    "description": "Deletes a locale for a shop. This also deletes all translations of this locale.",
+    "returns": "ShopLocaleDisablePayload"
+  },
+  "shopLocaleEnable": {
+    "description": "Adds a locale for a shop. The newly added locale is in the unpublished state.",
+    "returns": "ShopLocaleEnablePayload"
+  },
+  "shopLocaleUpdate": {
+    "description": "Updates a locale for a shop.",
+    "returns": "ShopLocaleUpdatePayload"
+  },
+  "shopPolicyUpdate": {
+    "description": "Updates a shop policy.",
+    "returns": "ShopPolicyUpdatePayload"
+  },
+  "shopResourceFeedbackCreate": {
+    "description": "The `ResourceFeedback` object lets your app report the status of shops and their resources. For example, if",
+    "returns": "ShopResourceFeedbackCreatePayload"
+  },
+  "shopifyPaymentsPayoutAlternateCurrencyCreate": {
+    "description": "Creates an alternate currency payout for a Shopify Payments account.",
+    "returns": "ShopifyPaymentsPayoutAlternateCurrencyCreatePayload"
+  },
+  "stagedUploadTargetGenerate": {
+    "description": "Generates the URL and signed paramaters needed to upload an asset to Shopify.",
+    "returns": "StagedUploadTargetGeneratePayload"
+  },
+  "stagedUploadTargetsGenerate": {
+    "description": "Uploads multiple images.",
+    "returns": "StagedUploadTargetsGeneratePayload"
+  },
+  "stagedUploadsCreate": {
+    "description": "Creates staged upload targets for file uploads such as images, videos, and 3D models.",
+    "returns": "StagedUploadsCreatePayload"
+  },
+  "standardMetafieldDefinitionEnable": {
+    "description": "Activates the specified standard metafield definition from its template.",
+    "returns": "StandardMetafieldDefinitionEnablePayload"
+  },
+  "standardMetaobjectDefinitionEnable": {
+    "description": "Enables the specified standard metaobject definition from its template.",
+    "returns": "StandardMetaobjectDefinitionEnablePayload"
+  },
+  "storeCreditAccountCredit": {
+    "description": "Adds funds to a [`StoreCreditAccount`](https://shopify.dev/docs/api/admin-graphql/latest/objects/StoreCreditAccount) by creating a [`StoreCreditAccountCreditTransaction`](https://shopify.dev/docs/api/",
+    "returns": "StoreCreditAccountCreditPayload"
+  },
+  "storeCreditAccountDebit": {
+    "description": "Creates a debit transaction that decreases the store credit account balance by the given amount.",
+    "returns": "StoreCreditAccountDebitPayload"
+  },
+  "storefrontAccessTokenCreate": {
+    "description": "Creates a storefront access token that delegates unauthenticated access scopes to clients using the [Storefront API](https://shopify.dev/docs/api/storefront). The token provides public access to store",
+    "returns": "StorefrontAccessTokenCreatePayload"
+  },
+  "storefrontAccessTokenDelete": {
+    "description": "Deletes a storefront access token.",
+    "returns": "StorefrontAccessTokenDeletePayload"
+  },
+  "subscriptionBillingAttemptCreate": {
+    "description": "Creates a billing attempt to charge for a [`SubscriptionContract`](https://shopify.dev/docs/api/admin-graphql/latest/objects/SubscriptionContract). The mutation processes either the payment for the cu",
+    "returns": "SubscriptionBillingAttemptCreatePayload"
+  },
+  "subscriptionBillingCycleBulkCharge": {
+    "description": "Asynchronously queries and charges all subscription billing cycles whose [billingAttemptExpectedDate](https://shopify.dev/api/admin-graphql/latest/objects/SubscriptionBillingCycle#field-billingattempt",
+    "returns": "SubscriptionBillingCycleBulkChargePayload"
+  },
+  "subscriptionBillingCycleBulkSearch": {
+    "description": "Asynchronously queries all subscription billing cycles whose [billingAttemptExpectedDate](https://shopify.dev/api/admin-graphql/latest/objects/SubscriptionBillingCycle#field-billingattemptexpecteddate",
+    "returns": "SubscriptionBillingCycleBulkSearchPayload"
+  },
+  "subscriptionBillingCycleCharge": {
+    "description": "Creates a new subscription billing attempt for a specified billing cycle. This is the alternative mutation for [subscriptionBillingAttemptCreate](https://shopify.dev/docs/api/admin-graphql/latest/muta",
+    "returns": "SubscriptionBillingCycleChargePayload"
+  },
+  "subscriptionBillingCycleContractDraftCommit": {
+    "description": "Commits the updates of a Subscription Billing Cycle Contract draft.",
+    "returns": "SubscriptionBillingCycleContractDraftCommitPayload"
+  },
+  "subscriptionBillingCycleContractDraftConcatenate": {
+    "description": "Concatenates a contract to a Subscription Draft.",
+    "returns": "SubscriptionBillingCycleContractDraftConcatenatePayload"
+  },
+  "subscriptionBillingCycleContractEdit": {
+    "description": "Edit the contents of a subscription contract for the specified billing cycle.",
+    "returns": "SubscriptionBillingCycleContractEditPayload"
+  },
+  "subscriptionBillingCycleEditDelete": {
+    "description": "Delete the schedule and contract edits of the selected subscription billing cycle.",
+    "returns": "SubscriptionBillingCycleEditDeletePayload"
+  },
+  "subscriptionBillingCycleEditsDelete": {
+    "description": "Delete the current and future schedule and contract edits of a list of subscription billing cycles.",
+    "returns": "SubscriptionBillingCycleEditsDeletePayload"
+  },
+  "subscriptionBillingCycleScheduleEdit": {
+    "description": "Modify the schedule of a specific billing cycle.",
+    "returns": "SubscriptionBillingCycleScheduleEditPayload"
+  },
+  "subscriptionBillingCycleSkip": {
+    "description": "Skips a Subscription Billing Cycle.",
+    "returns": "SubscriptionBillingCycleSkipPayload"
+  },
+  "subscriptionBillingCycleUnskip": {
+    "description": "Unskips a Subscription Billing Cycle.",
+    "returns": "SubscriptionBillingCycleUnskipPayload"
+  },
+  "subscriptionContractActivate": {
+    "description": "Activates a Subscription Contract. Contract status must be either active, paused, or failed.",
+    "returns": "SubscriptionContractActivatePayload"
+  },
+  "subscriptionContractAtomicCreate": {
+    "description": "Creates a Subscription Contract.",
+    "returns": "SubscriptionContractAtomicCreatePayload"
+  },
+  "subscriptionContractCancel": {
+    "description": "Cancels a Subscription Contract.",
+    "returns": "SubscriptionContractCancelPayload"
+  },
+  "subscriptionContractCreate": {
+    "description": "Creates a subscription contract draft, which is an intention to create a new subscription. The draft lets you incrementally build and modify subscription details before committing them to create the a",
+    "returns": "SubscriptionContractCreatePayload"
+  },
+  "subscriptionContractExpire": {
+    "description": "Expires a Subscription Contract.",
+    "returns": "SubscriptionContractExpirePayload"
+  },
+  "subscriptionContractFail": {
+    "description": "Fails a Subscription Contract.",
+    "returns": "SubscriptionContractFailPayload"
+  },
+  "subscriptionContractPause": {
+    "description": "Pauses a Subscription Contract.",
+    "returns": "SubscriptionContractPausePayload"
+  },
+  "subscriptionContractProductChange": {
+    "description": "Allows for the easy change of a Product in a Contract or a Product price change.",
+    "returns": "SubscriptionContractProductChangePayload"
+  },
+  "subscriptionContractSetNextBillingDate": {
+    "description": "Sets the next billing date of a Subscription Contract. This field is managed by the apps.",
+    "returns": "SubscriptionContractSetNextBillingDatePayload"
+  },
+  "subscriptionContractUpdate": {
+    "description": "Creates a draft of an existing [`SubscriptionContract`](https://shopify.dev/docs/api/admin-graphql/latest/objects/SubscriptionContract). The draft captures the current state of the contract and allows",
+    "returns": "SubscriptionContractUpdatePayload"
+  },
+  "subscriptionDraftCommit": {
+    "description": "Commits the updates of a Subscription Contract draft.",
+    "returns": "SubscriptionDraftCommitPayload"
+  },
+  "subscriptionDraftDiscountAdd": {
+    "description": "Adds a subscription discount to a subscription draft.",
+    "returns": "SubscriptionDraftDiscountAddPayload"
+  },
+  "subscriptionDraftDiscountCodeApply": {
+    "description": "Applies a code discount on the subscription draft.",
+    "returns": "SubscriptionDraftDiscountCodeApplyPayload"
+  },
+  "subscriptionDraftDiscountRemove": {
+    "description": "Removes a subscription discount from a subscription draft.",
+    "returns": "SubscriptionDraftDiscountRemovePayload"
+  },
+  "subscriptionDraftDiscountUpdate": {
+    "description": "Updates a subscription discount on a subscription draft.",
+    "returns": "SubscriptionDraftDiscountUpdatePayload"
+  },
+  "subscriptionDraftFreeShippingDiscountAdd": {
+    "description": "Adds a subscription free shipping discount to a subscription draft.",
+    "returns": "SubscriptionDraftFreeShippingDiscountAddPayload"
+  },
+  "subscriptionDraftFreeShippingDiscountUpdate": {
+    "description": "Updates a subscription free shipping discount on a subscription draft.",
+    "returns": "SubscriptionDraftFreeShippingDiscountUpdatePayload"
+  },
+  "subscriptionDraftLineAdd": {
+    "description": "Adds a subscription line to a subscription draft.",
+    "returns": "SubscriptionDraftLineAddPayload"
+  },
+  "subscriptionDraftLineRemove": {
+    "description": "Removes a subscription line from a subscription draft.",
+    "returns": "SubscriptionDraftLineRemovePayload"
+  },
+  "subscriptionDraftLineUpdate": {
+    "description": "Updates a subscription line on a subscription draft.",
+    "returns": "SubscriptionDraftLineUpdatePayload"
+  },
+  "subscriptionDraftUpdate": {
+    "description": "Updates a Subscription Draft.",
+    "returns": "SubscriptionDraftUpdatePayload"
+  },
+  "tagsAdd": {
+    "description": "Adds tags to a resource in the store. Supported resources include [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order), [`DraftOrder`](https://shopify.dev/docs/api/admin-graphql/",
+    "returns": "TagsAddPayload"
+  },
+  "tagsRemove": {
+    "description": "Removes tags from an [`Order`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order), [`DraftOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DraftOrder), [`Customer`](http",
+    "returns": "TagsRemovePayload"
+  },
+  "taxAppConfigure": {
+    "description": "Allows tax app configurations for tax partners.",
+    "returns": "TaxAppConfigurePayload"
+  },
+  "taxSummaryCreate": {
+    "description": "Creates a tax summary for a given order.",
+    "returns": "TaxSummaryCreatePayload"
+  },
+  "themeCreate": {
+    "description": "Creates a theme from an external URL or staged upload. The theme source can either be a ZIP file hosted at a public URL or files previously uploaded using the [`stagedUploadsCreate`](https://shopify.d",
+    "returns": "ThemeCreatePayload"
+  },
+  "themeDelete": {
+    "description": "Deletes a theme.",
+    "returns": "ThemeDeletePayload"
+  },
+  "themeDuplicate": {
+    "description": "Duplicates a theme.",
+    "returns": "ThemeDuplicatePayload"
+  },
+  "themeFilesCopy": {
+    "description": "Copy theme files. Copying to existing theme files will overwrite them.",
+    "returns": "ThemeFilesCopyPayload"
+  },
+  "themeFilesDelete": {
+    "description": "Deletes a theme's files.",
+    "returns": "ThemeFilesDeletePayload"
+  },
+  "themeFilesUpsert": {
+    "description": "Creates or updates theme files in an online store theme. This mutation allows batch operations on multiple theme files, either creating new files or overwriting existing ones with the same filename.",
+    "returns": "ThemeFilesUpsertPayload"
+  },
+  "themePublish": {
+    "description": "Publishes a theme.",
+    "returns": "ThemePublishPayload"
+  },
+  "themeUpdate": {
+    "description": "Updates a theme.",
+    "returns": "ThemeUpdatePayload"
+  },
+  "transactionVoid": {
+    "description": "Trigger the voiding of an uncaptured authorization transaction.",
+    "returns": "TransactionVoidPayload"
+  },
+  "translationsRegister": {
+    "description": "Creates or updates translations for a resource's [translatable content](https://shopify.dev/docs/api/admin-graphql/latest/objects/TranslatableContent).",
+    "returns": "TranslationsRegisterPayload"
+  },
+  "translationsRemove": {
+    "description": "Deletes translations.",
+    "returns": "TranslationsRemovePayload"
+  },
+  "urlRedirectBulkDeleteAll": {
+    "description": "Asynchronously delete [URL redirects](https://shopify.dev/api/admin-graphql/latest/objects/UrlRedirect) in bulk.",
+    "returns": "UrlRedirectBulkDeleteAllPayload"
+  },
+  "urlRedirectBulkDeleteByIds": {
+    "description": "Asynchronously delete [URLRedirect](https://shopify.dev/api/admin-graphql/latest/objects/UrlRedirect)",
+    "returns": "UrlRedirectBulkDeleteByIdsPayload"
+  },
+  "urlRedirectBulkDeleteBySavedSearch": {
+    "description": "Asynchronously delete redirects in bulk.",
+    "returns": "UrlRedirectBulkDeleteBySavedSearchPayload"
+  },
+  "urlRedirectBulkDeleteBySearch": {
+    "description": "Asynchronously delete redirects in bulk.",
+    "returns": "UrlRedirectBulkDeleteBySearchPayload"
+  },
+  "urlRedirectCreate": {
+    "description": "Creates a [`UrlRedirect`](https://shopify.dev/api/admin-graphql/latest/objects/UrlRedirect) object.",
+    "returns": "UrlRedirectCreatePayload"
+  },
+  "urlRedirectDelete": {
+    "description": "Deletes a [`UrlRedirect`](https://shopify.dev/api/admin-graphql/latest/objects/UrlRedirect) object.",
+    "returns": "UrlRedirectDeletePayload"
+  },
+  "urlRedirectImportCreate": {
+    "description": "Creates a [`UrlRedirectImport`](https://shopify.dev/api/admin-graphql/latest/objects/UrlRedirectImport) object.",
+    "returns": "UrlRedirectImportCreatePayload"
+  },
+  "urlRedirectImportSubmit": {
+    "description": "Submits a `UrlRedirectImport` request to be processed.",
+    "returns": "UrlRedirectImportSubmitPayload"
+  },
+  "urlRedirectUpdate": {
+    "description": "Updates a URL redirect.",
+    "returns": "UrlRedirectUpdatePayload"
+  },
+  "validationCreate": {
+    "description": "Creates a validation.",
+    "returns": "ValidationCreatePayload"
+  },
+  "validationDelete": {
+    "description": "Deletes a validation.",
+    "returns": "ValidationDeletePayload"
+  },
+  "validationUpdate": {
+    "description": "Update a validation.",
+    "returns": "ValidationUpdatePayload"
+  },
+  "webPixelCreate": {
+    "description": "Activate a [web pixel extension](https://shopify.dev/docs/apps/build/marketing-analytics/build-web-pixels)",
+    "returns": "WebPixelCreatePayload"
+  },
+  "webPixelDelete": {
+    "description": "Deletes the web pixel shop settings.",
+    "returns": "WebPixelDeletePayload"
+  },
+  "webPixelUpdate": {
+    "description": "Activate a [web pixel extension](https://shopify.dev/docs/apps/build/marketing-analytics/build-web-pixels)",
+    "returns": "WebPixelUpdatePayload"
+  },
+  "webPresenceCreate": {
+    "description": "Creates a web presence.",
+    "returns": "WebPresenceCreatePayload"
+  },
+  "webPresenceDelete": {
+    "description": "Deletes a web presence.",
+    "returns": "WebPresenceDeletePayload"
+  },
+  "webPresenceUpdate": {
+    "description": "Updates a web presence.",
+    "returns": "WebPresenceUpdatePayload"
+  },
+  "webhookSubscriptionCreate": {
+    "description": "Creates a webhook subscription that notifies your [`App`](https://shopify.dev/docs/api/admin-graphql/latest/objects/App) when specific events occur in a shop. Webhooks push event data to your endpoint",
+    "returns": "WebhookSubscriptionCreatePayload"
+  },
+  "webhookSubscriptionDelete": {
+    "description": "Deletes a [`WebhookSubscription`](https://shopify.dev/docs/api/admin-graphql/latest/objects/WebhookSubscription) and stops all future webhooks to its endpoint. Returns the deleted subscription's ID fo",
+    "returns": "WebhookSubscriptionDeletePayload"
+  },
+  "webhookSubscriptionUpdate": {
+    "description": "Updates a webhook subscription's configuration. Modify the endpoint URL, event filters, included fields, or metafield namespaces without recreating the subscription.",
+    "returns": "WebhookSubscriptionUpdatePayload"
+  }
+}

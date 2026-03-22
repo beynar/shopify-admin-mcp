@@ -1,0 +1,98 @@
+{
+  "apps": {
+    "description": "App installations, webhooks, pixels, script tags, Flow, extensions",
+    "queries": 21,
+    "mutations": 32,
+    "file": "references/apps.md"
+  },
+  "bulk_operations": {
+    "description": "Bulk operations, file uploads, staged uploads",
+    "queries": 4,
+    "mutations": 11,
+    "file": "references/bulk_operations.md"
+  },
+  "content": {
+    "description": "Blog posts, articles, pages, menus, themes, URL redirects, translations",
+    "queries": 30,
+    "mutations": 37,
+    "file": "references/content.md"
+  },
+  "customers": {
+    "description": "Customers, companies (B2B), segments, store credit",
+    "queries": 28,
+    "mutations": 66,
+    "file": "references/customers.md"
+  },
+  "discounts": {
+    "description": "Discounts, price rules, price lists, selling plans",
+    "queries": 19,
+    "mutations": 45,
+    "file": "references/discounts.md"
+  },
+  "fulfillment": {
+    "description": "Fulfillment, shipping, delivery, returns, reverse logistics",
+    "queries": 22,
+    "mutations": 60,
+    "file": "references/fulfillment.md"
+  },
+  "graphql_utils": {
+    "description": "Node lookups, utility queries, saved searches",
+    "queries": 19,
+    "mutations": 9,
+    "file": "references/graphql_utils.md"
+  },
+  "inventory": {
+    "description": "Inventory management, locations, stock levels",
+    "queries": 13,
+    "mutations": 34,
+    "file": "references/inventory.md"
+  },
+  "marketing": {
+    "description": "Marketing activities, events, campaigns",
+    "queries": 7,
+    "mutations": 12,
+    "file": "references/marketing.md"
+  },
+  "markets": {
+    "description": "Markets, international commerce, localization",
+    "queries": 7,
+    "mutations": 12,
+    "file": "references/markets.md"
+  },
+  "metafields": {
+    "description": "Metafields, metaobjects, custom data",
+    "queries": 10,
+    "mutations": 16,
+    "file": "references/metafields.md"
+  },
+  "orders": {
+    "description": "Orders, draft orders, abandoned checkouts",
+    "queries": 17,
+    "mutations": 40,
+    "file": "references/orders.md"
+  },
+  "payments": {
+    "description": "Payments, gift cards, refunds, Shopify Payments, transactions",
+    "queries": 14,
+    "mutations": 18,
+    "file": "references/payments.md"
+  },
+  "products": {
+    "description": "Products, collections, catalogs, publications, and taxonomy",
+    "queries": 33,
+    "mutations": 57,
+    "file": "references/products.md"
+  },
+  "shop": {
+    "description": "Shop settings, staff, domains, tax, policies",
+    "queries": 18,
+    "mutations": 13,
+    "file": "references/shop.md"
+  },
+  "subscriptions": {
+    "description": "Subscription contracts, billing, delivery schedules",
+    "queries": 8,
+    "mutations": 33,
+    "file": "references/subscriptions.md"
+  }
+}

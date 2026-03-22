@@ -1,0 +1,1082 @@
+{
+  "abandonedCheckouts": {
+    "description": "Returns a list of abandoned checkouts. A checkout is considered abandoned when a customer adds contact information but doesn't complete their purchase. Includes both abandoned and recovered checkouts.",
+    "returns": "AbandonedCheckoutConnection!"
+  },
+  "abandonedCheckoutsCount": {
+    "description": "Returns the count of abandoned checkouts for the given shop. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "abandonment": {
+    "description": "Returns a `Abandonment` resource by ID.",
+    "returns": "Abandonment"
+  },
+  "abandonmentByAbandonedCheckoutId": {
+    "description": "Returns an Abandonment by the Abandoned Checkout ID.",
+    "returns": "Abandonment"
+  },
+  "app": {
+    "description": "Retrieves an [`App`](https://shopify.dev/docs/api/admin-graphql/latest/objects/App) by its ID. If no ID is provided, returns details about the currently authenticated app. The query provides access to",
+    "returns": "App"
+  },
+  "appByHandle": {
+    "description": "Retrieves an app by its unique handle. The handle is a URL-friendly identifier for the app.",
+    "returns": "App"
+  },
+  "appByKey": {
+    "description": "Retrieves an [`App`](https://shopify.dev/docs/api/admin-graphql/latest/objects/App) by its client ID (API key). Returns the app's configuration, installation status, [`AccessScope`](https://shopify.de",
+    "returns": "App"
+  },
+  "appDiscountType": {
+    "description": "An app discount type.",
+    "returns": "AppDiscountType"
+  },
+  "appDiscountTypes": {
+    "description": "A list of app discount types installed by apps.",
+    "returns": "[AppDiscountType!]!"
+  },
+  "appDiscountTypesNodes": {
+    "description": "A list of app discount types installed by apps.",
+    "returns": "AppDiscountTypeConnection!"
+  },
+  "appInstallation": {
+    "description": "Retrieves an [`AppInstallation`](https://shopify.dev/docs/api/admin-graphql/latest/objects/AppInstallation) by ID. If no ID is provided, returns the installation for the currently authenticated [`App`",
+    "returns": "AppInstallation"
+  },
+  "appInstallations": {
+    "description": "A paginated list of [`AppInstallation`](https://shopify.dev/docs/api/admin-graphql/latest/objects/AppInstallation) objects across multiple stores where your app is installed. Use this query to monitor",
+    "returns": "AppInstallationConnection!"
+  },
+  "article": {
+    "description": "Returns a `Article` resource by ID.",
+    "returns": "Article"
+  },
+  "articleAuthors": {
+    "description": "List of article authors for the shop.",
+    "returns": "ArticleAuthorConnection!"
+  },
+  "articleTags": {
+    "description": "List of all article tags.",
+    "returns": "[String!]!"
+  },
+  "articles": {
+    "description": "Returns a paginated list of articles from the shop's blogs. [`Article`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Article) objects are blog posts that contain content like text, images",
+    "returns": "ArticleConnection!"
+  },
+  "assignedFulfillmentOrders": {
+    "description": "The paginated list of fulfillment orders assigned to the shop locations owned by the app.",
+    "returns": "FulfillmentOrderConnection!"
+  },
+  "automaticDiscount": {
+    "description": "Returns a `DiscountAutomatic` resource by ID.",
+    "returns": "DiscountAutomatic"
+  },
+  "automaticDiscountNode": {
+    "description": "Returns a `DiscountAutomaticNode` resource by ID.",
+    "returns": "DiscountAutomaticNode"
+  },
+  "automaticDiscountNodes": {
+    "description": "Returns a list of [automatic discounts](https://help.shopify.com/manual/discounts/discount-types#automatic-discounts).",
+    "returns": "DiscountAutomaticNodeConnection!"
+  },
+  "automaticDiscountSavedSearches": {
+    "description": "List of the shop's automatic discount saved searches.",
+    "returns": "SavedSearchConnection!"
+  },
+  "automaticDiscounts": {
+    "description": "Returns a list of automatic discounts that are applied in the cart and at checkout without requiring a discount code.",
+    "returns": "DiscountAutomaticConnection!"
+  },
+  "availableBackupRegions": {
+    "description": "The geographic regions that you can set as the [`Shop`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Shop)'s backup region. The backup region serves as a fallback when the system can't de",
+    "returns": "[MarketRegion!]!"
+  },
+  "availableCarrierServices": {
+    "description": "Returns a list of activated carrier services and associated shop locations that support them.",
+    "returns": "[DeliveryCarrierServiceAndLocations!]!"
+  },
+  "availableLocales": {
+    "description": "Returns all locales that Shopify supports. Each [`Locale`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Locale) includes an ISO code and human-readable name. Use this query to discover wh",
+    "returns": "[Locale!]!"
+  },
+  "backupRegion": {
+    "description": "The backup region of the shop.",
+    "returns": "MarketRegion!"
+  },
+  "blog": {
+    "description": "Returns a `Blog` resource by ID.",
+    "returns": "Blog"
+  },
+  "blogs": {
+    "description": "Returns a paginated list of the shop's [`Blog`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Blog) objects. Blogs serve as containers for [`Article`](https://shopify.dev/docs/api/admin-gr",
+    "returns": "BlogConnection!"
+  },
+  "blogsCount": {
+    "description": "Count of blogs. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "bulkOperation": {
+    "description": "Returns a `BulkOperation` resource by ID.",
+    "returns": "BulkOperation"
+  },
+  "bulkOperations": {
+    "description": "Returns the app's bulk operations meeting the specified filters. Defaults to sorting by created_at, with newest operations first.",
+    "returns": "BulkOperationConnection!"
+  },
+  "businessEntities": {
+    "description": "Returns the list of [business entities](https://shopify.dev/docs/api/admin-graphql/latest/objects/BusinessEntity) associated with the shop. Use this query to retrieve business entities for assigning t",
+    "returns": "[BusinessEntity!]!"
+  },
+  "businessEntity": {
+    "description": "Returns a Business Entity by ID.",
+    "returns": "BusinessEntity"
+  },
+  "carrierService": {
+    "description": "Returns a `DeliveryCarrierService` resource by ID.",
+    "returns": "DeliveryCarrierService"
+  },
+  "carrierServices": {
+    "description": "A paginated list of carrier services configured for the shop. Carrier services provide real-time shipping rates from external providers like FedEx, UPS, or custom shipping solutions. Use the `query` p",
+    "returns": "DeliveryCarrierServiceConnection!"
+  },
+  "cartTransforms": {
+    "description": "Retrieves all cart transform functions currently deployed by your app within the merchant's store. This query provides comprehensive access to your active cart modification logic, enabling management ",
+    "returns": "CartTransformConnection!"
+  },
+  "cashTrackingSession": {
+    "description": "Returns a `CashTrackingSession` resource by ID.",
+    "returns": "CashTrackingSession"
+  },
+  "cashTrackingSessions": {
+    "description": "Returns a shop's cash tracking sessions for locations with a POS Pro subscription.",
+    "returns": "CashTrackingSessionConnection!"
+  },
+  "catalog": {
+    "description": "Retrieves a [catalog](https://shopify.dev/docs/api/admin-graphql/latest/interfaces/Catalog) by its ID.",
+    "returns": "Catalog"
+  },
+  "catalogOperations": {
+    "description": "Returns the most recent catalog operations for the shop.",
+    "returns": "[ResourceOperation!]!"
+  },
+  "catalogs": {
+    "description": "Returns a paginated list of catalogs for the shop. Catalogs control which products are published and how they're priced in different contexts, such as international markets (Canada vs. United States),",
+    "returns": "CatalogConnection!"
+  },
+  "catalogsCount": {
+    "description": "The count of catalogs belonging to the shop. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "channel": {
+    "description": "Returns a `Channel` resource by ID.",
+    "returns": "Channel"
+  },
+  "channels": {
+    "description": "The channels established on the target shop by the calling application.",
+    "returns": "ChannelConnection!"
+  },
+  "checkoutBranding": {
+    "description": "Returns the visual customizations for checkout for a given [checkout profile](https://shopify.dev/docs/api/admin-graphql/latest/objects/CheckoutProfile).",
+    "returns": "CheckoutBranding"
+  },
+  "checkoutProfile": {
+    "description": "Returns a [`CheckoutProfile`](https://shopify.dev/docs/api/admin-graphql/latest/objects/CheckoutProfile). Checkout profiles define the branding settings and UI extensions for a store's checkout experi",
+    "returns": "CheckoutProfile"
+  },
+  "checkoutProfiles": {
+    "description": "List of checkout profiles on a shop.",
+    "returns": "CheckoutProfileConnection!"
+  },
+  "codeDiscountNode": {
+    "description": "Returns a [code discount](https://help.shopify.com/manual/discounts/discount-types#discount-codes) resource by ID.",
+    "returns": "DiscountCodeNode"
+  },
+  "codeDiscountNodeByCode": {
+    "description": "Retrieves a [code discount](https://help.shopify.com/manual/discounts/discount-types#discount-codes) by its discount code. The search is case-insensitive, enabling you to find discounts regardless of ",
+    "returns": "DiscountCodeNode"
+  },
+  "codeDiscountNodes": {
+    "description": "Returns a list of [code-based discounts](https://help.shopify.com/manual/discounts/discount-types#discount-codes).",
+    "returns": "DiscountCodeNodeConnection!"
+  },
+  "codeDiscountSavedSearches": {
+    "description": "List of the shop's code discount saved searches.",
+    "returns": "SavedSearchConnection!"
+  },
+  "collection": {
+    "description": "Retrieves a [collection](https://shopify.dev/docs/api/admin-graphql/latest/objects/Collection) by its ID.",
+    "returns": "Collection"
+  },
+  "collectionByHandle": {
+    "description": "Retrieves a collection by its unique handle identifier. Handles provide a URL-friendly way to reference collections and are commonly used in storefront URLs and navigation.",
+    "returns": "Collection"
+  },
+  "collectionByIdentifier": {
+    "description": "Return a collection by an identifier.",
+    "returns": "Collection"
+  },
+  "collectionRulesConditions": {
+    "description": "Lists all rules that can be used to create smart collections.",
+    "returns": "[CollectionRuleConditions!]!"
+  },
+  "collectionSavedSearches": {
+    "description": "Returns a list of the shop's collection saved searches.",
+    "returns": "SavedSearchConnection!"
+  },
+  "collections": {
+    "description": "Retrieves a list of [collections](https://shopify.dev/docs/api/admin-graphql/latest/objects/Collection)",
+    "returns": "CollectionConnection!"
+  },
+  "collectionsCount": {
+    "description": "Count of collections. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "comment": {
+    "description": "Returns a `Comment` resource by ID.",
+    "returns": "Comment"
+  },
+  "comments": {
+    "description": "List of the shop's comments.",
+    "returns": "CommentConnection!"
+  },
+  "companies": {
+    "description": "A paginated list of companies in the shop. [`Company`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Company) objects are business entities that purchase from the merchant.",
+    "returns": "CompanyConnection!"
+  },
+  "companiesCount": {
+    "description": "The number of companies for a shop. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "company": {
+    "description": "Returns a `Company` resource by ID.",
+    "returns": "Company"
+  },
+  "companyContact": {
+    "description": "Returns a `CompanyContact` resource by ID.",
+    "returns": "CompanyContact"
+  },
+  "companyContactRole": {
+    "description": "Returns a `CompanyContactRole` resource by ID.",
+    "returns": "CompanyContactRole"
+  },
+  "companyLocation": {
+    "description": "Returns a `CompanyLocation` resource by ID.",
+    "returns": "CompanyLocation"
+  },
+  "companyLocations": {
+    "description": "A paginated list of [`CompanyLocation`](https://shopify.dev/docs/api/admin-graphql/latest/objects/CompanyLocation) objects for B2B customers. Company locations represent individual branches or offices",
+    "returns": "CompanyLocationConnection!"
+  },
+  "consentPolicy": {
+    "description": "Returns the customer privacy consent policies of a shop.",
+    "returns": "[ConsentPolicy!]!"
+  },
+  "consentPolicyRegions": {
+    "description": "List of countries and regions for which consent policies can be created or updated.",
+    "returns": "[ConsentPolicyRegion!]!"
+  },
+  "currentAppInstallation": {
+    "description": "Returns the [`AppInstallation`](https://shopify.dev/docs/api/admin-graphql/latest/objects/AppInstallation) for the currently authenticated app. Provides access to granted access scopes, active [`AppSu",
+    "returns": "AppInstallation!"
+  },
+  "currentBulkOperation": {
+    "description": "Returns the current app's most recent [`BulkOperation`](https://shopify.dev/docs/api/admin-graphql/latest/objects/BulkOperation). Apps can run one bulk query and one bulk mutation operation at a time ",
+    "returns": "BulkOperation"
+  },
+  "currentStaffMember": {
+    "description": "The staff member making the API request.",
+    "returns": "StaffMember"
+  },
+  "customer": {
+    "description": "Returns a `Customer` resource by ID.",
+    "returns": "Customer"
+  },
+  "customerAccountPage": {
+    "description": "Returns a `CustomerAccountPage` resource by ID.",
+    "returns": "CustomerAccountPage"
+  },
+  "customerAccountPages": {
+    "description": "List of the shop's customer account pages.",
+    "returns": "CustomerAccountPageConnection"
+  },
+  "customerByIdentifier": {
+    "description": "Return a customer by an identifier.",
+    "returns": "Customer"
+  },
+  "customerMergeJobStatus": {
+    "description": "Returns the status of a customer merge request job.",
+    "returns": "CustomerMergeRequest"
+  },
+  "customerMergePreview": {
+    "description": "Returns a preview of a customer merge request.",
+    "returns": "CustomerMergePreview!"
+  },
+  "customerPaymentMethod": {
+    "description": "Returns a CustomerPaymentMethod resource by its ID.",
+    "returns": "CustomerPaymentMethod"
+  },
+  "customerSavedSearches": {
+    "description": "List of the shop's customer saved searches.",
+    "returns": "SavedSearchConnection!"
+  },
+  "customerSegmentMembers": {
+    "description": "A paginated list of customers that belong to an individual [`Segment`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Segment). Segments group customers based on criteria defined through [S",
+    "returns": "CustomerSegmentMemberConnection!"
+  },
+  "customerSegmentMembersQuery": {
+    "description": "Returns a `CustomerSegmentMembersQuery` resource by ID.",
+    "returns": "CustomerSegmentMembersQuery"
+  },
+  "customerSegmentMembership": {
+    "description": "Whether a member, which is a customer, belongs to a segment.",
+    "returns": "SegmentMembershipResponse!"
+  },
+  "customers": {
+    "description": "Returns a list of [customers](https://shopify.dev/api/admin-graphql/latest/objects/Customer) in your Shopify store, including key information such as name, email, location, and purchase history.",
+    "returns": "CustomerConnection!"
+  },
+  "customersCount": {
+    "description": "The number of customers. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "deletionEvents": {
+    "description": "The paginated list of deletion events.",
+    "returns": "DeletionEventConnection!"
+  },
+  "deliveryCustomization": {
+    "description": "The delivery customization.",
+    "returns": "DeliveryCustomization"
+  },
+  "deliveryCustomizations": {
+    "description": "The delivery customizations.",
+    "returns": "DeliveryCustomizationConnection!"
+  },
+  "deliveryProfile": {
+    "description": "Retrieves a [`DeliveryProfile`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DeliveryProfile) by ID. Delivery profiles group shipping settings for specific [`Product`](https://shopify.dev",
+    "returns": "DeliveryProfile"
+  },
+  "deliveryProfiles": {
+    "description": "Returns a paginated list of [`DeliveryProfile`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DeliveryProfile) objects for the shop. Delivery profiles group [`Product`](https://shopify.dev",
+    "returns": "DeliveryProfileConnection!"
+  },
+  "deliveryPromiseParticipants": {
+    "description": "Returns delivery promise participants.",
+    "returns": "DeliveryPromiseParticipantConnection"
+  },
+  "deliveryPromiseProvider": {
+    "description": "Lookup a delivery promise provider.",
+    "returns": "DeliveryPromiseProvider"
+  },
+  "deliveryPromiseSettings": {
+    "description": "Represents the delivery promise settings for a shop.",
+    "returns": "DeliveryPromiseSetting!"
+  },
+  "deliverySettings": {
+    "description": "Returns the shop-wide shipping settings.",
+    "returns": "DeliverySetting"
+  },
+  "discountCodesCount": {
+    "description": "The total number of discount codes for the shop. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "discountNode": {
+    "description": "Returns a `DiscountNode` resource by ID.",
+    "returns": "DiscountNode"
+  },
+  "discountNodes": {
+    "description": "Returns a list of discounts.",
+    "returns": "DiscountNodeConnection!"
+  },
+  "discountNodesCount": {
+    "description": "The total number of discounts for the shop. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "discountRedeemCodeBulkCreation": {
+    "description": "Returns a `DiscountRedeemCodeBulkCreation` resource by ID.",
+    "returns": "DiscountRedeemCodeBulkCreation"
+  },
+  "discountRedeemCodeSavedSearches": {
+    "description": "List of the shop's redeemed discount code saved searches.",
+    "returns": "SavedSearchConnection!"
+  },
+  "dispute": {
+    "description": "Returns a `ShopifyPaymentsDispute` resource by ID.",
+    "returns": "ShopifyPaymentsDispute"
+  },
+  "disputeEvidence": {
+    "description": "Returns a `ShopifyPaymentsDisputeEvidence` resource by ID.",
+    "returns": "ShopifyPaymentsDisputeEvidence"
+  },
+  "disputes": {
+    "description": "All disputes related to the Shop.",
+    "returns": "ShopifyPaymentsDisputeConnection!"
+  },
+  "domain": {
+    "description": "Returns a `Domain` resource by ID.",
+    "returns": "Domain"
+  },
+  "draftOrder": {
+    "description": "Retrieves a [draft order](https://shopify.dev/docs/api/admin-graphql/latest/objects/DraftOrder) by its ID.",
+    "returns": "DraftOrder"
+  },
+  "draftOrderAvailableDeliveryOptions": {
+    "description": "Available delivery options for a [`DraftOrder`](https://shopify.dev/docs/api/admin-graphql/latest/objects/DraftOrder) based on the provided input. The query returns shipping rates, local delivery rate",
+    "returns": "DraftOrderAvailableDeliveryOptions!"
+  },
+  "draftOrderSavedSearches": {
+    "description": "List of the shop's draft order saved searches.",
+    "returns": "SavedSearchConnection!"
+  },
+  "draftOrderTag": {
+    "description": "Returns a `DraftOrderTag` resource by ID.",
+    "returns": "DraftOrderTag"
+  },
+  "draftOrders": {
+    "description": "List of saved draft orders.",
+    "returns": "DraftOrderConnection!"
+  },
+  "draftOrdersCount": {
+    "description": "Returns the number of draft orders that match the query. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "event": {
+    "description": "Retrieves a single event by ID. Events chronicle activities in your store such as resource creation, updates, or staff comments. The query returns an [`Event`](https://shopify.dev/docs/api/admin-graph",
+    "returns": "Event"
+  },
+  "events": {
+    "description": "A paginated list of events that chronicle activities in the store. [`Event`](https://shopify.dev/docs/api/admin-graphql/latest/interfaces/Event) is an interface implemented by types such as [`BasicEve",
+    "returns": "EventConnection"
+  },
+  "eventsCount": {
+    "description": "Count of events. Limited to a maximum of 10000.",
+    "returns": "Count"
+  },
+  "fileSavedSearches": {
+    "description": "A list of the shop's file saved searches.",
+    "returns": "SavedSearchConnection!"
+  },
+  "files": {
+    "description": "Retrieves a paginated list of files that have been uploaded to a Shopify store. Files represent digital assets",
+    "returns": "FileConnection!"
+  },
+  "financeAppAccessPolicy": {
+    "description": "Returns the access policy for a finance app .",
+    "returns": "FinanceAppAccessPolicy!"
+  },
+  "financeKycInformation": {
+    "description": "Returns the KYC information for the shop's Shopify Payments account, used in embedded finance apps.",
+    "returns": "FinanceKycInformation"
+  },
+  "fulfillment": {
+    "description": "Retrieves a [`Fulfillment`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Fulfillment) by its ID. A fulfillment is a record that the merchant has completed their work required for one or m",
+    "returns": "Fulfillment"
+  },
+  "fulfillmentConstraintRules": {
+    "description": "The fulfillment constraint rules that belong to a shop.",
+    "returns": "[FulfillmentConstraintRule!]!"
+  },
+  "fulfillmentOrder": {
+    "description": "Returns a `FulfillmentOrder` resource by ID.",
+    "returns": "FulfillmentOrder"
+  },
+  "fulfillmentOrders": {
+    "description": "The paginated list of all fulfillment orders.",
+    "returns": "FulfillmentOrderConnection!"
+  },
+  "fulfillmentService": {
+    "description": "Returns a [`FulfillmentService`](https://shopify.dev/docs/api/admin-graphql/latest/objects/FulfillmentService) by its ID. The service can manage inventory, process fulfillment requests, and provide tr",
+    "returns": "FulfillmentService"
+  },
+  "giftCard": {
+    "description": "Retrieves a [`GiftCard`](https://shopify.dev/docs/api/admin-graphql/latest/objects/GiftCard) by its ID. Returns the gift card's balance, transaction history, [`Customer`](https://shopify.dev/docs/api/",
+    "returns": "GiftCard"
+  },
+  "giftCardConfiguration": {
+    "description": "The configuration for the shop's gift cards.",
+    "returns": "GiftCardConfiguration!"
+  },
+  "giftCards": {
+    "description": "Returns a paginated list of [`GiftCard`](https://shopify.dev/docs/api/admin-graphql/latest/objects/GiftCard) objects issued for the shop.",
+    "returns": "GiftCardConnection!"
+  },
+  "giftCardsCount": {
+    "description": "The total number of gift cards issued for the shop. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "inventoryItem": {
+    "description": "Returns an",
+    "returns": "InventoryItem"
+  },
+  "inventoryItems": {
+    "description": "Returns a list of inventory items.",
+    "returns": "InventoryItemConnection!"
+  },
+  "inventoryLevel": {
+    "description": "Returns an",
+    "returns": "InventoryLevel"
+  },
+  "inventoryProperties": {
+    "description": "Returns the shop's inventory configuration, including all inventory quantity names. Quantity names represent different [inventory states](https://shopify.dev/docs/apps/build/orders-fulfillment/invento",
+    "returns": "InventoryProperties!"
+  },
+  "inventoryShipment": {
+    "description": "Retrieves an [`InventoryShipment`](https://shopify.dev/docs/api/admin-graphql/latest/objects/InventoryShipment) by ID. Returns tracking details, [`InventoryShipmentLineItem`](https://shopify.dev/docs/",
+    "returns": "InventoryShipment"
+  },
+  "inventoryTransfer": {
+    "description": "Returns an [`InventoryTransfer`](https://shopify.dev/docs/api/admin-graphql/latest/objects/InventoryTransfer) by ID. Inventory transfers track the movement of inventory between locations, including or",
+    "returns": "InventoryTransfer"
+  },
+  "inventoryTransfers": {
+    "description": "Returns a paginated list of [`InventoryTransfer`](https://shopify.dev/docs/api/admin-graphql/latest/objects/InventoryTransfer) objects between locations. Transfers track the movement of [`InventoryIte",
+    "returns": "InventoryTransferConnection!"
+  },
+  "job": {
+    "description": "Returns a Job resource by ID. Used to check the status of internal jobs and any applicable changes.",
+    "returns": "Job"
+  },
+  "location": {
+    "description": "Retrieves a [`Location`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Location) by its ID. Locations are physical places where merchants store inventory, such as warehouses, retail stores",
+    "returns": "Location"
+  },
+  "locationByIdentifier": {
+    "description": "Return a location by an identifier.",
+    "returns": "Location"
+  },
+  "locations": {
+    "description": "A paginated list of inventory locations where merchants can stock [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) items and fulfill [`Order`](https://shopify.dev/docs/ap",
+    "returns": "LocationConnection!"
+  },
+  "locationsAvailableForDeliveryProfiles": {
+    "description": "Returns a list of all origin locations available for a delivery profile.",
+    "returns": "[Location!]"
+  },
+  "locationsAvailableForDeliveryProfilesConnection": {
+    "description": "Returns a list of all origin locations available for a delivery profile.",
+    "returns": "LocationConnection!"
+  },
+  "locationsCount": {
+    "description": "Returns the count of locations for the given shop. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "manualHoldsFulfillmentOrders": {
+    "description": "Returns a list of fulfillment orders that are on hold.",
+    "returns": "FulfillmentOrderConnection!"
+  },
+  "market": {
+    "description": "Returns a `Market` resource by ID.",
+    "returns": "Market"
+  },
+  "marketByGeography": {
+    "description": "Returns the applicable market for a customer based on where they are in the world.",
+    "returns": "Market"
+  },
+  "marketLocalizableResource": {
+    "description": "A resource that can have localized values for different markets.",
+    "returns": "MarketLocalizableResource"
+  },
+  "marketLocalizableResources": {
+    "description": "Resources that can have localized values for different markets.",
+    "returns": "MarketLocalizableResourceConnection!"
+  },
+  "marketLocalizableResourcesByIds": {
+    "description": "Resources that can have localized values for different markets.",
+    "returns": "MarketLocalizableResourceConnection!"
+  },
+  "marketingActivities": {
+    "description": "A list of marketing activities associated with the marketing app.",
+    "returns": "MarketingActivityConnection!"
+  },
+  "marketingActivity": {
+    "description": "Returns a `MarketingActivity` resource by ID.",
+    "returns": "MarketingActivity"
+  },
+  "marketingEvent": {
+    "description": "Returns a `MarketingEvent` resource by ID.",
+    "returns": "MarketingEvent"
+  },
+  "marketingEvents": {
+    "description": "A list of marketing events associated with the marketing app.",
+    "returns": "MarketingEventConnection!"
+  },
+  "markets": {
+    "description": "Returns a paginated list of [`Market`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Market) objects configured for the shop. Markets match buyers based on defined conditions to deliver cu",
+    "returns": "MarketConnection!"
+  },
+  "marketsResolvedValues": {
+    "description": "The resolved values for a buyer signal.",
+    "returns": "MarketsResolvedValues!"
+  },
+  "menu": {
+    "description": "Returns a `Menu` resource by ID.",
+    "returns": "Menu"
+  },
+  "menus": {
+    "description": "Retrieves navigation menus. Menus organize content into hierarchical navigation structures that merchants can display in the online store (for example, in headers, footers, and sidebars) and customer ",
+    "returns": "MenuConnection!"
+  },
+  "metafieldDefinition": {
+    "description": "Retrieves a [`MetafieldDefinition`](https://shopify.dev/docs/api/admin-graphql/current/objects/MetafieldDefinition) by its identifier. You can identify a definition using either its owner type, namesp",
+    "returns": "MetafieldDefinition"
+  },
+  "metafieldDefinitionTypes": {
+    "description": "The available metafield types that you can use when creating [`MetafieldDefinition`](https://shopify.dev/docs/api/admin-graphql/current/objects/MetafieldDefinition) objects. Each type specifies what k",
+    "returns": "[MetafieldDefinitionType!]!"
+  },
+  "metafieldDefinitions": {
+    "description": "Returns a list of metafield definitions.",
+    "returns": "MetafieldDefinitionConnection!"
+  },
+  "metaobject": {
+    "description": "Retrieves a single [`Metaobject`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Metaobject) by its global ID. [Metaobjects](https://shopify.dev/docs/apps/build/custom-data#what-are-metaobj",
+    "returns": "Metaobject"
+  },
+  "metaobjectByHandle": {
+    "description": "Retrieves a [`Metaobject`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Metaobject) by its handle and type. Handles are unique identifiers within a metaobject type.",
+    "returns": "Metaobject"
+  },
+  "metaobjectDefinition": {
+    "description": "Retrieves a [`MetaobjectDefinition`](https://shopify.dev/docs/api/admin-graphql/latest/objects/MetaobjectDefinition) by its global ID. Metaobject definitions provide the structure and fields for metao",
+    "returns": "MetaobjectDefinition"
+  },
+  "metaobjectDefinitionByType": {
+    "description": "Retrieves a [`MetaobjectDefinition`](https://shopify.dev/docs/api/admin-graphql/latest/objects/MetaobjectDefinition) by its type. The type serves as a unique identifier that distinguishes one metaobje",
+    "returns": "MetaobjectDefinition"
+  },
+  "metaobjectDefinitions": {
+    "description": "Returns a paginated list of all [`MetaobjectDefinition`](https://shopify.dev/docs/api/admin-graphql/latest/objects/MetaobjectDefinition) objects configured for the store. Metaobject definitions provid",
+    "returns": "MetaobjectDefinitionConnection!"
+  },
+  "metaobjects": {
+    "description": "Returns a paginated list of [`Metaobject`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Metaobject) entries for a specific type. Metaobjects are custom data structures that extend Shopify",
+    "returns": "MetaobjectConnection!"
+  },
+  "mobilePlatformApplication": {
+    "description": "Return a mobile platform application by its ID.",
+    "returns": "MobilePlatformApplication"
+  },
+  "mobilePlatformApplications": {
+    "description": "List the mobile platform applications.",
+    "returns": "MobilePlatformApplicationConnection!"
+  },
+  "node": {
+    "description": "Returns a specific node (any object that implements the",
+    "returns": "Node"
+  },
+  "nodes": {
+    "description": "Returns the list of nodes (any objects that implement the",
+    "returns": "[Node]!"
+  },
+  "onlineStore": {
+    "description": "The shop's online store channel.",
+    "returns": "OnlineStore!"
+  },
+  "order": {
+    "description": "The `order` query retrieves an [order](https://shopify.dev/docs/api/admin-graphql/latest/objects/order) by its ID. This query provides access to comprehensive order information such as customer detail",
+    "returns": "Order"
+  },
+  "orderByIdentifier": {
+    "description": "Return an order by an identifier.",
+    "returns": "Order"
+  },
+  "orderEditSession": {
+    "description": "Returns a `OrderEditSession` resource by ID.",
+    "returns": "OrderEditSession"
+  },
+  "orderPaymentStatus": {
+    "description": "Retrieves the status of a deferred payment by its payment reference ID. Use this query to monitor the processing status of payments that are initiated through payment mutations. Deferred payments are ",
+    "returns": "OrderPaymentStatus"
+  },
+  "orderSavedSearches": {
+    "description": "Returns [saved searches](https://shopify.dev/docs/api/admin-graphql/latest/objects/SavedSearch) for orders in the shop. Saved searches store search queries with their filters and search terms.",
+    "returns": "SavedSearchConnection!"
+  },
+  "orders": {
+    "description": "Returns a list of [orders](https://shopify.dev/api/admin-graphql/latest/objects/Order) placed in the store, including data such as order status, customer, and line item details.",
+    "returns": "OrderConnection!"
+  },
+  "ordersCount": {
+    "description": "Returns the number of [orders](https://shopify.dev/docs/api/admin-graphql/latest/objects/Order) in the shop. You can filter orders using [search syntax](https://shopify.dev/docs/api/usage/search-synta",
+    "returns": "Count"
+  },
+  "page": {
+    "description": "Returns a `Page` resource by ID.",
+    "returns": "Page"
+  },
+  "pages": {
+    "description": "A paginated list of pages from the online store. [`Page`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Page) objects are content pages that merchants create to provide information to cust",
+    "returns": "PageConnection!"
+  },
+  "pagesCount": {
+    "description": "Count of pages. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "paymentCustomization": {
+    "description": "The payment customization.",
+    "returns": "PaymentCustomization"
+  },
+  "paymentCustomizations": {
+    "description": "The payment customizations.",
+    "returns": "PaymentCustomizationConnection!"
+  },
+  "paymentTermsTemplates": {
+    "description": "The list of payment terms templates eligible for all shops and users.",
+    "returns": "[PaymentTermsTemplate!]!"
+  },
+  "pendingOrdersCount": {
+    "description": "The number of pendings orders. Limited to a maximum of 10000.",
+    "returns": "Count"
+  },
+  "pointOfSaleDevice": {
+    "description": "Returns a `PointOfSaleDevice` resource by ID.",
+    "returns": "PointOfSaleDevice"
+  },
+  "priceList": {
+    "description": "Returns a [`PriceList`](https://shopify.dev/docs/api/admin-graphql/latest/objects/PriceList) by ID. You can use price lists to specify either fixed prices or adjusted relative prices that override ini",
+    "returns": "PriceList"
+  },
+  "priceLists": {
+    "description": "All price lists for a shop.",
+    "returns": "PriceListConnection!"
+  },
+  "primaryMarket": {
+    "description": "The primary market of the shop.",
+    "returns": "Market!"
+  },
+  "privacySettings": {
+    "description": "Privacy related settings for a shop.",
+    "returns": "PrivacySettings!"
+  },
+  "product": {
+    "description": "Retrieves a [product](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) by its ID.",
+    "returns": "Product"
+  },
+  "productByHandle": {
+    "description": "Retrieves a [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) using its handle. A handle is a unique, URL-friendly string that Shopify automatically generates from the pro",
+    "returns": "Product"
+  },
+  "productByIdentifier": {
+    "description": "Return a product by an identifier.",
+    "returns": "Product"
+  },
+  "productDuplicateJob": {
+    "description": "Returns the product duplicate job.",
+    "returns": "ProductDuplicateJob!"
+  },
+  "productFeed": {
+    "description": "Returns a ProductFeed resource by ID.",
+    "returns": "ProductFeed"
+  },
+  "productFeeds": {
+    "description": "The product feeds for the shop.",
+    "returns": "ProductFeedConnection!"
+  },
+  "productOperation": {
+    "description": "Returns a ProductOperation resource by ID.",
+    "returns": "ProductOperation"
+  },
+  "productResourceFeedback": {
+    "description": "Retrieves product resource feedback for the currently authenticated app, providing insights into product data quality, completeness, and optimization opportunities. This feedback helps apps guide merc",
+    "returns": "ProductResourceFeedback"
+  },
+  "productSavedSearches": {
+    "description": "Returns a list of the shop's product saved searches.",
+    "returns": "SavedSearchConnection!"
+  },
+  "productTags": {
+    "description": "Returns tags added to [`Product`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) objects in the shop. Provides a paginated list of tag strings.",
+    "returns": "StringConnection"
+  },
+  "productTypes": {
+    "description": "Returns a paginated list of product types assigned to [products](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product) in the store. The maximum page size is 1000.",
+    "returns": "StringConnection"
+  },
+  "productVariant": {
+    "description": "Retrieves a [product variant](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductVariant) by its ID.",
+    "returns": "ProductVariant"
+  },
+  "productVariantByIdentifier": {
+    "description": "Return a product variant by an identifier.",
+    "returns": "ProductVariant"
+  },
+  "productVariants": {
+    "description": "Retrieves a list of [product variants](https://shopify.dev/docs/api/admin-graphql/latest/objects/ProductVariant)",
+    "returns": "ProductVariantConnection!"
+  },
+  "productVariantsCount": {
+    "description": "Count of product variants. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "productVendors": {
+    "description": "The list of vendors added to products.",
+    "returns": "StringConnection"
+  },
+  "products": {
+    "description": "Retrieves a list of [products](https://shopify.dev/docs/api/admin-graphql/latest/objects/Product)",
+    "returns": "ProductConnection!"
+  },
+  "productsCount": {
+    "description": "Count of products. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "publicApiVersions": {
+    "description": "The list of publicly-accessible Admin API versions, including supported versions, the release candidate, and unstable versions.",
+    "returns": "[ApiVersion!]!"
+  },
+  "publication": {
+    "description": "Retrieves a [`Publication`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication) by [`ID`](https://shopify.dev/docs/api/usage/gids).",
+    "returns": "Publication"
+  },
+  "publications": {
+    "description": "Returns a paginated list of [`Publication`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Publication).",
+    "returns": "PublicationConnection!"
+  },
+  "publicationsCount": {
+    "description": "Count of publications. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "publishedProductsCount": {
+    "description": "Returns a count of published products by publication ID. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "refund": {
+    "description": "Retrieves a [refund](https://shopify.dev/docs/api/admin-graphql/latest/objects/Refund) by its ID.",
+    "returns": "Refund"
+  },
+  "return": {
+    "description": "Retrieves a return by its ID. A return represents the intent of a buyer to ship one or more items from an",
+    "returns": "Return"
+  },
+  "returnCalculate": {
+    "description": "Calculates the financial outcome of a [`Return`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Return) without creating it. Use this query to preview return costs before initiating the act",
+    "returns": "CalculatedReturn"
+  },
+  "returnReasonDefinitions": {
+    "description": "Returns the full library of available return reason definitions.",
+    "returns": "ReturnReasonDefinitionConnection!"
+  },
+  "returnableFulfillment": {
+    "description": "Returns a `ReturnableFulfillment` resource by ID.",
+    "returns": "ReturnableFulfillment"
+  },
+  "returnableFulfillments": {
+    "description": "List of returnable fulfillments.",
+    "returns": "ReturnableFulfillmentConnection!"
+  },
+  "reverseDelivery": {
+    "description": "Lookup a reverse delivery by ID.",
+    "returns": "ReverseDelivery"
+  },
+  "reverseFulfillmentOrder": {
+    "description": "Lookup a reverse fulfillment order by ID.",
+    "returns": "ReverseFulfillmentOrder"
+  },
+  "scriptTag": {
+    "description": "<div class=\"note\"><h4>Theme app extensions</h4>",
+    "returns": "ScriptTag"
+  },
+  "scriptTags": {
+    "description": "<div class=\"note\"><h4>Theme app extensions</h4>",
+    "returns": "ScriptTagConnection!"
+  },
+  "segment": {
+    "description": "Retrieves a customer [`Segment`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Segment) by ID. Segments are dynamic groups of customers that meet specific criteria defined through [Shopify",
+    "returns": "Segment"
+  },
+  "segmentFilterSuggestions": {
+    "description": "A list of filter suggestions associated with a segment. A segment is a group of members (commonly customers) that meet specific criteria.",
+    "returns": "SegmentFilterConnection!"
+  },
+  "segmentFilters": {
+    "description": "A list of filters.",
+    "returns": "SegmentFilterConnection!"
+  },
+  "segmentMigrations": {
+    "description": "A list of a shop's segment migrations.",
+    "returns": "SegmentMigrationConnection!"
+  },
+  "segmentValueSuggestions": {
+    "description": "The list of suggested values corresponding to a particular filter for a segment. A segment is a group of members, such as customers, that meet specific criteria.",
+    "returns": "SegmentValueConnection!"
+  },
+  "segments": {
+    "description": "Returns a paginated list of [`Segment`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Segment) objects for the shop. Segments are dynamic groups of customers that meet specific criteria de",
+    "returns": "SegmentConnection!"
+  },
+  "segmentsCount": {
+    "description": "The number of segments for a shop. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "sellingPlanGroup": {
+    "description": "Returns a `SellingPlanGroup` resource by ID.",
+    "returns": "SellingPlanGroup"
+  },
+  "sellingPlanGroups": {
+    "description": "Retrieves a paginated list of [`SellingPlanGroup`](https://shopify.dev/docs/api/admin-graphql/latest/objects/SellingPlanGroup) objects that belong to the app making the API call. Selling plan groups a",
+    "returns": "SellingPlanGroupConnection!"
+  },
+  "serverPixel": {
+    "description": "The server pixel configured by the app.",
+    "returns": "ServerPixel"
+  },
+  "shop": {
+    "description": "Returns the Shop resource corresponding to the access token used in the request. The Shop resource contains",
+    "returns": "Shop!"
+  },
+  "shopBillingPreferences": {
+    "description": "The shop's billing preferences, including the currency for paying for apps and services. Use this to create [app charges in the merchant's local billing currency](https://shopify.dev/docs/apps/launch/",
+    "returns": "ShopBillingPreferences!"
+  },
+  "shopLocales": {
+    "description": "Returns the locales enabled on a shop. Each locale represents a language for translations and determines how content displays to customers in different markets.",
+    "returns": "[ShopLocale!]!"
+  },
+  "shopPayPaymentRequestReceipt": {
+    "description": "Returns a Shop Pay payment request receipt.",
+    "returns": "ShopPayPaymentRequestReceipt"
+  },
+  "shopPayPaymentRequestReceipts": {
+    "description": "Returns a list of Shop Pay payment request receipts.",
+    "returns": "ShopPayPaymentRequestReceiptConnection"
+  },
+  "shopifyFunction": {
+    "description": "Returns a Shopify Function by its ID.",
+    "returns": "ShopifyFunction"
+  },
+  "shopifyFunctions": {
+    "description": "Returns Shopify Functions owned by the querying API client installed on the shop. [Functions](https://shopify.dev/docs/apps/build/functions) enable you to customize",
+    "returns": "ShopifyFunctionConnection!"
+  },
+  "shopifyPaymentsAccount": {
+    "description": "Returns the Shopify Payments account information for the shop. Includes current balances across all currencies, payout schedules, and bank account configurations.",
+    "returns": "ShopifyPaymentsAccount"
+  },
+  "shopifyqlQuery": {
+    "description": "Executes a [ShopifyQL query](https://shopify.dev/docs/apps/build/shopifyql) to analyze store data and returns results in a tabular format.",
+    "returns": "ShopifyqlQueryResponse"
+  },
+  "staffMember": {
+    "description": "Retrieves a [staff member](https://shopify.dev/docs/api/admin-graphql/latest/objects/StaffMember) by ID. If no ID is provided, the query returns the staff member that's making the request. A staff mem",
+    "returns": "StaffMember"
+  },
+  "staffMembers": {
+    "description": "Returns a paginated list of [`StaffMember`](https://shopify.dev/docs/api/admin-graphql/latest/objects/StaffMember) objects for the shop. Staff members are users who can access the Shopify admin to man",
+    "returns": "StaffMemberConnection"
+  },
+  "standardMetafieldDefinitionTemplates": {
+    "description": "Retrieves preset metafield definition templates for common use cases. Each template provides a reserved namespace and key combination for specific purposes like product subtitles, care guides, or ISBN",
+    "returns": "StandardMetafieldDefinitionTemplateConnection!"
+  },
+  "storeCreditAccount": {
+    "description": "Retrieves a [`StoreCreditAccount`](https://shopify.dev/docs/api/admin-graphql/latest/objects/StoreCreditAccount) by ID. Store credit accounts hold monetary balances that account owners can use at chec",
+    "returns": "StoreCreditAccount"
+  },
+  "subscriptionBillingAttempt": {
+    "description": "Returns a `SubscriptionBillingAttempt` resource by ID.",
+    "returns": "SubscriptionBillingAttempt"
+  },
+  "subscriptionBillingAttempts": {
+    "description": "Returns subscription billing attempts on a store.",
+    "returns": "SubscriptionBillingAttemptConnection!"
+  },
+  "subscriptionBillingCycle": {
+    "description": "Returns a subscription billing cycle found either by cycle index or date.",
+    "returns": "SubscriptionBillingCycle"
+  },
+  "subscriptionBillingCycleBulkResults": {
+    "description": "Retrieves the results of the asynchronous job for the subscription billing cycle bulk action based on the specified job ID.",
+    "returns": "SubscriptionBillingCycleConnection!"
+  },
+  "subscriptionBillingCycles": {
+    "description": "Returns subscription billing cycles for a contract ID.",
+    "returns": "SubscriptionBillingCycleConnection!"
+  },
+  "subscriptionContract": {
+    "description": "Retrieves a [`SubscriptionContract`](https://shopify.dev/docs/api/customer/latest/objects/SubscriptionContract) by ID.",
+    "returns": "SubscriptionContract"
+  },
+  "subscriptionContracts": {
+    "description": "Returns a [`SubscriptionContractConnection`](https://shopify.dev/docs/api/admin-graphql/latest/objects/SubscriptionContractConnection) containing [subscription contracts](https://shopify.dev/docs/api/",
+    "returns": "SubscriptionContractConnection!"
+  },
+  "subscriptionDraft": {
+    "description": "Returns a Subscription Draft resource by ID.",
+    "returns": "SubscriptionDraft"
+  },
+  "taxonomy": {
+    "description": "Access to Shopify's [standardized product taxonomy](https://shopify.github.io/product-taxonomy/releases/unstable/?categoryId=sg-4-17-2-17) for categorizing products. The [`Taxonomy`](https://shopify.d",
+    "returns": "Taxonomy"
+  },
+  "tenderTransactions": {
+    "description": "Transactions representing a movement of money between customers and the shop. Each transaction records the amount, payment method, processing details, and the associated [`Order`](https://shopify.dev/",
+    "returns": "TenderTransactionConnection!"
+  },
+  "theme": {
+    "description": "Returns an [`OnlineStoreTheme`](https://shopify.dev/docs/api/admin-graphql/latest/objects/OnlineStoreTheme) by its ID. Use this query to retrieve theme metadata and access the theme's [`files`](https:",
+    "returns": "OnlineStoreTheme"
+  },
+  "themes": {
+    "description": "Returns a paginated list of [`OnlineStoreTheme`](https://shopify.dev/docs/api/admin-graphql/latest/objects/OnlineStoreTheme) objects for the online store. Themes control the appearance and layout of t",
+    "returns": "OnlineStoreThemeConnection"
+  },
+  "translatableResource": {
+    "description": "Retrieves a resource that has translatable fields. Returns the resource's [`Translation`](https://shopify.dev/docs/api/admin-graphql/latest/objects/Translation) objects for different locales and marke",
+    "returns": "TranslatableResource"
+  },
+  "translatableResources": {
+    "description": "Returns a paginated list of [`TranslatableResource`](https://shopify.dev/docs/api/admin-graphql/latest/objects/TranslatableResource) objects for a specific resource type. Each resource provides transl",
+    "returns": "TranslatableResourceConnection!"
+  },
+  "translatableResourcesByIds": {
+    "description": "Returns a paginated list of [`TranslatableResource`](https://shopify.dev/docs/api/admin-graphql/latest/objects/TranslatableResource) objects for the specified resource IDs. Each resource provides tran",
+    "returns": "TranslatableResourceConnection!"
+  },
+  "urlRedirect": {
+    "description": "Returns a `UrlRedirect` resource by ID.",
+    "returns": "UrlRedirect"
+  },
+  "urlRedirectImport": {
+    "description": "Returns a `UrlRedirectImport` resource by ID.",
+    "returns": "UrlRedirectImport"
+  },
+  "urlRedirectSavedSearches": {
+    "description": "A list of the shop's URL redirect saved searches.",
+    "returns": "SavedSearchConnection!"
+  },
+  "urlRedirects": {
+    "description": "A list of redirects for a shop.",
+    "returns": "UrlRedirectConnection!"
+  },
+  "urlRedirectsCount": {
+    "description": "Count of redirects. Limited to a maximum of 10000 by default.",
+    "returns": "Count"
+  },
+  "validation": {
+    "description": "Validation available on the shop.",
+    "returns": "Validation"
+  },
+  "validations": {
+    "description": "Validations available on the shop.",
+    "returns": "ValidationConnection!"
+  },
+  "webPixel": {
+    "description": "Returns a",
+    "returns": "WebPixel"
+  },
+  "webPresences": {
+    "description": "The web presences for the shop.",
+    "returns": "MarketWebPresenceConnection"
+  },
+  "webhookSubscription": {
+    "description": "Returns a webhook subscription by ID.",
+    "returns": "WebhookSubscription"
+  },
+  "webhookSubscriptions": {
+    "description": "Retrieves a paginated list of webhook subscriptions created using the API for the current app and shop.",
+    "returns": "WebhookSubscriptionConnection!"
+  },
+  "webhookSubscriptionsCount": {
+    "description": "The count of webhook subscriptions.",
+    "returns": "Count"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "shopify-admin-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the Shopify Admin GraphQL API using asset-backed code mode",
+  "type": "module",
+  "scripts": {
+    "build:search-assets": "node --experimental-strip-types scripts/build-search-assets.ts",
+    "dev": "npm run build:search-assets && wrangler dev",
+    "deploy": "npm run build:search-assets && wrangler deploy --env staging",
+    "deploy:prod": "npm run build:search-assets && wrangler deploy --env production",
+    "types": "wrangler types",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint src/",
+    "format": "oxfmt --write src/",
+    "format:check": "oxfmt --check src/",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run build:search-assets && npm run format:check && npm run lint && npm run typecheck && npm run test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "@orama/orama": "^3.1.18",
+    "hono": "^4.12.3",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.12.11",
+    "@types/node": "^25.0.6",
+    "esbuild": "^0.27.4",
+    "oxfmt": "^0.31.0",
+    "oxlint": "^1.46.0",
+    "typescript": "^5.7.0",
+    "vitest": "3.2",
+    "wrangler": "^4.64.0"
+  }
+}

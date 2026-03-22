@@ -1,0 +1,170 @@
+# Enum: `CurrencyCode`
+
+The currency codes that represent the world currencies throughout the Admin API. Currency codes include
+[standard ISO 4217 codes](https://en.wikipedia.org/wiki/ISO_4217), legacy codes, non-standard codes,
+digital currency codes.
+
+## Values
+
+- `USD` — United States Dollars (USD).
+- `EUR` — Euro (EUR).
+- `GBP` — United Kingdom Pounds (GBP).
+- `CAD` — Canadian Dollars (CAD).
+- `AFN` — Afghan Afghani (AFN).
+- `ALL` — Albanian Lek (ALL).
+- `DZD` — Algerian Dinar (DZD).
+- `AOA` — Angolan Kwanza (AOA).
+- `ARS` — Argentine Pesos (ARS).
+- `AMD` — Armenian Dram (AMD).
+- `AWG` — Aruban Florin (AWG).
+- `AUD` — Australian Dollars (AUD).
+- `BBD` — Barbadian Dollar (BBD).
+- `AZN` — Azerbaijani Manat (AZN).
+- `BDT` — Bangladesh Taka (BDT).
+- `BSD` — Bahamian Dollar (BSD).
+- `BHD` — Bahraini Dinar (BHD).
+- `BIF` — Burundian Franc (BIF).
+- `BYN` — Belarusian Ruble (BYN).
+- `BZD` — Belize Dollar (BZD).
+- `BMD` — Bermudian Dollar (BMD).
+- `BTN` — Bhutanese Ngultrum (BTN).
+- `BAM` — Bosnia and Herzegovina Convertible Mark (BAM).
+- `BRL` — Brazilian Real (BRL).
+- `BOB` — Bolivian Boliviano (BOB).
+- `BWP` — Botswana Pula (BWP).
+- `BND` — Brunei Dollar (BND).
+- `BGN` — Bulgarian Lev (BGN).
+- `MMK` — Burmese Kyat (MMK).
+- `KHR` — Cambodian Riel.
+- `CVE` — Cape Verdean escudo (CVE).
+- `KYD` — Cayman Dollars (KYD).
+- `XAF` — Central African CFA Franc (XAF).
+- `CLP` — Chilean Peso (CLP).
+- `CNY` — Chinese Yuan Renminbi (CNY).
+- `COP` — Colombian Peso (COP).
+- `KMF` — Comorian Franc (KMF).
+- `CDF` — Congolese franc (CDF).
+- `CRC` — Costa Rican Colones (CRC).
+- `HRK` — Croatian Kuna (HRK).
+- `CZK` — Czech Koruny (CZK).
+- `DKK` — Danish Kroner (DKK).
+- `DJF` — Djiboutian Franc (DJF).
+- `DOP` — Dominican Peso (DOP).
+- `XCD` — East Caribbean Dollar (XCD).
+- `EGP` — Egyptian Pound (EGP).
+- `ERN` — Eritrean Nakfa (ERN).
+- `ETB` — Ethiopian Birr (ETB).
+- `FKP` — Falkland Islands Pounds (FKP).
+- `XPF` — CFP Franc (XPF).
+- `FJD` — Fijian Dollars (FJD).
+- `GIP` — Gibraltar Pounds (GIP).
+- `GMD` — Gambian Dalasi (GMD).
+- `GHS` — Ghanaian Cedi (GHS).
+- `GTQ` — Guatemalan Quetzal (GTQ).
+- `GYD` — Guyanese Dollar (GYD).
+- `GEL` — Georgian Lari (GEL).
+- `GNF` — Guinean Franc (GNF).
+- `HTG` — Haitian Gourde (HTG).
+- `HNL` — Honduran Lempira (HNL).
+- `HKD` — Hong Kong Dollars (HKD).
+- `HUF` — Hungarian Forint (HUF).
+- `ISK` — Icelandic Kronur (ISK).
+- `INR` — Indian Rupees (INR).
+- `IDR` — Indonesian Rupiah (IDR).
+- `ILS` — Israeli New Shekel (NIS).
+- `IRR` — Iranian Rial (IRR).
+- `IQD` — Iraqi Dinar (IQD).
+- `JMD` — Jamaican Dollars (JMD).
+- `JPY` — Japanese Yen (JPY).
+- `JEP` — Jersey Pound.
+- `JOD` — Jordanian Dinar (JOD).
+- `KZT` — Kazakhstani Tenge (KZT).
+- `KES` — Kenyan Shilling (KES).
+- `KID` — Kiribati Dollar (KID).
+- `KWD` — Kuwaiti Dinar (KWD).
+- `KGS` — Kyrgyzstani Som (KGS).
+- `LAK` — Laotian Kip (LAK).
+- `LVL` — Latvian Lati (LVL).
+- `LBP` — Lebanese Pounds (LBP).
+- `LSL` — Lesotho Loti (LSL).
+- `LRD` — Liberian Dollar (LRD).
+- `LYD` — Libyan Dinar (LYD).
+- `LTL` — Lithuanian Litai (LTL).
+- `MGA` — Malagasy Ariary (MGA).
+- `MKD` — Macedonia Denar (MKD).
+- `MOP` — Macanese Pataca (MOP).
+- `MWK` — Malawian Kwacha (MWK).
+- `MVR` — Maldivian Rufiyaa (MVR).
+- `MRU` — Mauritanian Ouguiya (MRU).
+- `MXN` — Mexican Pesos (MXN).
+- `MYR` — Malaysian Ringgits (MYR).
+- `MUR` — Mauritian Rupee (MUR).
+- `MDL` — Moldovan Leu (MDL).
+- `MAD` — Moroccan Dirham.
+- `MNT` — Mongolian Tugrik.
+- `MZN` — Mozambican Metical.
+- `NAD` — Namibian Dollar.
+- `NPR` — Nepalese Rupee (NPR).
+- `ANG` — Netherlands Antillean Guilder.
+- `NZD` — New Zealand Dollars (NZD).
+- `NIO` — Nicaraguan Córdoba (NIO).
+- `NGN` — Nigerian Naira (NGN).
+- `NOK` — Norwegian Kroner (NOK).
+- `OMR` — Omani Rial (OMR).
+- `PAB` — Panamian Balboa (PAB).
+- `PKR` — Pakistani Rupee (PKR).
+- `PGK` — Papua New Guinean Kina (PGK).
+- `PYG` — Paraguayan Guarani (PYG).
+- `PEN` — Peruvian Nuevo Sol (PEN).
+- `PHP` — Philippine Peso (PHP).
+- `PLN` — Polish Zlotych (PLN).
+- `QAR` — Qatari Rial (QAR).
+- `RON` — Romanian Lei (RON).
+- `RUB` — Russian Rubles (RUB).
+- `RWF` — Rwandan Franc (RWF).
+- `WST` — Samoan Tala (WST).
+- `SHP` — Saint Helena Pounds (SHP).
+- `SAR` — Saudi Riyal (SAR).
+- `RSD` — Serbian dinar (RSD).
+- `SCR` — Seychellois Rupee (SCR).
+- `SLL` — Sierra Leonean Leone (SLL).
+- `SGD` — Singapore Dollars (SGD).
+- `SDG` — Sudanese Pound (SDG).
+- `SOS` — Somali Shilling (SOS).
+- `SYP` — Syrian Pound (SYP).
+- `ZAR` — South African Rand (ZAR).
+- `KRW` — South Korean Won (KRW).
+- `SSP` — South Sudanese Pound (SSP).
+- `SBD` — Solomon Islands Dollar (SBD).
+- `LKR` — Sri Lankan Rupees (LKR).
+- `SRD` — Surinamese Dollar (SRD).
+- `SZL` — Swazi Lilangeni (SZL).
+- `SEK` — Swedish Kronor (SEK).
+- `CHF` — Swiss Francs (CHF).
+- `TWD` — Taiwan Dollars (TWD).
+- `THB` — Thai baht (THB).
+- `TJS` — Tajikistani Somoni (TJS).
+- `TZS` — Tanzanian Shilling (TZS).
+- `TOP` — Tongan Pa'anga (TOP).
+- `TTD` — Trinidad and Tobago Dollars (TTD).
+- `TND` — Tunisian Dinar (TND).
+- `TRY` — Turkish Lira (TRY).
+- `TMT` — Turkmenistani Manat (TMT).
+- `UGX` — Ugandan Shilling (UGX).
+- `UAH` — Ukrainian Hryvnia (UAH).
+- `AED` — United Arab Emirates Dirham (AED).
+- `UYU` — Uruguayan Pesos (UYU).
+- `UZS` — Uzbekistan som (UZS).
+- `VUV` — Vanuatu Vatu (VUV).
+- `VES` — Venezuelan Bolivares Soberanos (VES).
+- `VND` — Vietnamese đồng (VND).
+- `XOF` — West African CFA franc (XOF).
+- `YER` — Yemeni Rial (YER).
+- `ZMW` — Zambian Kwacha (ZMW).
+- `USDC` — United States Dollars Coin (USDC).
+- `BYR` *(deprecated)* — Belarusian Ruble (BYR).
+- `STD` *(deprecated)* — Sao Tome And Principe Dobra (STD).
+- `STN` — Sao Tome And Principe Dobra (STN).
+- `VED` — Venezuelan Bolivares (VED).
+- `VEF` *(deprecated)* — Venezuelan Bolivares (VEF).
+- `XXX` — Unrecognized currency.

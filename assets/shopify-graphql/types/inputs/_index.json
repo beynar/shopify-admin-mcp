@@ -1,0 +1,2102 @@
+{
+  "AppPlanInput": {
+    "description": "The pricing model for the app subscription.",
+    "kind": "INPUT_OBJECT"
+  },
+  "AppRecurringPricingInput": {
+    "description": "Instructs the app subscription to generate a fixed charge on a recurring basis. The frequency is specified by the billing interval.",
+    "kind": "INPUT_OBJECT"
+  },
+  "AppSubscriptionDiscountInput": {
+    "description": "The input fields to specify a discount to the recurring pricing portion of a subscription over a number of billing intervals.",
+    "kind": "INPUT_OBJECT"
+  },
+  "AppSubscriptionDiscountValueInput": {
+    "description": "The input fields to specify the value discounted every billing interval.",
+    "kind": "INPUT_OBJECT"
+  },
+  "AppSubscriptionLineItemInput": {
+    "description": "The input fields to add more than one pricing plan to an app subscription.",
+    "kind": "INPUT_OBJECT"
+  },
+  "AppUsagePricingInput": {
+    "description": "The input fields to issue arbitrary charges for app usage associated with a subscription.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ArticleBlogInput": {
+    "description": "The input fields of a blog when an article is created or updated.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ArticleCreateInput": {
+    "description": "The input fields to create an article.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ArticleImageInput": {
+    "description": "The input fields for an image associated with an article.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ArticleUpdateInput": {
+    "description": "The input fields to update an article.",
+    "kind": "INPUT_OBJECT"
+  },
+  "AttributeInput": {
+    "description": "The input fields for an attribute.",
+    "kind": "INPUT_OBJECT"
+  },
+  "AuthorInput": {
+    "description": "The input fields for an author. Either the `name` or `user_id` fields can be supplied, but never both.",
+    "kind": "INPUT_OBJECT"
+  },
+  "BackupRegionUpdateInput": {
+    "description": "The input fields for updating a backup region with exactly one required option.",
+    "kind": "INPUT_OBJECT"
+  },
+  "BlogCreateInput": {
+    "description": "The input fields to create a blog.",
+    "kind": "INPUT_OBJECT"
+  },
+  "BlogUpdateInput": {
+    "description": "The input fields to update a blog.",
+    "kind": "INPUT_OBJECT"
+  },
+  "BundlesDraftOrderBundleLineItemComponentInput": {
+    "description": "The input fields representing the components of a bundle line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "BuyerExperienceConfigurationInput": {
+    "description": "The input fields specifying the behavior of checkout for a B2B buyer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "BuyerSignalInput": {
+    "description": "The input fields for a buyer signal.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CalculateExchangeLineItemInput": {
+    "description": "The input fields for exchange line items on a calculated return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CalculateReturnInput": {
+    "description": "The input fields to calculate return amounts associated with an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CalculateReturnLineItemInput": {
+    "description": "The input fields for return line items on a calculated return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CatalogContextInput": {
+    "description": "The input fields for the context in which the catalog's publishing and pricing rules apply.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CatalogCreateInput": {
+    "description": "The input fields required to create a catalog.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CatalogUpdateInput": {
+    "description": "The input fields used to update a catalog.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingButtonColorRolesInput": {
+    "description": "The input fields to set colors for buttons.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingButtonInput": {
+    "description": "The input fields used to update the buttons customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingBuyerJourneyInput": {
+    "description": "The input fields for updating breadcrumb customizations, which represent the buyer's journey to checkout.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingCartLinkInput": {
+    "description": "The input fields for updating the cart link customizations at checkout.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingCheckboxInput": {
+    "description": "The input fields used to update the checkboxes customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingChoiceListGroupInput": {
+    "description": "The input fields to update the settings that apply to the 'group' variant of ChoiceList.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingChoiceListInput": {
+    "description": "The input fields to use to update the choice list customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingColorGlobalInput": {
+    "description": "The input fields to customize the overall look and feel of the checkout.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingColorRolesInput": {
+    "description": "The input fields for a group of colors used together on a surface.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingColorSchemeInput": {
+    "description": "The input fields for a base set of color customizations that's applied to an area of Checkout, from which",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingColorSchemesInput": {
+    "description": "The input fields for the color schemes.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingColorsInput": {
+    "description": "The input fields used to update the color settings for global colors and color schemes.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingContainerDividerInput": {
+    "description": "The input fields used to update a container's divider customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingContentInput": {
+    "description": "The input fields used to update the content container customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingControlColorRolesInput": {
+    "description": "The input fields to define colors for form controls.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingControlInput": {
+    "description": "The input fields used to update the form controls customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingCornerRadiusVariablesInput": {
+    "description": "The input fields used to update the corner radius variables.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingCustomFontGroupInput": {
+    "description": "The input fields required to update a custom font group.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingCustomFontInput": {
+    "description": "The input fields required to update a font.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingCustomizationsInput": {
+    "description": "The input fields used to update the components customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingDesignSystemInput": {
+    "description": "The input fields used to update the design system.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingDividerStyleInput": {
+    "description": "The input fields used to update the page, content, main and order summary dividers customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingExpressCheckoutButtonInput": {
+    "description": "The input fields to use to update the express checkout customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingExpressCheckoutInput": {
+    "description": "The input fields to use to update the Express Checkout customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingFontGroupInput": {
+    "description": "The input fields used to update a font group. To learn more about updating fonts, refer to the",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingFontSizeInput": {
+    "description": "The input fields used to update the font size.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingFooterContentInput": {
+    "description": "The input fields for footer content customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingFooterInput": {
+    "description": "The input fields when mutating the checkout footer settings.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingGlobalInput": {
+    "description": "The input fields used to update the global customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingHeaderCartLinkInput": {
+    "description": "The input fields for header cart link customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingHeaderInput": {
+    "description": "The input fields used to update the header customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingHeadingLevelInput": {
+    "description": "The input fields for heading level customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingImageInput": {
+    "description": "The input fields used to update a checkout branding image uploaded via the Files API.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingInput": {
+    "description": "The input fields used to upsert the checkout branding settings.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingLogoInput": {
+    "description": "The input fields used to update the logo customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingMainInput": {
+    "description": "The input fields used to update the main container customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingMainSectionInput": {
+    "description": "The input fields used to update the main sections customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingMerchandiseThumbnailBadgeInput": {
+    "description": "The input fields used to update the merchandise thumbnail badges customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingMerchandiseThumbnailInput": {
+    "description": "The input fields used to update the merchandise thumbnails customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingOrderSummaryInput": {
+    "description": "The input fields used to update the order summary container customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingOrderSummarySectionInput": {
+    "description": "The input fields used to update the order summary sections customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingSelectInput": {
+    "description": "The input fields used to update the selects customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingShopifyFontGroupInput": {
+    "description": "The input fields used to update a Shopify font group.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingTextFieldInput": {
+    "description": "The input fields used to update the text fields customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingTypographyInput": {
+    "description": "The input fields used to update the typography. Refer to the [typography tutorial](https://shopify.dev/docs/apps/checkout/styling/customize-typography)",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingTypographyStyleGlobalInput": {
+    "description": "The input fields used to update the global typography customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CheckoutBrandingTypographyStyleInput": {
+    "description": "The input fields used to update the typography customizations.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ChildProductRelationInput": {
+    "description": "The input fields for adding products to the Combined Listing.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CollectionDeleteInput": {
+    "description": "The input fields for specifying the collection to delete.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CollectionDuplicateInput": {
+    "description": "The input fields for duplicating a collection.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CollectionIdentifierInput": {
+    "description": "The input fields for identifying a collection.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CollectionInput": {
+    "description": "The input fields required to create a collection.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CollectionPublicationInput": {
+    "description": "The input fields for publications to which a collection will be published.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CollectionPublishInput": {
+    "description": "The input fields for specifying a collection to publish and the sales channels to publish it to.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CollectionRuleInput": {
+    "description": "The input fields for a rule to associate with a collection.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CollectionRuleSetInput": {
+    "description": "The input fields for a rule set of the collection.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CollectionUnpublishInput": {
+    "description": "The input fields for specifying the collection to unpublish and the sales channels to remove it from.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CompanyAddressInput": {
+    "description": "The input fields to create or update the address of a company location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CompanyContactInput": {
+    "description": "The input fields for company contact attributes when creating or updating a company contact.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CompanyContactRoleAssign": {
+    "description": "The input fields for the role and location to assign to a company contact.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CompanyCreateInput": {
+    "description": "The input fields and values for creating a company and its associated resources.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CompanyInput": {
+    "description": "The input fields for company attributes when creating or updating a company.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CompanyLocationInput": {
+    "description": "The input fields for company location when creating or updating a company location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CompanyLocationRoleAssign": {
+    "description": "The input fields for the role and contact to assign on a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CompanyLocationUpdateInput": {
+    "description": "The input fields for company location when creating or updating a company location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ConsentPolicyInput": {
+    "description": "The input fields for a consent policy to be updated or created.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ContextualPricingContext": {
+    "description": "The input fields for the context data that determines the pricing of a variant. Refer to [Product](https://shopify.dev/docs/api/admin-graphql/latest/queries/product?example=Get+the+price+range+for+a+p",
+    "kind": "INPUT_OBJECT"
+  },
+  "ContextualPublicationContext": {
+    "description": "The context data that determines the publication status of a product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CountryHarmonizedSystemCodeInput": {
+    "description": "The input fields required to specify a harmonized system code.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CreateMediaInput": {
+    "description": "The input fields required to create a media object.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomShippingPackageInput": {
+    "description": "The input fields for a custom shipping package used to pack shipment.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerDeleteInput": {
+    "description": "The input fields to delete a customer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerEmailMarketingConsentInput": {
+    "description": "Information that describes when a customer consented to",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerEmailMarketingConsentUpdateInput": {
+    "description": "The input fields for the email consent information to update for a given customer ID.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerIdentifierInput": {
+    "description": "The input fields for identifying a customer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerInput": {
+    "description": "The input fields and values to use when creating or updating a customer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerMergeOverrideFields": {
+    "description": "The input fields to override default customer merge rules.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerPaymentMethodRemoteInput": {
+    "description": "The input fields for a remote gateway payment method, only one remote reference permitted.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerSegmentMembersQueryInput": {
+    "description": "The input fields and values for creating a customer segment members query.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerSetIdentifiers": {
+    "description": "The input fields required to identify a customer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerSetInput": {
+    "description": "The input fields and values to use when creating or updating a customer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerSmsMarketingConsentInput": {
+    "description": "The marketing consent information when the customer consented to",
+    "kind": "INPUT_OBJECT"
+  },
+  "CustomerSmsMarketingConsentUpdateInput": {
+    "description": "The input fields for updating SMS marketing consent information for a given customer ID.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DelegateAccessTokenInput": {
+    "description": "The input fields for a delegate access token.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryCarrierServiceCreateInput": {
+    "description": "The input fields required to create a carrier service.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryCarrierServiceUpdateInput": {
+    "description": "The input fields used to update a carrier service.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryCountryInput": {
+    "description": "The input fields to specify a country.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryCustomizationInput": {
+    "description": "The input fields to create and update a delivery customization.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryLocationGroupZoneInput": {
+    "description": "The input fields for a delivery zone associated to a location group and profile.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryLocationLocalPickupEnableInput": {
+    "description": "The input fields for a local pickup setting associated with a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryMethodDefinitionInput": {
+    "description": "The input fields for a method definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryParticipantInput": {
+    "description": "The input fields for a participant.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryParticipantServiceInput": {
+    "description": "The input fields for a shipping service provided by a participant.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryPriceConditionInput": {
+    "description": "The input fields for a price-based condition of a delivery method definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryProfileInput": {
+    "description": "The input fields for a delivery profile.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryProfileLocationGroupInput": {
+    "description": "The input fields for a location group associated to a delivery profile.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryProvinceInput": {
+    "description": "The input fields to specify a region.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryRateDefinitionInput": {
+    "description": "The input fields for a rate definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliverySettingInput": {
+    "description": "The input fields for shop-level delivery settings.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryUpdateConditionInput": {
+    "description": "The input fields for updating the condition of a delivery method definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DeliveryWeightConditionInput": {
+    "description": "The input fields for a weight-based condition of a delivery method definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DepositInput": {
+    "description": "The input fields configuring the deposit for a B2B buyer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountAmountInput": {
+    "description": "The input fields for the value of the discount and how it is applied.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountAutomaticAppInput": {
+    "description": "The input fields for creating or updating an automatic discount",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountAutomaticBasicInput": {
+    "description": "The input fields for creating or updating an",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountAutomaticBxgyInput": {
+    "description": "The input fields for creating or updating a",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountAutomaticFreeShippingInput": {
+    "description": "The input fields for creating or updating a",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCodeAppInput": {
+    "description": "The input fields for creating or updating a code discount, where the discount type is provided by an app extension that uses [Shopify Functions](https://shopify.dev/docs/apps/build/functions).",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCodeBasicInput": {
+    "description": "The input fields for creating or updating an [amount off discount](https://help.shopify.com/manual/discounts/discount-types/percentage-fixed-amount) that's applied on a cart and at checkout when a cus",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCodeBxgyInput": {
+    "description": "The input fields for creating or updating a",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCodeFreeShippingInput": {
+    "description": "The input fields for creating or updating a [free shipping discount](https://help.shopify.com/manual/discounts/discount-types/free-shipping) that's applied on a cart and at checkout when a customer en",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCollectionsInput": {
+    "description": "The input fields for collections attached to a discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCombinesWithInput": {
+    "description": "The input fields to determine which discount classes the discount can combine with.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountContextInput": {
+    "description": "The input fields for the buyers who can use this discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCountriesInput": {
+    "description": "The input fields for a list of countries to add or remove from the free shipping discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCustomerBuysInput": {
+    "description": "The input fields for prerequisite items and quantity for the discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCustomerBuysValueInput": {
+    "description": "The input fields for prerequisite quantity or minimum purchase amount required for the discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCustomerGetsInput": {
+    "description": "Specifies the items that will be discounted, the quantity of items that will be discounted, and the value of discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCustomerGetsValueInput": {
+    "description": "The input fields for the quantity of items discounted and the discount value.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCustomerSegmentsInput": {
+    "description": "The input fields for which customer segments to add to or remove from the discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCustomerSelectionInput": {
+    "description": "The input fields for the customers who can use this discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountCustomersInput": {
+    "description": "The input fields for which customers to add to or remove from the discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountEffectInput": {
+    "description": "The input fields for how the discount will be applied. Currently, only percentage off is supported.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountItemsInput": {
+    "description": "The input fields for the items attached to a discount. You can specify the discount items by product ID or collection ID.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountMinimumQuantityInput": {
+    "description": "The input fields for the minimum quantity required for the discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountMinimumRequirementInput": {
+    "description": "The input fields for the minimum quantity or subtotal required for a discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountMinimumSubtotalInput": {
+    "description": "The input fields for the minimum subtotal required for a discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountOnQuantityInput": {
+    "description": "The input fields for the quantity of items discounted and the discount value.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountProductsInput": {
+    "description": "The input fields for adding and removing",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountRedeemCodeInput": {
+    "description": "The input fields for the redeem code to attach to a discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DiscountShippingDestinationSelectionInput": {
+    "description": "The input fields for the destinations where the free shipping discount will be applied.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DraftOrderAppliedDiscountInput": {
+    "description": "The input fields for applying an order-level discount to a draft order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DraftOrderAvailableDeliveryOptionsInput": {
+    "description": "The input fields used to determine available delivery options for a draft order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DraftOrderDeleteInput": {
+    "description": "The input fields to specify the draft order to delete by its ID.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DraftOrderInput": {
+    "description": "The input fields used to create or update a draft order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DraftOrderLineItemComponentInput": {
+    "description": "The input fields representing the components of a line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "DraftOrderLineItemInput": {
+    "description": "The input fields for a line item included in a draft order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "EmailInput": {
+    "description": "The input fields for an email.",
+    "kind": "INPUT_OBJECT"
+  },
+  "EventBridgeWebhookSubscriptionInput": {
+    "description": "The input fields for an EventBridge webhook subscription.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ExchangeLineItemAppliedDiscountInput": {
+    "description": "The input fields for an applied discount on a calculated exchange line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ExchangeLineItemAppliedDiscountValueInput": {
+    "description": "The input value for an applied discount on a calculated exchange line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ExchangeLineItemInput": {
+    "description": "The input fields for new line items to be added to the order as part of an exchange.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ExchangeLineItemRemoveFromReturnInput": {
+    "description": "The input fields for removing an exchange line item from a return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FileCreateInput": {
+    "description": "The input fields that are required to create a file object.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FileSetInput": {
+    "description": "The input fields required to create or update a file object.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FileUpdateInput": {
+    "description": "The input fields that are required to update a file object.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentEventInput": {
+    "description": "The input fields used to create a fulfillment event.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentInput": {
+    "description": "The input fields used to create a fulfillment from fulfillment orders.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentOrderHoldInput": {
+    "description": "The input fields for the fulfillment hold applied on the fulfillment order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentOrderLineItemInput": {
+    "description": "The input fields used to include the quantity of the fulfillment order line item that should be fulfilled.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentOrderLineItemsInput": {
+    "description": "The input fields used to include the line items of a specified fulfillment order that should be fulfilled.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentOrderLineItemsPreparedForPickupInput": {
+    "description": "The input fields for marking fulfillment order line items as ready for pickup.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentOrderMergeInput": {
+    "description": "The input fields for merging fulfillment orders.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentOrderMergeInputMergeIntent": {
+    "description": "The input fields for merging fulfillment orders into a single merged fulfillment order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentOrderSplitInput": {
+    "description": "The input fields for the split applied to the fulfillment order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentOriginAddressInput": {
+    "description": "The input fields used to include the address at which the fulfillment occurred. This input object is intended for tax purposes, as a full address is required for tax providers to accurately calculate ",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentTrackingInput": {
+    "description": "The input fields that specify all possible fields for tracking information.",
+    "kind": "INPUT_OBJECT"
+  },
+  "FulfillmentV2Input": {
+    "description": "The input fields used to create a fulfillment from fulfillment orders.",
+    "kind": "INPUT_OBJECT"
+  },
+  "GiftCardCreateInput": {
+    "description": "The input fields to issue a gift card.",
+    "kind": "INPUT_OBJECT"
+  },
+  "GiftCardCreditInput": {
+    "description": "The input fields for a gift card credit transaction.",
+    "kind": "INPUT_OBJECT"
+  },
+  "GiftCardDebitInput": {
+    "description": "The input fields for a gift card debit transaction.",
+    "kind": "INPUT_OBJECT"
+  },
+  "GiftCardRecipientInput": {
+    "description": "The input fields to add a recipient to a gift card.",
+    "kind": "INPUT_OBJECT"
+  },
+  "GiftCardUpdateInput": {
+    "description": "The input fields to update a gift card.",
+    "kind": "INPUT_OBJECT"
+  },
+  "HasMetafieldsMetafieldIdentifierInput": {
+    "description": "The input fields that identify metafield definitions.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ImageInput": {
+    "description": "The input fields for an image.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ImageTransformInput": {
+    "description": "The available options for transforming an image.",
+    "kind": "INPUT_OBJECT"
+  },
+  "IncomingRequestLineItemInput": {
+    "description": "The input fields for the incoming line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryAdjustQuantitiesInput": {
+    "description": "The input fields required to adjust inventory quantities.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryAdjustmentInput": {
+    "description": "The input fields required to adjust the available quantity of a product variant at a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryBulkToggleActivationInput": {
+    "description": "The input fields to specify whether the inventory item should be activated or not at the specified location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryChangeInput": {
+    "description": "The input fields for the change to be made to an inventory item at a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryItemInput": {
+    "description": "The input fields for an inventory item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryItemMeasurementInput": {
+    "description": "The input fields for an inventory item measurement.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryLevelInput": {
+    "description": "The input fields for an inventory level.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryMoveQuantitiesInput": {
+    "description": "The input fields required to move inventory quantities.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryMoveQuantityChange": {
+    "description": "Represents the change to be made to an inventory item at a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryMoveQuantityTerminalInput": {
+    "description": "The input fields representing the change to be made to an inventory item at a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryQuantityInput": {
+    "description": "The input fields for the quantity to be set for an inventory item at a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryScheduledChangeInput": {
+    "description": "The input fields for a scheduled change of an inventory item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryScheduledChangeItemInput": {
+    "description": "The input fields for the inventory item associated with the scheduled changes that need to be applied.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventorySetOnHandQuantitiesInput": {
+    "description": "The input fields required to set inventory on hand quantities.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventorySetQuantitiesInput": {
+    "description": "The input fields required to set inventory quantities.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventorySetQuantityInput": {
+    "description": "The input fields for the quantity to be set for an inventory item at a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventorySetScheduledChangesInput": {
+    "description": "The input fields for setting up scheduled changes of inventory items.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryShipmentCreateInput": {
+    "description": "The input fields to add a shipment.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryShipmentLineItemInput": {
+    "description": "The input fields for a line item on an inventory shipment.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryShipmentReceiveItemInput": {
+    "description": "The input fields to receive an item on an inventory shipment.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryShipmentTrackingInput": {
+    "description": "The input fields for an inventory shipment's tracking information.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryShipmentUpdateItemQuantitiesInput": {
+    "description": "The input fields for a line item on an inventory shipment.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryTransferCreateAsReadyToShipInput": {
+    "description": "The input fields to create an inventory transfer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryTransferCreateInput": {
+    "description": "The input fields to create an inventory transfer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryTransferEditInput": {
+    "description": "The input fields to edit an inventory transfer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryTransferLineItemInput": {
+    "description": "The input fields for a line item on an inventory transfer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryTransferRemoveItemsInput": {
+    "description": "The input fields to remove inventory items from a transfer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "InventoryTransferSetItemsInput": {
+    "description": "The input fields to the InventoryTransferSetItems mutation.",
+    "kind": "INPUT_OBJECT"
+  },
+  "LinkedMetafieldCreateInput": {
+    "description": "The input fields required to link a product option to a metafield.",
+    "kind": "INPUT_OBJECT"
+  },
+  "LinkedMetafieldInput": {
+    "description": "The input fields for linking a combined listing option to a metafield.",
+    "kind": "INPUT_OBJECT"
+  },
+  "LinkedMetafieldUpdateInput": {
+    "description": "The input fields required to link a product option to a metafield.",
+    "kind": "INPUT_OBJECT"
+  },
+  "LocalizationExtensionInput": {
+    "description": "The input fields for a LocalizationExtensionInput.",
+    "kind": "INPUT_OBJECT"
+  },
+  "LocalizedFieldInput": {
+    "description": "The input fields for a LocalizedFieldInput.",
+    "kind": "INPUT_OBJECT"
+  },
+  "LocationAddAddressInput": {
+    "description": "The input fields to use to specify the address while adding a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "LocationAddInput": {
+    "description": "The input fields to use to add a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "LocationEditAddressInput": {
+    "description": "The input fields to use to edit the address of a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "LocationEditInput": {
+    "description": "The input fields to use to edit a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "LocationIdentifierInput": {
+    "description": "The input fields for identifying a location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MailingAddressInput": {
+    "description": "The input fields to create or update a mailing address.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketConditionsCompanyLocationsInput": {
+    "description": "The input fields required to create or update a company location market condition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketConditionsInput": {
+    "description": "The input fields required to create or update the market conditions.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketConditionsLocationsInput": {
+    "description": "The input fields required to create or update a location market condition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketConditionsRegionInput": {
+    "description": "The input fields to specify a region condition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketConditionsRegionsInput": {
+    "description": "The input fields required to create or update a region market condition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketConditionsUpdateInput": {
+    "description": "The input fields required to update a market condition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketCreateInput": {
+    "description": "The input fields required to create a market.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketCurrencySettingsUpdateInput": {
+    "description": "The input fields used to update the currency settings of a market.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketLocalizationRegisterInput": {
+    "description": "The input fields and values for creating or updating a market localization.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketPriceInclusionsInput": {
+    "description": "The input fields used to create a price inclusion.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketRegionCreateInput": {
+    "description": "The input fields for creating a market region with exactly one required option.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketUpdateInput": {
+    "description": "The input fields used to update a market.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketWebPresenceCreateInput": {
+    "description": "The input fields used to create a web presence for a market.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketWebPresenceUpdateInput": {
+    "description": "The input fields used to update a web presence for a market.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketingActivityBudgetInput": {
+    "description": "The input fields combining budget amount and its marketing budget type.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketingActivityCreateExternalInput": {
+    "description": "The input fields for creating an externally-managed marketing activity.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketingActivityCreateInput": {
+    "description": "The input fields required to create a marketing activity. Marketing activity app extensions are deprecated and will be removed in the near future.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketingActivityUpdateExternalInput": {
+    "description": "The input fields required to update an externally managed marketing activity.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketingActivityUpdateInput": {
+    "description": "The input fields required to update a marketing activity. Marketing activity app extensions are deprecated and will be removed in the near future.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketingActivityUpsertExternalInput": {
+    "description": "The input fields for creating or updating an externally-managed marketing activity.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MarketingEngagementInput": {
+    "description": "The input fields for a marketing engagement.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MenuItemCreateInput": {
+    "description": "The input fields required to create a valid menu item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MenuItemUpdateInput": {
+    "description": "The input fields required to update a valid menu item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldAccessInput": {
+    "description": "The input fields that set access permissions for the definition's metafields.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldAccessUpdateInput": {
+    "description": "The input fields for the access settings for the metafields under the definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldCapabilityAdminFilterableInput": {
+    "description": "The input fields for enabling and disabling the admin filterable capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldCapabilityCreateInput": {
+    "description": "The input fields for creating a metafield capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldCapabilitySmartCollectionConditionInput": {
+    "description": "The input fields for enabling and disabling the smart collection condition capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldCapabilityUniqueValuesInput": {
+    "description": "The input fields for enabling and disabling the unique values capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldCapabilityUpdateInput": {
+    "description": "The input fields for updating a metafield capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldDefinitionConstraintSubtypeIdentifier": {
+    "description": "The input fields used to identify a subtype of a resource for the purposes of metafield definition constraints.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldDefinitionConstraintValueUpdateInput": {
+    "description": "The inputs fields for modifying a metafield definition's constraint subtype values.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldDefinitionConstraintsInput": {
+    "description": "The input fields required to create metafield definition [constraints](https://shopify.dev/apps/build/custom-data/metafields/conditional-metafield-definitions).",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldDefinitionConstraintsUpdatesInput": {
+    "description": "The input fields required to update metafield definition [constraints](https://shopify.dev/apps/build/custom-data/metafields/conditional-metafield-definitions).",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldDefinitionIdentifierInput": {
+    "description": "The input fields that identify metafield definitions.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldDefinitionInput": {
+    "description": "The input fields required to create a metafield definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldDefinitionUpdateInput": {
+    "description": "The input fields required to update a metafield definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldDefinitionValidationInput": {
+    "description": "The name and value for a metafield definition validation.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldIdentifierInput": {
+    "description": "The input fields that identify metafields.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldInput": {
+    "description": "The input fields to use to create or update a metafield through a mutation on the owning resource.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetafieldsSetInput": {
+    "description": "The input fields for a metafield value to set.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectAccessInput": {
+    "description": "The input fields that set access permissions for the definition's metaobjects.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectBulkDeleteWhereCondition": {
+    "description": "Specifies the condition by which metaobjects are deleted.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityCreateInput": {
+    "description": "The input fields for creating a metaobject capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityDataInput": {
+    "description": "The input fields for metaobject capabilities.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityDataOnlineStoreInput": {
+    "description": "The input fields for the Online Store capability to control renderability on the Online Store.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityDataPublishableInput": {
+    "description": "The input fields for publishable capability to adjust visibility on channels.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityDefinitionDataOnlineStoreInput": {
+    "description": "The input fields of the Online Store capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityDefinitionDataRenderableInput": {
+    "description": "The input fields of the renderable capability for SEO aliases.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityOnlineStoreInput": {
+    "description": "The input fields for enabling and disabling the Online Store capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityPublishableInput": {
+    "description": "The input fields for enabling and disabling the publishable capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityRenderableInput": {
+    "description": "The input fields for enabling and disabling the renderable capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityTranslatableInput": {
+    "description": "The input fields for enabling and disabling the translatable capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCapabilityUpdateInput": {
+    "description": "The input fields for updating a metaobject capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectCreateInput": {
+    "description": "The input fields for creating a metaobject.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectDefinitionCreateInput": {
+    "description": "The input fields for creating a metaobject definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectDefinitionUpdateInput": {
+    "description": "The input fields for updating a metaobject definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectFieldCapabilityAdminFilterableInput": {
+    "description": "The input fields for enabling and disabling the admin filterable capability.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectFieldDefinitionCapabilityCreateInput": {
+    "description": "The input fields for creating capabilities on a metaobject field definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectFieldDefinitionCreateInput": {
+    "description": "The input fields for creating a metaobject field definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectFieldDefinitionDeleteInput": {
+    "description": "The input fields for deleting a metaobject field definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectFieldDefinitionOperationInput": {
+    "description": "The input fields for possible operations for modifying field definitions. Exactly one option is required.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectFieldDefinitionUpdateInput": {
+    "description": "The input fields for updating a metaobject field definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectFieldInput": {
+    "description": "The input fields for a metaobject field value.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectHandleInput": {
+    "description": "The input fields for retrieving a metaobject by handle.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectUpdateInput": {
+    "description": "The input fields for updating a metaobject.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MetaobjectUpsertInput": {
+    "description": "The input fields for upserting a metaobject.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MobilePlatformApplicationCreateAndroidInput": {
+    "description": "The input fields for an Android based mobile platform application.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MobilePlatformApplicationCreateAppleInput": {
+    "description": "The input fields for an Apple based mobile platform application.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MobilePlatformApplicationCreateInput": {
+    "description": "The input fields for a mobile application platform type.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MobilePlatformApplicationUpdateAndroidInput": {
+    "description": "The input fields for an Android based mobile platform application.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MobilePlatformApplicationUpdateAppleInput": {
+    "description": "The input fields for an Apple based mobile platform application.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MobilePlatformApplicationUpdateInput": {
+    "description": "The input fields for the mobile platform application platform type.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MoneyBagInput": {
+    "description": "An input collection of monetary values in their respective currencies.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MoneyInput": {
+    "description": "The input fields for a monetary value with currency.",
+    "kind": "INPUT_OBJECT"
+  },
+  "MoveInput": {
+    "description": "The input for moving a single object to a specific position in a set.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ObjectDimensionsInput": {
+    "description": "The input fields for dimensions of an object.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OnlineStoreThemeFileBodyInput": {
+    "description": "The input fields for the theme file body.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OnlineStoreThemeFilesUpsertFileInput": {
+    "description": "The input fields for the file to create or update.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OnlineStoreThemeInput": {
+    "description": "The input fields for Theme attributes to update.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OptionAndValueInput": {
+    "description": "The input fields for the options and values of the combined listing.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OptionCreateInput": {
+    "description": "The input fields for creating a product option.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OptionReorderInput": {
+    "description": "The input fields for reordering a product option and/or its values.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OptionSetInput": {
+    "description": "The input fields for creating or updating a product option.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OptionUpdateInput": {
+    "description": "The input fields for updating a product option.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OptionValueCreateInput": {
+    "description": "The input fields required to create a product option value.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OptionValueReorderInput": {
+    "description": "The input fields for reordering a product option value.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OptionValueSetInput": {
+    "description": "The input fields for creating or updating a product option value.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OptionValueUpdateInput": {
+    "description": "The input fields for updating a product option value.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCancelRefundMethodInput": {
+    "description": "The input fields used to specify the refund method for an order cancellation.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCancelStoreCreditRefundInput": {
+    "description": "The input fields used to refund to store credit.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCaptureInput": {
+    "description": "The input fields for the authorized transaction to capture and the total amount to capture from it.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCloseInput": {
+    "description": "The input fields for specifying an open order to close.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateAssociateCustomerAttributesInput": {
+    "description": "The input fields for identifying an existing customer to associate with the order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateCustomAttributeInput": {
+    "description": "The input fields for a note attribute for an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateCustomerAddressInput": {
+    "description": "The input fields for creating a customer's mailing address.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateCustomerInput": {
+    "description": "The input fields for a customer to associate with an order. Allows creation of a new customer or specifying an existing one.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateDiscountCodeInput": {
+    "description": "The input fields for a discount code to apply to an order. Only one type of discount can be applied to an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateFixedDiscountCodeAttributesInput": {
+    "description": "The input fields for a fixed amount discount code to apply to an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateFreeShippingDiscountCodeAttributesInput": {
+    "description": "The input fields for a free shipping discount code to apply to an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateFulfillmentInput": {
+    "description": "The input fields for a fulfillment to create for an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateLineItemInput": {
+    "description": "The input fields for a line item to create for an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateLineItemPropertyInput": {
+    "description": "The input fields for a line item property for an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateOptionsInput": {
+    "description": "The input fields that define the strategies for updating inventory and",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateOrderInput": {
+    "description": "The input fields for creating an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateOrderTransactionInput": {
+    "description": "The input fields for a transaction to create for an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreatePercentageDiscountCodeAttributesInput": {
+    "description": "The input fields for a percentage discount code to apply to an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateShippingLineInput": {
+    "description": "The input fields for a shipping line to create for an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateTaxLineInput": {
+    "description": "The input fields for a tax line to create for an order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderCreateUpsertCustomerAttributesInput": {
+    "description": "The input fields for creating a new customer object or identifying an existing customer to update & associate with the order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderEditAddShippingLineInput": {
+    "description": "The input fields used to add a shipping line.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderEditAppliedDiscountInput": {
+    "description": "The input fields used to add a discount during an order edit.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderEditUpdateShippingLineInput": {
+    "description": "The input fields used to update a shipping line.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderIdentifierInput": {
+    "description": "The input fields for identifying a order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderInput": {
+    "description": "The input fields for specifying the information to be updated on an order when using the orderUpdate mutation.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderMarkAsPaidInput": {
+    "description": "The input fields for specifying the order to mark as paid.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderOpenInput": {
+    "description": "The input fields for specifying a closed order to open.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderRiskAssessmentCreateInput": {
+    "description": "The input fields for an order risk assessment.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderRiskAssessmentFactInput": {
+    "description": "The input fields to create a fact on an order risk assessment.",
+    "kind": "INPUT_OBJECT"
+  },
+  "OrderTransactionInput": {
+    "description": "The input fields for the information needed to create an order transaction.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PageCreateInput": {
+    "description": "The input fields to create a page.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PageUpdateInput": {
+    "description": "The input fields to update a page.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PaymentCustomizationInput": {
+    "description": "The input fields to create and update a payment customization.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PaymentScheduleInput": {
+    "description": "The input fields used to create a payment schedule for payment terms.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PaymentTermsCreateInput": {
+    "description": "The input fields used to create a payment terms.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PaymentTermsDeleteInput": {
+    "description": "The input fields used to delete the payment terms.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PaymentTermsInput": {
+    "description": "The input fields to create payment terms. Payment terms set the date that payment is due.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PaymentTermsUpdateInput": {
+    "description": "The input fields used to update the payment terms.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PreparedFulfillmentOrderLineItemsInput": {
+    "description": "The input fields used to include the line items of a specified fulfillment order that should be marked as prepared for pickup by a customer.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PriceInput": {
+    "description": "The input fields for updating the price of a parent product variant.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PriceListAdjustmentInput": {
+    "description": "The input fields to set a price list adjustment.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PriceListAdjustmentSettingsInput": {
+    "description": "The input fields to set a price list's adjustment settings.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PriceListCreateInput": {
+    "description": "The input fields to create a price list.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PriceListParentCreateInput": {
+    "description": "The input fields to create a price list adjustment.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PriceListParentUpdateInput": {
+    "description": "The input fields used to update a price list's adjustment.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PriceListPriceInput": {
+    "description": "The input fields for providing the fields and values to use when creating or updating a fixed price list price.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PriceListProductPriceInput": {
+    "description": "The input fields representing the price for all variants of a product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PriceListUpdateInput": {
+    "description": "The input fields used to update a price list.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductBundleComponentInput": {
+    "description": "The input fields for a single component related to a componentized product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductBundleComponentOptionSelectionInput": {
+    "description": "The input fields for a single option related to a component product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductBundleComponentQuantityOptionInput": {
+    "description": "Input for the quantity option related to a component product. This will become a new option on the parent bundle product that doesn't have a corresponding option on the component.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductBundleComponentQuantityOptionValueInput": {
+    "description": "The input fields for a single quantity option value related to a component product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductBundleConsolidatedOptionComponentInput": {
+    "description": "The input fields for mapping a consolidated option to a specific component option.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductBundleConsolidatedOptionInput": {
+    "description": "The input fields for a consolidated option on a componentized product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductBundleConsolidatedOptionSelectionInput": {
+    "description": "The input fields for a consolidated option selection that maps to component options.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductBundleCreateInput": {
+    "description": "The input fields for creating a componentized product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductBundleUpdateInput": {
+    "description": "The input fields for updating a componentized product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductClaimOwnershipInput": {
+    "description": "The input fields to claim ownership for Product features such as Bundles.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductCreateInput": {
+    "description": "The input fields required to create a product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductDeleteInput": {
+    "description": "The input fields for specifying the product to delete.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductFeedInput": {
+    "description": "The input fields required to create a product feed.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductIdentifierInput": {
+    "description": "The input fields for identifying a product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductInput": {
+    "description": "The input fields for creating or updating a product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductPublicationInput": {
+    "description": "The input fields for specifying a publication to which a product will be published.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductPublishInput": {
+    "description": "The input fields for specifying a product to publish and the channels to publish it to.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductResourceFeedbackInput": {
+    "description": "The input fields used to create a product feedback.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductSetIdentifiers": {
+    "description": "The input fields required to identify a resource.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductSetInput": {
+    "description": "The input fields required to create or update a product via ProductSet mutation.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductSetInventoryInput": {
+    "description": "The input fields required to set inventory quantities using `productSet` mutation.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductUnpublishInput": {
+    "description": "The input fields for specifying a product to unpublish from a channel and the sales channels to unpublish it from.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductUpdateInput": {
+    "description": "The input fields for updating a product.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductVariantAppendMediaInput": {
+    "description": "The input fields required to append media to a single variant.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductVariantDetachMediaInput": {
+    "description": "The input fields required to detach media from a single variant.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductVariantGroupRelationshipInput": {
+    "description": "The input fields for the bundle components for core.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductVariantIdentifierInput": {
+    "description": "The input fields for identifying a product variant.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductVariantPositionInput": {
+    "description": "The input fields representing a product variant position.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductVariantRelationshipUpdateInput": {
+    "description": "The input fields for updating a composite product variant.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductVariantSetInput": {
+    "description": "The input fields for specifying a product variant to create or update.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ProductVariantsBulkInput": {
+    "description": "The input fields for specifying a product variant to create as part of a variant bulk mutation.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PubSubWebhookSubscriptionInput": {
+    "description": "The input fields for a PubSub webhook subscription.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PublicationCreateInput": {
+    "description": "The input fields for creating a publication.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PublicationInput": {
+    "description": "The input fields required to publish a resource.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PublicationUpdateInput": {
+    "description": "The input fields for updating a publication.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PurchasingCompanyInput": {
+    "description": "The input fields for a purchasing company, which is a combination of company, company contact, and company location.",
+    "kind": "INPUT_OBJECT"
+  },
+  "PurchasingEntityInput": {
+    "description": "The input fields for a purchasing entity. Can either be a customer or a purchasing company.",
+    "kind": "INPUT_OBJECT"
+  },
+  "QuantityPriceBreakInput": {
+    "description": "The input fields and values to use when creating quantity price breaks.",
+    "kind": "INPUT_OBJECT"
+  },
+  "QuantityPricingByVariantUpdateInput": {
+    "description": "The input fields used to update quantity pricing.",
+    "kind": "INPUT_OBJECT"
+  },
+  "QuantityRuleInput": {
+    "description": "The input fields for the per-order quantity rule to be applied on the product variant.",
+    "kind": "INPUT_OBJECT"
+  },
+  "RefundDutyInput": {
+    "description": "The input fields required to reimburse duties on a refund.",
+    "kind": "INPUT_OBJECT"
+  },
+  "RefundInput": {
+    "description": "The input fields to create a refund.",
+    "kind": "INPUT_OBJECT"
+  },
+  "RefundLineItemInput": {
+    "description": "The input fields required to reimburse line items on a refund.",
+    "kind": "INPUT_OBJECT"
+  },
+  "RefundMethodInput": {
+    "description": "The input fields for processing the financial outcome of a refund.",
+    "kind": "INPUT_OBJECT"
+  },
+  "RefundShippingInput": {
+    "description": "The input fields for the shipping cost to refund.",
+    "kind": "INPUT_OBJECT"
+  },
+  "RemoteAuthorizeNetCustomerPaymentProfileInput": {
+    "description": "The input fields for a remote Authorize.net customer payment profile.",
+    "kind": "INPUT_OBJECT"
+  },
+  "RemoteBraintreePaymentMethodInput": {
+    "description": "The input fields for a remote Braintree customer payment profile.",
+    "kind": "INPUT_OBJECT"
+  },
+  "RemoteStripePaymentMethodInput": {
+    "description": "The input fields for a remote stripe payment method.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ResourceFeedbackCreateInput": {
+    "description": "The input fields for a resource feedback object.",
+    "kind": "INPUT_OBJECT"
+  },
+  "RestockingFeeInput": {
+    "description": "The input fields for a restocking fee.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnApproveRequestInput": {
+    "description": "The input fields for approving a customer's return request.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnDeclineRequestInput": {
+    "description": "The input fields for declining a customer's return request.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnInput": {
+    "description": "The input fields for a return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnLineItemInput": {
+    "description": "The input fields for a return line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnLineItemRemoveFromReturnInput": {
+    "description": "The input fields for a removing a return line item from a return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnProcessExchangeLineItemInput": {
+    "description": "The input fields for an exchange line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnProcessFinancialTransferInput": {
+    "description": "The input fields for the financial transfer for the return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnProcessInput": {
+    "description": "The input fields for processing a return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnProcessRefundInput": {
+    "description": "The input fields for the refund for the return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnProcessReturnLineItemInput": {
+    "description": "The input fields for a return line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnRefundInput": {
+    "description": "The input fields to refund a return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnRefundLineItemInput": {
+    "description": "The input fields for a return refund line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnRefundOrderTransactionInput": {
+    "description": "The input fields to create order transactions when refunding a return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnRequestInput": {
+    "description": "The input fields for requesting a return.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnRequestLineItemInput": {
+    "description": "The input fields for a return line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReturnShippingFeeInput": {
+    "description": "The input fields for a return shipping fee.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReverseDeliveryLabelInput": {
+    "description": "The input fields for a reverse label.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReverseDeliveryLineItemInput": {
+    "description": "The input fields for a reverse delivery line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReverseDeliveryTrackingInput": {
+    "description": "The input fields for tracking information about a return delivery.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ReverseFulfillmentOrderDisposeInput": {
+    "description": "The input fields to dispose a reverse fulfillment order line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SEOInput": {
+    "description": "The input fields for SEO information.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SavedSearchCreateInput": {
+    "description": "The input fields to create a saved search.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SavedSearchDeleteInput": {
+    "description": "The input fields to delete a saved search.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SavedSearchUpdateInput": {
+    "description": "The input fields to update a saved search.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ScriptTagInput": {
+    "description": "The input fields for a script tag. This input object is used when creating or updating",
+    "kind": "INPUT_OBJECT"
+  },
+  "SelectedVariantOptionInput": {
+    "description": "The input fields for the selected variant option of the combined listing.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanAnchorInput": {
+    "description": "The input fields required to create or update a selling plan anchor.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanBillingPolicyInput": {
+    "description": "The input fields that are required to create or update a billing policy type.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanCheckoutChargeInput": {
+    "description": "The input fields that are required to create or update a checkout charge.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanCheckoutChargeValueInput": {
+    "description": "The input fields required to create or update an checkout charge value.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanDeliveryPolicyInput": {
+    "description": "The input fields that are required to create or update a delivery policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanFixedBillingPolicyInput": {
+    "description": "The input fields required to create or update a fixed billing policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanFixedDeliveryPolicyInput": {
+    "description": "The input fields required to create or update a fixed delivery policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanFixedPricingPolicyInput": {
+    "description": "The input fields required to create or update a fixed selling plan pricing policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanGroupInput": {
+    "description": "The input fields required to create or update a selling plan group.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanGroupResourceInput": {
+    "description": "The input fields for resource association with a Selling Plan Group.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanInput": {
+    "description": "The input fields to create or update a selling plan.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanInventoryPolicyInput": {
+    "description": "The input fields required to create or update an inventory policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanPricingPolicyInput": {
+    "description": "The input fields required to create or update a selling plan pricing policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanPricingPolicyValueInput": {
+    "description": "The input fields required to create or update a pricing policy adjustment value.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanRecurringBillingPolicyInput": {
+    "description": "The input fields required to create or update a recurring billing policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanRecurringDeliveryPolicyInput": {
+    "description": "The input fields to create or update a recurring delivery policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SellingPlanRecurringPricingPolicyInput": {
+    "description": "The input fields required to create or update a recurring selling plan pricing policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ShippingLineInput": {
+    "description": "The input fields for specifying the shipping details for the draft order.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ShippingRefundInput": {
+    "description": "The input fields that are required to reimburse shipping costs.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ShopLocaleInput": {
+    "description": "The input fields for a shop locale.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ShopPolicyInput": {
+    "description": "The input fields required to update a policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ShopifyPaymentsDisputeEvidenceUpdateInput": {
+    "description": "The input fields required to update a dispute evidence object.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ShopifyPaymentsDisputeFileUploadUpdateInput": {
+    "description": "The input fields required to update a dispute file upload object.",
+    "kind": "INPUT_OBJECT"
+  },
+  "StageImageInput": {
+    "description": "An image to be uploaded.",
+    "kind": "INPUT_OBJECT"
+  },
+  "StagedUploadInput": {
+    "description": "The input fields for generating staged upload targets.",
+    "kind": "INPUT_OBJECT"
+  },
+  "StagedUploadTargetGenerateInput": {
+    "description": "The required fields and parameters to generate the URL upload an\"",
+    "kind": "INPUT_OBJECT"
+  },
+  "StandardMetafieldDefinitionAccessInput": {
+    "description": "The input fields for the access settings for the metafields under the standard definition.",
+    "kind": "INPUT_OBJECT"
+  },
+  "StoreCreditAccountCreditInput": {
+    "description": "The input fields for a store credit account credit transaction.",
+    "kind": "INPUT_OBJECT"
+  },
+  "StoreCreditAccountDebitInput": {
+    "description": "The input fields for a store credit account debit transaction.",
+    "kind": "INPUT_OBJECT"
+  },
+  "StoreCreditRefundInput": {
+    "description": "The input fields to process a refund to store credit.",
+    "kind": "INPUT_OBJECT"
+  },
+  "StorefrontAccessTokenDeleteInput": {
+    "description": "The input fields to delete a storefront access token.",
+    "kind": "INPUT_OBJECT"
+  },
+  "StorefrontAccessTokenInput": {
+    "description": "The input fields for a storefront access token.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionAtomicLineInput": {
+    "description": "The input fields for mapping a subscription line to a discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionAtomicManualDiscountInput": {
+    "description": "The input fields for mapping a subscription line to a discount.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionBillingAttemptInput": {
+    "description": "The input fields required to complete a subscription billing attempt.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionBillingCycleBulkFilters": {
+    "description": "The input fields for filtering subscription billing cycles in bulk actions.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionBillingCycleInput": {
+    "description": "The input fields for specifying the subscription contract and selecting the associated billing cycle.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionBillingCycleScheduleEditInput": {
+    "description": "The input fields for parameters to modify the schedule of a specific billing cycle.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionBillingCycleSelector": {
+    "description": "The input fields to select SubscriptionBillingCycle by either date or index. Both past and future billing cycles can be selected.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionBillingCyclesDateRangeSelector": {
+    "description": "The input fields to select a subset of subscription billing cycles within a date range.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionBillingCyclesIndexRangeSelector": {
+    "description": "The input fields to select a subset of subscription billing cycles within an index range.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionBillingPolicyInput": {
+    "description": "The input fields for a Subscription Billing Policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionContractAtomicCreateInput": {
+    "description": "The input fields required to create a Subscription Contract.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionContractCreateInput": {
+    "description": "The input fields required to create a Subscription Contract.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionContractProductChangeInput": {
+    "description": "The input fields required to create a Subscription Contract.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionDeliveryMethodInput": {
+    "description": "Specifies delivery method fields for a subscription draft.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionDeliveryMethodLocalDeliveryInput": {
+    "description": "The input fields for a local delivery method.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionDeliveryMethodLocalDeliveryOptionInput": {
+    "description": "The input fields for local delivery option.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionDeliveryMethodPickupInput": {
+    "description": "The input fields for a pickup delivery method.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionDeliveryMethodPickupOptionInput": {
+    "description": "The input fields for pickup option.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionDeliveryMethodShippingInput": {
+    "description": "Specifies shipping delivery method fields.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionDeliveryMethodShippingOptionInput": {
+    "description": "The input fields for shipping option.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionDeliveryPolicyInput": {
+    "description": "The input fields for a Subscription Delivery Policy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionDraftInput": {
+    "description": "The input fields required to create a Subscription Draft.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionFreeShippingDiscountInput": {
+    "description": "The input fields for a subscription free shipping discount on a contract.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionLineInput": {
+    "description": "The input fields required to add a new subscription line to a contract.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionLineUpdateInput": {
+    "description": "The input fields required to update a subscription line on a contract.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionManualDiscountEntitledLinesInput": {
+    "description": "The input fields for the subscription lines the discount applies on.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionManualDiscountFixedAmountInput": {
+    "description": "The input fields for the fixed amount value of the discount and distribution on the lines.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionManualDiscountInput": {
+    "description": "The input fields for a subscription discount on a contract.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionManualDiscountLinesInput": {
+    "description": "The input fields for line items that the discount refers to.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionManualDiscountValueInput": {
+    "description": "The input fields for the discount value and its distribution.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionPricingPolicyCycleDiscountsInput": {
+    "description": "The input fields for an array containing all pricing changes for each billing cycle.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SubscriptionPricingPolicyInput": {
+    "description": "The input fields for expected price changes of the subscription line over time.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SuggestedOutcomeExchangeLineItemInput": {
+    "description": "The input fields for an exchange line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "SuggestedOutcomeReturnLineItemInput": {
+    "description": "The input fields for a return line item.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ThemeFilesCopyFileInput": {
+    "description": "The input fields for the file copy.",
+    "kind": "INPUT_OBJECT"
+  },
+  "TranslationInput": {
+    "description": "The input fields and values for creating or updating a translation.",
+    "kind": "INPUT_OBJECT"
+  },
+  "UTMInput": {
+    "description": "Specifies the",
+    "kind": "INPUT_OBJECT"
+  },
+  "UniqueMetafieldValueInput": {
+    "description": "The input fields that identify a unique valued metafield.",
+    "kind": "INPUT_OBJECT"
+  },
+  "UnitPriceMeasurementInput": {
+    "description": "The input fields for the measurement used to calculate a unit price for a product variant (e.g. $9.99 / 100ml).",
+    "kind": "INPUT_OBJECT"
+  },
+  "UpdateMediaInput": {
+    "description": "The input fields required to update a media object.",
+    "kind": "INPUT_OBJECT"
+  },
+  "UrlRedirectInput": {
+    "description": "The input fields to create or update a URL redirect.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ValidationCreateInput": {
+    "description": "The input fields required to install a validation.",
+    "kind": "INPUT_OBJECT"
+  },
+  "ValidationUpdateInput": {
+    "description": "The input fields required to update a validation.",
+    "kind": "INPUT_OBJECT"
+  },
+  "VariantOptionValueInput": {
+    "description": "The input fields required to create or modify a product variant's option value.",
+    "kind": "INPUT_OBJECT"
+  },
+  "WebPixelInput": {
+    "description": "The input fields for creating or updating a web pixel.",
+    "kind": "INPUT_OBJECT"
+  },
+  "WebPresenceCreateInput": {
+    "description": "The input fields used to create a web presence.",
+    "kind": "INPUT_OBJECT"
+  },
+  "WebPresenceUpdateInput": {
+    "description": "The input fields used to update a web presence.",
+    "kind": "INPUT_OBJECT"
+  },
+  "WebhookSubscriptionInput": {
+    "description": "The input fields for a webhook subscription.",
+    "kind": "INPUT_OBJECT"
+  },
+  "WeightInput": {
+    "description": "The input fields for the weight unit and value inputs.",
+    "kind": "INPUT_OBJECT"
+  }
+}

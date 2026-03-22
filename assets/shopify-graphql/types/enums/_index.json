@@ -1,0 +1,2270 @@
+{
+  "AbandonedCheckoutSortKeys": {
+    "description": "The set of valid sort keys for the AbandonedCheckout query.",
+    "kind": "ENUM"
+  },
+  "AbandonmentAbandonmentType": {
+    "description": "Specifies the abandonment type.",
+    "kind": "ENUM"
+  },
+  "AbandonmentDeliveryState": {
+    "description": "Specifies the delivery state of a marketing activity.",
+    "kind": "ENUM"
+  },
+  "AbandonmentEmailState": {
+    "description": "Specifies the email state.",
+    "kind": "ENUM"
+  },
+  "AbandonmentEmailStateUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `AbandonmentEmailStateUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "AbandonmentUpdateActivitiesDeliveryStatusesUserErrorCode": {
+    "description": "Possible error codes that can be returned by `AbandonmentUpdateActivitiesDeliveryStatusesUserError`.",
+    "kind": "ENUM"
+  },
+  "AccountType": {
+    "description": "Possible account types that a staff member can have.",
+    "kind": "ENUM"
+  },
+  "AdjustmentsSortKeys": {
+    "description": "The set of valid sort keys for the Adjustments query.",
+    "kind": "ENUM"
+  },
+  "AppDeveloperType": {
+    "description": "Possible types of app developer.",
+    "kind": "ENUM"
+  },
+  "AppInstallationCategory": {
+    "description": "The possible categories of an app installation, based on their purpose",
+    "kind": "ENUM"
+  },
+  "AppInstallationPrivacy": {
+    "description": "The levels of privacy of an app installation.",
+    "kind": "ENUM"
+  },
+  "AppInstallationSortKeys": {
+    "description": "The set of valid sort keys for the AppInstallation query.",
+    "kind": "ENUM"
+  },
+  "AppPricingInterval": {
+    "description": "The frequency at which the shop is billed for an app subscription.",
+    "kind": "ENUM"
+  },
+  "AppPublicCategory": {
+    "description": "The public-facing category for an app.",
+    "kind": "ENUM"
+  },
+  "AppPurchaseStatus": {
+    "description": "The approval status of the app purchase.",
+    "kind": "ENUM"
+  },
+  "AppRevenueAttributionRecordSortKeys": {
+    "description": "The set of valid sort keys for the AppRevenueAttributionRecord query.",
+    "kind": "ENUM"
+  },
+  "AppRevenueAttributionType": {
+    "description": "Represents the billing types of revenue attribution.",
+    "kind": "ENUM"
+  },
+  "AppRevokeAccessScopesAppRevokeScopeErrorCode": {
+    "description": "Possible error codes that can be returned by `AppRevokeAccessScopesAppRevokeScopeError`.",
+    "kind": "ENUM"
+  },
+  "AppSubscriptionReplacementBehavior": {
+    "description": "The replacement behavior when creating an app subscription for a merchant with an already existing app subscription.",
+    "kind": "ENUM"
+  },
+  "AppSubscriptionSortKeys": {
+    "description": "The set of valid sort keys for the AppSubscription query.",
+    "kind": "ENUM"
+  },
+  "AppSubscriptionStatus": {
+    "description": "The status of the app subscription.",
+    "kind": "ENUM"
+  },
+  "AppSubscriptionTrialExtendUserErrorCode": {
+    "description": "Possible error codes that can be returned by `AppSubscriptionTrialExtendUserError`.",
+    "kind": "ENUM"
+  },
+  "AppTransactionSortKeys": {
+    "description": "The set of valid sort keys for the AppTransaction query.",
+    "kind": "ENUM"
+  },
+  "AppUninstallAppUninstallErrorCode": {
+    "description": "Possible error codes that can be returned by `AppUninstallAppUninstallError`.",
+    "kind": "ENUM"
+  },
+  "AppUsageRecordSortKeys": {
+    "description": "The set of valid sort keys for the AppUsageRecord query.",
+    "kind": "ENUM"
+  },
+  "ArticleCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ArticleCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "ArticleDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ArticleDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "ArticleSortKeys": {
+    "description": "The set of valid sort keys for the Article query.",
+    "kind": "ENUM"
+  },
+  "ArticleTagSort": {
+    "description": "Possible sort of tags.",
+    "kind": "ENUM"
+  },
+  "ArticleUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ArticleUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "Audience": {
+    "description": "The intended audience for the order status page.",
+    "kind": "ENUM"
+  },
+  "AutomaticDiscountSortKeys": {
+    "description": "The set of valid sort keys for the AutomaticDiscount query.",
+    "kind": "ENUM"
+  },
+  "BadgeType": {
+    "description": "The possible types for a badge.",
+    "kind": "ENUM"
+  },
+  "BalanceTransactionSortKeys": {
+    "description": "The set of valid sort keys for the BalanceTransaction query.",
+    "kind": "ENUM"
+  },
+  "BankAccountHolderType": {
+    "description": "The type of bank account holder.",
+    "kind": "ENUM"
+  },
+  "BankAccountType": {
+    "description": "The type of bank account.",
+    "kind": "ENUM"
+  },
+  "BankingFinanceAppAccess": {
+    "description": "The valid types of actions a user should be able to perform in an financial app.",
+    "kind": "ENUM"
+  },
+  "BillingAttemptUserErrorCode": {
+    "description": "Possible error codes that can be returned by `BillingAttemptUserError`.",
+    "kind": "ENUM"
+  },
+  "BlogCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `BlogCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "BlogDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `BlogDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "BlogSortKeys": {
+    "description": "The set of valid sort keys for the Blog query.",
+    "kind": "ENUM"
+  },
+  "BlogUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `BlogUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "BulkMutationErrorCode": {
+    "description": "Possible error codes that can be returned by `BulkMutationUserError`.",
+    "kind": "ENUM"
+  },
+  "BulkOperationErrorCode": {
+    "description": "Error codes for failed bulk operations.",
+    "kind": "ENUM"
+  },
+  "BulkOperationStatus": {
+    "description": "The valid values for the status of a bulk operation.",
+    "kind": "ENUM"
+  },
+  "BulkOperationType": {
+    "description": "The valid values for the bulk operation's type.",
+    "kind": "ENUM"
+  },
+  "BulkOperationUserErrorCode": {
+    "description": "Possible error codes that can be returned by `BulkOperationUserError`.",
+    "kind": "ENUM"
+  },
+  "BulkOperationsSortKeys": {
+    "description": "The set of valid sort keys for the BulkOperations query.",
+    "kind": "ENUM"
+  },
+  "BulkProductResourceFeedbackCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `BulkProductResourceFeedbackCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "BusinessCustomerErrorCode": {
+    "description": "Possible error codes that can be returned by `BusinessCustomerUserError`.",
+    "kind": "ENUM"
+  },
+  "CalculatedShippingLineStagedStatus": {
+    "description": "Represents the staged status of a CalculatedShippingLine on a CalculatedOrder.",
+    "kind": "ENUM"
+  },
+  "CarrierServiceCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CarrierServiceCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "CarrierServiceDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CarrierServiceDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "CarrierServiceSortKeys": {
+    "description": "The set of valid sort keys for the CarrierService query.",
+    "kind": "ENUM"
+  },
+  "CarrierServiceUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CarrierServiceUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "CartTransformCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CartTransformCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "CartTransformDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CartTransformDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "CashTrackingSessionTransactionsSortKeys": {
+    "description": "The set of valid sort keys for the CashTrackingSessionTransactions query.",
+    "kind": "ENUM"
+  },
+  "CashTrackingSessionsSortKeys": {
+    "description": "The set of valid sort keys for the CashTrackingSessions query.",
+    "kind": "ENUM"
+  },
+  "CatalogSortKeys": {
+    "description": "The set of valid sort keys for the Catalog query.",
+    "kind": "ENUM"
+  },
+  "CatalogStatus": {
+    "description": "The state of a catalog.",
+    "kind": "ENUM"
+  },
+  "CatalogType": {
+    "description": "The associated catalog's type.",
+    "kind": "ENUM"
+  },
+  "CatalogUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CatalogUserError`.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingBackground": {
+    "description": "The container background style.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingBackgroundStyle": {
+    "description": "Possible values for the background style.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingBorder": {
+    "description": "Possible values for the border.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingBorderStyle": {
+    "description": "The container border style.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingBorderWidth": {
+    "description": "The container border width.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingCartLinkContentType": {
+    "description": "Possible values for the cart link content type for the header.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingColorSchemeSelection": {
+    "description": "The possible color schemes.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingColorSelection": {
+    "description": "The possible colors.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingCornerRadius": {
+    "description": "The options for customizing the corner radius of checkout-related objects. Examples include the primary",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingFontLoadingStrategy": {
+    "description": "The font loading strategy determines how a font face is displayed after it is loaded or failed to load.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingFooterAlignment": {
+    "description": "Possible values for the footer alignment.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingFooterPosition": {
+    "description": "Possible values for the footer position.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingGlobalCornerRadius": {
+    "description": "Possible choices to override corner radius customizations on all applicable objects. Note that this selection",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingHeaderAlignment": {
+    "description": "The possible header alignments.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingHeaderPosition": {
+    "description": "The possible header positions.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingLabelPosition": {
+    "description": "Possible values for the label position.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingMerchandiseThumbnailBadgeBackground": {
+    "description": "The merchandise thumbnail badge background.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingObjectFit": {
+    "description": "Possible values for object fit.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingShadow": {
+    "description": "The container shadow.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingSimpleBorder": {
+    "description": "Possible values for the simple border.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingSpacing": {
+    "description": "Possible values for the spacing.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingSpacingKeyword": {
+    "description": "The spacing between UI elements.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingTypographyFont": {
+    "description": "The font selection.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingTypographyKerning": {
+    "description": "Possible values for the typography kerning.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingTypographyLetterCase": {
+    "description": "Possible values for the typography letter case.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingTypographySize": {
+    "description": "Possible choices for the font size.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingTypographyWeight": {
+    "description": "Possible values for the font weight.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingUpsertUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CheckoutBrandingUpsertUserError`.",
+    "kind": "ENUM"
+  },
+  "CheckoutBrandingVisibility": {
+    "description": "Possible visibility states.",
+    "kind": "ENUM"
+  },
+  "CheckoutProfileSortKeys": {
+    "description": "The set of valid sort keys for the CheckoutProfile query.",
+    "kind": "ENUM"
+  },
+  "CodeDiscountSortKeys": {
+    "description": "The set of valid sort keys for the CodeDiscount query.",
+    "kind": "ENUM"
+  },
+  "CollectionAddProductsV2UserErrorCode": {
+    "description": "Possible error codes that can be returned by `CollectionAddProductsV2UserError`.",
+    "kind": "ENUM"
+  },
+  "CollectionDuplicateOperationRole": {
+    "description": "The role a collection plays in a duplication operation.",
+    "kind": "ENUM"
+  },
+  "CollectionDuplicateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CollectionDuplicateUserError`.",
+    "kind": "ENUM"
+  },
+  "CollectionReorderProductsUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CollectionReorderProductsUserError`.",
+    "kind": "ENUM"
+  },
+  "CollectionRuleColumn": {
+    "description": "Specifies the attribute of a product being used to populate the smart collection.",
+    "kind": "ENUM"
+  },
+  "CollectionRuleRelation": {
+    "description": "Specifies the relationship between the `column` and the `condition`.",
+    "kind": "ENUM"
+  },
+  "CollectionSortKeys": {
+    "description": "The set of valid sort keys for the Collection query.",
+    "kind": "ENUM"
+  },
+  "CollectionSortOrder": {
+    "description": "Specifies the sort order for the products in the collection.",
+    "kind": "ENUM"
+  },
+  "ColumnDataType": {
+    "description": "The data type of a column.",
+    "kind": "ENUM"
+  },
+  "CombinedListingUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CombinedListingUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "CombinedListingsRole": {
+    "description": "The role of the combined listing.",
+    "kind": "ENUM"
+  },
+  "CommentApproveUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CommentApproveUserError`.",
+    "kind": "ENUM"
+  },
+  "CommentDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CommentDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "CommentNotSpamUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CommentNotSpamUserError`.",
+    "kind": "ENUM"
+  },
+  "CommentPolicy": {
+    "description": "Possible comment policies for a blog.",
+    "kind": "ENUM"
+  },
+  "CommentSortKeys": {
+    "description": "The set of valid sort keys for the Comment query.",
+    "kind": "ENUM"
+  },
+  "CommentSpamUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CommentSpamUserError`.",
+    "kind": "ENUM"
+  },
+  "CommentStatus": {
+    "description": "The status of a comment.",
+    "kind": "ENUM"
+  },
+  "CompanyAddressType": {
+    "description": "The valid values for the address type of a company.",
+    "kind": "ENUM"
+  },
+  "CompanyContactRoleAssignmentSortKeys": {
+    "description": "The set of valid sort keys for the CompanyContactRoleAssignment query.",
+    "kind": "ENUM"
+  },
+  "CompanyContactRoleSortKeys": {
+    "description": "The set of valid sort keys for the CompanyContactRole query.",
+    "kind": "ENUM"
+  },
+  "CompanyContactSortKeys": {
+    "description": "The set of valid sort keys for the CompanyContact query.",
+    "kind": "ENUM"
+  },
+  "CompanyLocationSortKeys": {
+    "description": "The set of valid sort keys for the CompanyLocation query.",
+    "kind": "ENUM"
+  },
+  "CompanyLocationStaffMemberAssignmentSortKeys": {
+    "description": "The set of valid sort keys for the CompanyLocationStaffMemberAssignment query.",
+    "kind": "ENUM"
+  },
+  "CompanySortKeys": {
+    "description": "The set of valid sort keys for the Company query.",
+    "kind": "ENUM"
+  },
+  "ConsentPolicyErrorCode": {
+    "description": "Possible error codes that can be returned by `ConsentPolicyError`.",
+    "kind": "ENUM"
+  },
+  "CountPrecision": {
+    "description": "The precision of the value returned by a count field.",
+    "kind": "ENUM"
+  },
+  "CountryCode": {
+    "description": "The code designating a country/region, which generally follows ISO 3166-1 alpha-2 guidelines.",
+    "kind": "ENUM"
+  },
+  "CropRegion": {
+    "description": "The part of the image that should remain after cropping.",
+    "kind": "ENUM"
+  },
+  "CurrencyCode": {
+    "description": "The currency codes that represent the world currencies throughout the Admin API. Currency codes include",
+    "kind": "ENUM"
+  },
+  "CustomerAccountNativePagePageType": {
+    "description": "The type of customer account native page.",
+    "kind": "ENUM"
+  },
+  "CustomerAccountsVersion": {
+    "description": "The login redirection target for customer accounts.",
+    "kind": "ENUM"
+  },
+  "CustomerCancelDataErasureErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerCancelDataErasureUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerConsentCollectedFrom": {
+    "description": "The source that collected the customer's consent to receive marketing materials.",
+    "kind": "ENUM"
+  },
+  "CustomerEmailAddressMarketingState": {
+    "description": "Possible marketing states for the customer\u2019s email address.",
+    "kind": "ENUM"
+  },
+  "CustomerEmailAddressOpenTrackingLevel": {
+    "description": "The different levels related to whether a customer has opted in to having their opened emails tracked.",
+    "kind": "ENUM"
+  },
+  "CustomerEmailMarketingConsentUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerEmailMarketingConsentUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerEmailMarketingState": {
+    "description": "The possible email marketing states for a customer.",
+    "kind": "ENUM"
+  },
+  "CustomerMarketingOptInLevel": {
+    "description": "The possible values for the marketing subscription opt-in level enabled at the time the customer consented to receive marketing information.",
+    "kind": "ENUM"
+  },
+  "CustomerMergeErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerMergeUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerMergeErrorFieldType": {
+    "description": "The types of the hard blockers preventing a customer from being merged to another customer.",
+    "kind": "ENUM"
+  },
+  "CustomerMergeRequestStatus": {
+    "description": "The status of the customer merge request.",
+    "kind": "ENUM"
+  },
+  "CustomerPaymentMethodCreateFromDuplicationDataUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerPaymentMethodCreateFromDuplicationDataUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerPaymentMethodGetDuplicationDataUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerPaymentMethodGetDuplicationDataUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerPaymentMethodGetUpdateUrlUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerPaymentMethodGetUpdateUrlUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerPaymentMethodRemoteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerPaymentMethodRemoteUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerPaymentMethodRevocationReason": {
+    "description": "The revocation reason types for a customer payment method.",
+    "kind": "ENUM"
+  },
+  "CustomerPaymentMethodUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerPaymentMethodUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerPredictedSpendTier": {
+    "description": "The valid tiers for the predicted spend of a customer with a shop.",
+    "kind": "ENUM"
+  },
+  "CustomerProductSubscriberStatus": {
+    "description": "The possible product subscription states for a customer, as defined by the customer's subscription contracts.",
+    "kind": "ENUM"
+  },
+  "CustomerRequestDataErasureErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerRequestDataErasureUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerRfmGroup": {
+    "description": "The RFM (Recency, Frequency, Monetary) group for a customer.",
+    "kind": "ENUM"
+  },
+  "CustomerSavedSearchSortKeys": {
+    "description": "The set of valid sort keys for the CustomerSavedSearch query.",
+    "kind": "ENUM"
+  },
+  "CustomerSegmentMembersQueryUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerSegmentMembersQueryUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerSendAccountInviteEmailUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerSendAccountInviteEmailUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerSetUserErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerSetUserError`.",
+    "kind": "ENUM"
+  },
+  "CustomerSmsMarketingConsentErrorCode": {
+    "description": "Possible error codes that can be returned by `CustomerSmsMarketingConsentError`.",
+    "kind": "ENUM"
+  },
+  "CustomerSmsMarketingState": {
+    "description": "The valid SMS marketing states for a customer\u2019s phone number.",
+    "kind": "ENUM"
+  },
+  "CustomerSortKeys": {
+    "description": "The set of valid sort keys for the Customer query.",
+    "kind": "ENUM"
+  },
+  "CustomerState": {
+    "description": "The valid values for the state of a customer's account with a shop.",
+    "kind": "ENUM"
+  },
+  "DataSaleOptOutUserErrorCode": {
+    "description": "Possible error codes that can be returned by `DataSaleOptOutUserError`.",
+    "kind": "ENUM"
+  },
+  "DayOfTheWeek": {
+    "description": "Days of the week from Monday to Sunday.",
+    "kind": "ENUM"
+  },
+  "DelegateAccessTokenCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `DelegateAccessTokenCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "DelegateAccessTokenDestroyUserErrorCode": {
+    "description": "Possible error codes that can be returned by `DelegateAccessTokenDestroyUserError`.",
+    "kind": "ENUM"
+  },
+  "DeletionEventSortKeys": {
+    "description": "The set of valid sort keys for the DeletionEvent query.",
+    "kind": "ENUM"
+  },
+  "DeletionEventSubjectType": {
+    "description": "The supported subject types of deletion events.",
+    "kind": "ENUM"
+  },
+  "DeliveryConditionField": {
+    "description": "The field type that the condition will be applied to.",
+    "kind": "ENUM"
+  },
+  "DeliveryConditionOperator": {
+    "description": "The operator to use to determine if the condition passes.",
+    "kind": "ENUM"
+  },
+  "DeliveryCustomizationErrorCode": {
+    "description": "Possible error codes that can be returned by `DeliveryCustomizationError`.",
+    "kind": "ENUM"
+  },
+  "DeliveryLegacyModeBlockedReason": {
+    "description": "Reasons the shop is blocked from converting to full multi-location delivery profiles mode.",
+    "kind": "ENUM"
+  },
+  "DeliveryLocalPickupTime": {
+    "description": "Possible pickup time values that a location enabled for local pickup can have.",
+    "kind": "ENUM"
+  },
+  "DeliveryLocationLocalPickupSettingsErrorCode": {
+    "description": "Possible error codes that can be returned by `DeliveryLocationLocalPickupSettingsError`.",
+    "kind": "ENUM"
+  },
+  "DeliveryMethodDefinitionType": {
+    "description": "The different types of method definitions to filter by.",
+    "kind": "ENUM"
+  },
+  "DeliveryMethodType": {
+    "description": "Possible method types that a delivery method can have.",
+    "kind": "ENUM"
+  },
+  "DeliveryPromiseParticipantOwnerType": {
+    "description": "The type of object that the participant is attached to.",
+    "kind": "ENUM"
+  },
+  "DeliveryPromiseProviderUpsertUserErrorCode": {
+    "description": "Possible error codes that can be returned by `DeliveryPromiseProviderUpsertUserError`.",
+    "kind": "ENUM"
+  },
+  "DigitalWallet": {
+    "description": "Digital wallet, such as Apple Pay, which can be used for accelerated checkouts.",
+    "kind": "ENUM"
+  },
+  "DiscountApplicationAllocationMethod": {
+    "description": "The method by which the discount's value is allocated onto its entitled lines.",
+    "kind": "ENUM"
+  },
+  "DiscountApplicationLevel": {
+    "description": "The level at which the discount's value is applied.",
+    "kind": "ENUM"
+  },
+  "DiscountApplicationTargetSelection": {
+    "description": "The lines on the order to which the discount is applied, of the type defined by",
+    "kind": "ENUM"
+  },
+  "DiscountApplicationTargetType": {
+    "description": "The type of line (i.e. line item or shipping line) on an order that the discount is applicable towards.",
+    "kind": "ENUM"
+  },
+  "DiscountBuyerSelection": {
+    "description": "All buyers are eligible for the discount.",
+    "kind": "ENUM"
+  },
+  "DiscountClass": {
+    "description": "The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)",
+    "kind": "ENUM"
+  },
+  "DiscountCodeSortKeys": {
+    "description": "The set of valid sort keys for the DiscountCode query.",
+    "kind": "ENUM"
+  },
+  "DiscountErrorCode": {
+    "description": "Possible error codes that can be returned by `DiscountUserError`.",
+    "kind": "ENUM"
+  },
+  "DiscountShareableUrlTargetType": {
+    "description": "The type of page where a shareable discount URL lands.",
+    "kind": "ENUM"
+  },
+  "DiscountSortKeys": {
+    "description": "The set of valid sort keys for the Discount query.",
+    "kind": "ENUM"
+  },
+  "DiscountStatus": {
+    "description": "The status of the discount that describes its availability,",
+    "kind": "ENUM"
+  },
+  "DiscountTargetType": {
+    "description": "The type of line (line item or shipping line) on an order that the subscription discount is applicable towards.",
+    "kind": "ENUM"
+  },
+  "DiscountType": {
+    "description": "The type of the subscription discount.",
+    "kind": "ENUM"
+  },
+  "DisputeEvidenceUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `DisputeEvidenceUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "DisputeStatus": {
+    "description": "The possible statuses of a dispute.",
+    "kind": "ENUM"
+  },
+  "DisputeType": {
+    "description": "The possible types for a dispute.",
+    "kind": "ENUM"
+  },
+  "DistanceUnit": {
+    "description": "Units of measurement for distance.",
+    "kind": "ENUM"
+  },
+  "DraftOrderAppliedDiscountType": {
+    "description": "The valid discount types that can be applied to a draft order.",
+    "kind": "ENUM"
+  },
+  "DraftOrderSortKeys": {
+    "description": "The set of valid sort keys for the DraftOrder query.",
+    "kind": "ENUM"
+  },
+  "DraftOrderStatus": {
+    "description": "The valid statuses for a draft order.",
+    "kind": "ENUM"
+  },
+  "ErrorsServerPixelUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ErrorsServerPixelUserError`.",
+    "kind": "ENUM"
+  },
+  "ErrorsWebPixelUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ErrorsWebPixelUserError`.",
+    "kind": "ENUM"
+  },
+  "EventSortKeys": {
+    "description": "The set of valid sort keys for the Event query.",
+    "kind": "ENUM"
+  },
+  "EventSubjectType": {
+    "description": "The type of the resource that generated the event.",
+    "kind": "ENUM"
+  },
+  "FileContentType": {
+    "description": "The possible content types for a file object.",
+    "kind": "ENUM"
+  },
+  "FileCreateInputDuplicateResolutionMode": {
+    "description": "The input fields for handling if filename is already in use.",
+    "kind": "ENUM"
+  },
+  "FileErrorCode": {
+    "description": "The error types for a file.",
+    "kind": "ENUM"
+  },
+  "FileSortKeys": {
+    "description": "The set of valid sort keys for the File query.",
+    "kind": "ENUM"
+  },
+  "FileStatus": {
+    "description": "The possible statuses for a file object.",
+    "kind": "ENUM"
+  },
+  "FilesErrorCode": {
+    "description": "Possible error codes that can be returned by `FilesUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentConstraintRuleCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentConstraintRuleCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentConstraintRuleDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentConstraintRuleDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentConstraintRuleUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentConstraintRuleUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentDisplayStatus": {
+    "description": "The display status of a fulfillment.",
+    "kind": "ENUM"
+  },
+  "FulfillmentEventSortKeys": {
+    "description": "The set of valid sort keys for the FulfillmentEvent query.",
+    "kind": "ENUM"
+  },
+  "FulfillmentEventStatus": {
+    "description": "The status that describes a fulfillment or delivery event.",
+    "kind": "ENUM"
+  },
+  "FulfillmentHoldReason": {
+    "description": "The reason for a fulfillment hold.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderAction": {
+    "description": "The actions that can be taken on a fulfillment order.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderAssignmentStatus": {
+    "description": "The assigment status to be used to filter fulfillment orders.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderHoldUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentOrderHoldUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderLineItemsPreparedForPickupUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentOrderLineItemsPreparedForPickupUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderMerchantRequestKind": {
+    "description": "The kinds of request merchants can make to a fulfillment service.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderMergeUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentOrderMergeUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderRejectionReason": {
+    "description": "The reason for a fulfillment order rejection.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderReleaseHoldUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentOrderReleaseHoldUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderRequestStatus": {
+    "description": "The request status of a fulfillment order.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderRescheduleUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentOrderRescheduleUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderSortKeys": {
+    "description": "The set of valid sort keys for the FulfillmentOrder query.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderSplitUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentOrderSplitUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrderStatus": {
+    "description": "The status of a fulfillment order.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrdersRerouteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentOrdersRerouteUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentOrdersSetFulfillmentDeadlineUserErrorCode": {
+    "description": "Possible error codes that can be returned by `FulfillmentOrdersSetFulfillmentDeadlineUserError`.",
+    "kind": "ENUM"
+  },
+  "FulfillmentServiceDeleteInventoryAction": {
+    "description": "Actions that can be taken at the location when a client requests the deletion of the fulfillment service.",
+    "kind": "ENUM"
+  },
+  "FulfillmentServiceType": {
+    "description": "The type of a fulfillment service.",
+    "kind": "ENUM"
+  },
+  "FulfillmentStatus": {
+    "description": "The status of a fulfillment.",
+    "kind": "ENUM"
+  },
+  "GiftCardDeactivateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `GiftCardDeactivateUserError`.",
+    "kind": "ENUM"
+  },
+  "GiftCardErrorCode": {
+    "description": "Possible error codes that can be returned by `GiftCardUserError`.",
+    "kind": "ENUM"
+  },
+  "GiftCardSendNotificationToCustomerUserErrorCode": {
+    "description": "Possible error codes that can be returned by `GiftCardSendNotificationToCustomerUserError`.",
+    "kind": "ENUM"
+  },
+  "GiftCardSendNotificationToRecipientUserErrorCode": {
+    "description": "Possible error codes that can be returned by `GiftCardSendNotificationToRecipientUserError`.",
+    "kind": "ENUM"
+  },
+  "GiftCardSortKeys": {
+    "description": "The set of valid sort keys for the GiftCard query.",
+    "kind": "ENUM"
+  },
+  "GiftCardTransactionUserErrorCode": {
+    "description": "Possible error codes that can be returned by `GiftCardTransactionUserError`.",
+    "kind": "ENUM"
+  },
+  "ImageContentType": {
+    "description": "List of supported image content types.",
+    "kind": "ENUM"
+  },
+  "InclusiveDutiesPricingStrategy": {
+    "description": "Answers the question if prices include duties and / or taxes.",
+    "kind": "ENUM"
+  },
+  "InclusiveTaxPricingStrategy": {
+    "description": "Answers the question if prices include duties and / or taxes.",
+    "kind": "ENUM"
+  },
+  "InventoryAdjustQuantitiesUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryAdjustQuantitiesUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryBulkToggleActivationUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryBulkToggleActivationUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryMoveQuantitiesUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryMoveQuantitiesUserError`.",
+    "kind": "ENUM"
+  },
+  "InventorySetOnHandQuantitiesUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventorySetOnHandQuantitiesUserError`.",
+    "kind": "ENUM"
+  },
+  "InventorySetQuantitiesUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventorySetQuantitiesUserError`.",
+    "kind": "ENUM"
+  },
+  "InventorySetScheduledChangesUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventorySetScheduledChangesUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentAddItemsUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryShipmentAddItemsUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentCreateInTransitUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryShipmentCreateInTransitUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryShipmentCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryShipmentDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentMarkInTransitUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryShipmentMarkInTransitUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentReceiveLineItemReason": {
+    "description": "The reason for receiving a line item on an inventory shipment.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentReceiveUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryShipmentReceiveUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentRemoveItemsUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryShipmentRemoveItemsUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentSetTrackingUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryShipmentSetTrackingUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentStatus": {
+    "description": "The status of an inventory shipment.",
+    "kind": "ENUM"
+  },
+  "InventoryShipmentUpdateItemQuantitiesUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryShipmentUpdateItemQuantitiesUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryTransferCancelUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryTransferCancelUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryTransferCreateAsReadyToShipUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryTransferCreateAsReadyToShipUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryTransferCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryTransferCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryTransferDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryTransferDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryTransferDuplicateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryTransferDuplicateUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryTransferEditUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryTransferEditUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryTransferMarkAsReadyToShipUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryTransferMarkAsReadyToShipUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryTransferRemoveItemsUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryTransferRemoveItemsUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryTransferSetItemsUserErrorCode": {
+    "description": "Possible error codes that can be returned by `InventoryTransferSetItemsUserError`.",
+    "kind": "ENUM"
+  },
+  "InventoryTransferStatus": {
+    "description": "The status of a transfer.",
+    "kind": "ENUM"
+  },
+  "LanguageCode": {
+    "description": "Language codes supported by Shopify.",
+    "kind": "ENUM"
+  },
+  "LengthUnit": {
+    "description": "Units of measurement for length.",
+    "kind": "ENUM"
+  },
+  "LocalizableContentType": {
+    "description": "Specifies the type of the underlying localizable content. This can be used to conditionally render different UI elements such as input fields.",
+    "kind": "ENUM"
+  },
+  "LocalizationExtensionKey": {
+    "description": "The key of a localization extension.",
+    "kind": "ENUM"
+  },
+  "LocalizationExtensionPurpose": {
+    "description": "The purpose of a localization extension.",
+    "kind": "ENUM"
+  },
+  "LocalizedFieldKey": {
+    "description": "The key of a localized field.",
+    "kind": "ENUM"
+  },
+  "LocalizedFieldPurpose": {
+    "description": "The purpose of a localized field.",
+    "kind": "ENUM"
+  },
+  "LocationActivateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `LocationActivateUserError`.",
+    "kind": "ENUM"
+  },
+  "LocationAddUserErrorCode": {
+    "description": "Possible error codes that can be returned by `LocationAddUserError`.",
+    "kind": "ENUM"
+  },
+  "LocationDeactivateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `LocationDeactivateUserError`.",
+    "kind": "ENUM"
+  },
+  "LocationDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `LocationDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "LocationEditUserErrorCode": {
+    "description": "Possible error codes that can be returned by `LocationEditUserError`.",
+    "kind": "ENUM"
+  },
+  "LocationSortKeys": {
+    "description": "The set of valid sort keys for the Location query.",
+    "kind": "ENUM"
+  },
+  "MailingAddressValidationResult": {
+    "description": "Highest level of validation concerns identified for the address.",
+    "kind": "ENUM"
+  },
+  "MandateResourceType": {
+    "description": "The type of resource a payment mandate can be used for.",
+    "kind": "ENUM"
+  },
+  "MarketConditionApplicationType": {
+    "description": "The application level for a market condition.",
+    "kind": "ENUM"
+  },
+  "MarketConditionType": {
+    "description": "The condition types for the condition set.",
+    "kind": "ENUM"
+  },
+  "MarketCurrencySettingsUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MarketCurrencySettingsUserError`.",
+    "kind": "ENUM"
+  },
+  "MarketLocalizableResourceType": {
+    "description": "The type of resources that are market localizable.",
+    "kind": "ENUM"
+  },
+  "MarketStatus": {
+    "description": "The possible market statuses.",
+    "kind": "ENUM"
+  },
+  "MarketType": {
+    "description": "The market types.",
+    "kind": "ENUM"
+  },
+  "MarketUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MarketUserError`.",
+    "kind": "ENUM"
+  },
+  "MarketingActivityExtensionAppErrorCode": {
+    "description": "The error code resulted from the marketing activity extension integration.",
+    "kind": "ENUM"
+  },
+  "MarketingActivityExternalStatus": {
+    "description": "Set of possible statuses for an external marketing activity.",
+    "kind": "ENUM"
+  },
+  "MarketingActivityHierarchyLevel": {
+    "description": "Hierarchy levels for external marketing activities.",
+    "kind": "ENUM"
+  },
+  "MarketingActivitySortKeys": {
+    "description": "The set of valid sort keys for the MarketingActivity query.",
+    "kind": "ENUM"
+  },
+  "MarketingActivityStatus": {
+    "description": "Status helps to identify if this marketing activity has been completed, queued, failed etc.",
+    "kind": "ENUM"
+  },
+  "MarketingActivityStatusBadgeType": {
+    "description": "StatusBadgeType helps to identify the color of the status badge.",
+    "kind": "ENUM"
+  },
+  "MarketingActivityUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MarketingActivityUserError`.",
+    "kind": "ENUM"
+  },
+  "MarketingBudgetBudgetType": {
+    "description": "The budget type for a marketing activity.",
+    "kind": "ENUM"
+  },
+  "MarketingChannel": {
+    "description": "The medium through which the marketing activity and event reached consumers. This is used for reporting aggregation.",
+    "kind": "ENUM"
+  },
+  "MarketingEventSortKeys": {
+    "description": "The set of valid sort keys for the MarketingEvent query.",
+    "kind": "ENUM"
+  },
+  "MarketingTactic": {
+    "description": "The available types of tactics for a marketing activity.",
+    "kind": "ENUM"
+  },
+  "MarketsSortKeys": {
+    "description": "The set of valid sort keys for the Markets query.",
+    "kind": "ENUM"
+  },
+  "MediaContentType": {
+    "description": "The possible content types for a media object.",
+    "kind": "ENUM"
+  },
+  "MediaErrorCode": {
+    "description": "Error types for media.",
+    "kind": "ENUM"
+  },
+  "MediaHost": {
+    "description": "Host for a Media Resource.",
+    "kind": "ENUM"
+  },
+  "MediaPreviewImageStatus": {
+    "description": "The possible statuses for a media preview image.",
+    "kind": "ENUM"
+  },
+  "MediaStatus": {
+    "description": "The possible statuses for a media object.",
+    "kind": "ENUM"
+  },
+  "MediaUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MediaUserError`.",
+    "kind": "ENUM"
+  },
+  "MediaWarningCode": {
+    "description": "Warning types for media.",
+    "kind": "ENUM"
+  },
+  "MenuCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MenuCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "MenuDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MenuDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "MenuItemType": {
+    "description": "A menu item type.",
+    "kind": "ENUM"
+  },
+  "MenuSortKeys": {
+    "description": "The set of valid sort keys for the Menu query.",
+    "kind": "ENUM"
+  },
+  "MenuUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MenuUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "MerchandiseDiscountClass": {
+    "description": "The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)",
+    "kind": "ENUM"
+  },
+  "MetafieldAdminAccess": {
+    "description": "Metafield access permissions for the Admin API.",
+    "kind": "ENUM"
+  },
+  "MetafieldAdminAccessInput": {
+    "description": "Metafield access permissions for the Admin API.",
+    "kind": "ENUM"
+  },
+  "MetafieldCustomerAccountAccess": {
+    "description": "Metafield access permissions for the Customer Account API.",
+    "kind": "ENUM"
+  },
+  "MetafieldCustomerAccountAccessInput": {
+    "description": "Metafield access permissions for the Customer Account API.",
+    "kind": "ENUM"
+  },
+  "MetafieldDefinitionAdminFilterStatus": {
+    "description": "Possible filter statuses associated with a metafield definition for use in admin filtering.",
+    "kind": "ENUM"
+  },
+  "MetafieldDefinitionConstraintStatus": {
+    "description": "Metafield definition constraint criteria to filter metafield definitions by.",
+    "kind": "ENUM"
+  },
+  "MetafieldDefinitionCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MetafieldDefinitionCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "MetafieldDefinitionDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MetafieldDefinitionDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "MetafieldDefinitionPinUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MetafieldDefinitionPinUserError`.",
+    "kind": "ENUM"
+  },
+  "MetafieldDefinitionPinnedStatus": {
+    "description": "Possible metafield definition pinned statuses.",
+    "kind": "ENUM"
+  },
+  "MetafieldDefinitionSortKeys": {
+    "description": "The set of valid sort keys for the MetafieldDefinition query.",
+    "kind": "ENUM"
+  },
+  "MetafieldDefinitionUnpinUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MetafieldDefinitionUnpinUserError`.",
+    "kind": "ENUM"
+  },
+  "MetafieldDefinitionUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MetafieldDefinitionUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "MetafieldDefinitionValidationStatus": {
+    "description": "Possible metafield definition validation statuses.",
+    "kind": "ENUM"
+  },
+  "MetafieldOwnerType": {
+    "description": "Possible types of a metafield's owner resource.",
+    "kind": "ENUM"
+  },
+  "MetafieldStorefrontAccess": {
+    "description": "Metafield access permissions for the Storefront API.",
+    "kind": "ENUM"
+  },
+  "MetafieldStorefrontAccessInput": {
+    "description": "Metafield access permissions for the Storefront API.",
+    "kind": "ENUM"
+  },
+  "MetafieldValidationStatus": {
+    "description": "Possible metafield validation statuses.",
+    "kind": "ENUM"
+  },
+  "MetafieldValueType": {
+    "description": "Legacy type information for the stored value.",
+    "kind": "ENUM"
+  },
+  "MetafieldsSetUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MetafieldsSetUserError`.",
+    "kind": "ENUM"
+  },
+  "MetaobjectAdminAccess": {
+    "description": "Metaobject access permissions for the Admin API. When the metaobject is app-owned, the owning app always has",
+    "kind": "ENUM"
+  },
+  "MetaobjectAdminAccessInput": {
+    "description": "Metaobject access permissions for the Admin API. When the metaobject is app-owned, the owning app always has",
+    "kind": "ENUM"
+  },
+  "MetaobjectCapabilityType": {
+    "description": "Metaobject Capabilities types which can be enabled.",
+    "kind": "ENUM"
+  },
+  "MetaobjectCustomerAccountAccess": {
+    "description": "Metaobject access permissions for the Customer Account API.",
+    "kind": "ENUM"
+  },
+  "MetaobjectStatus": {
+    "description": "Defines visibility status for metaobjects.",
+    "kind": "ENUM"
+  },
+  "MetaobjectStorefrontAccess": {
+    "description": "Metaobject access permissions for the Storefront API.",
+    "kind": "ENUM"
+  },
+  "MetaobjectUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MetaobjectUserError`.",
+    "kind": "ENUM"
+  },
+  "MethodDefinitionSortKeys": {
+    "description": "The set of valid sort keys for the MethodDefinition query.",
+    "kind": "ENUM"
+  },
+  "MobilePlatformApplicationUserErrorCode": {
+    "description": "Possible error codes that can be returned by `MobilePlatformApplicationUserError`.",
+    "kind": "ENUM"
+  },
+  "NotificationUsage": {
+    "description": "The valid values for the notification usage, specifying the intended notification environment usage for certain operations.",
+    "kind": "ENUM"
+  },
+  "OnlineStoreThemeFileBodyInputType": {
+    "description": "The input type for a theme file body.",
+    "kind": "ENUM"
+  },
+  "OnlineStoreThemeFileResultType": {
+    "description": "Type of a theme file operation result.",
+    "kind": "ENUM"
+  },
+  "OnlineStoreThemeFilesUserErrorsCode": {
+    "description": "Possible error codes that can be returned by `OnlineStoreThemeFilesUserErrors`.",
+    "kind": "ENUM"
+  },
+  "OrderActionType": {
+    "description": "The possible order action types for a",
+    "kind": "ENUM"
+  },
+  "OrderAdjustmentDiscrepancyReason": {
+    "description": "Discrepancy reasons for order adjustments.",
+    "kind": "ENUM"
+  },
+  "OrderAdjustmentInputDiscrepancyReason": {
+    "description": "Discrepancy reasons for order adjustments.",
+    "kind": "ENUM"
+  },
+  "OrderCancelReason": {
+    "description": "Represents the reason for the order's cancellation.",
+    "kind": "ENUM"
+  },
+  "OrderCancelUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderCancelUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderCreateFinancialStatus": {
+    "description": "The status of payments associated with the order. Can only be set when the order is created.",
+    "kind": "ENUM"
+  },
+  "OrderCreateFulfillmentStatus": {
+    "description": "The order's status in terms of fulfilled line items.",
+    "kind": "ENUM"
+  },
+  "OrderCreateInputsInventoryBehavior": {
+    "description": "The types of behavior to use when updating inventory.",
+    "kind": "ENUM"
+  },
+  "OrderCreateMandatePaymentUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderCreateMandatePaymentUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderCreateManualPaymentOrderCreateManualPaymentErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderCreateManualPaymentOrderCreateManualPaymentError`.",
+    "kind": "ENUM"
+  },
+  "OrderCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderCustomerRemoveUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderCustomerRemoveUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderCustomerSetUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderCustomerSetUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderDisplayFinancialStatus": {
+    "description": "Represents the order's current financial status.",
+    "kind": "ENUM"
+  },
+  "OrderDisplayFulfillmentStatus": {
+    "description": "Represents the order's aggregated fulfillment status for display purposes.",
+    "kind": "ENUM"
+  },
+  "OrderEditAddShippingLineUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderEditAddShippingLineUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderEditRemoveDiscountUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderEditRemoveDiscountUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderEditRemoveShippingLineUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderEditRemoveShippingLineUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderEditUpdateDiscountUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderEditUpdateDiscountUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderEditUpdateShippingLineUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderEditUpdateShippingLineUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderInvoiceSendUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderInvoiceSendUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderPaymentStatusResult": {
+    "description": "The type of a payment status.",
+    "kind": "ENUM"
+  },
+  "OrderReturnStatus": {
+    "description": "The order's aggregated return status that's used for display purposes.",
+    "kind": "ENUM"
+  },
+  "OrderRiskAssessmentCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `OrderRiskAssessmentCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "OrderRiskLevel": {
+    "description": "The likelihood that an order is fraudulent.",
+    "kind": "ENUM"
+  },
+  "OrderRiskRecommendationResult": {
+    "description": "List of possible values for an OrderRiskRecommendation recommendation.",
+    "kind": "ENUM"
+  },
+  "OrderSortKeys": {
+    "description": "The set of valid sort keys for the Order query.",
+    "kind": "ENUM"
+  },
+  "OrderTransactionErrorCode": {
+    "description": "A standardized error code, independent of the payment provider.",
+    "kind": "ENUM"
+  },
+  "OrderTransactionKind": {
+    "description": "The different kinds of order transactions.",
+    "kind": "ENUM"
+  },
+  "OrderTransactionStatus": {
+    "description": "The different states that an `OrderTransaction` can have.",
+    "kind": "ENUM"
+  },
+  "PageCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PageCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "PageDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PageDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "PageSortKeys": {
+    "description": "The set of valid sort keys for the Page query.",
+    "kind": "ENUM"
+  },
+  "PageUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PageUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "PaymentCustomizationErrorCode": {
+    "description": "Possible error codes that can be returned by `PaymentCustomizationError`.",
+    "kind": "ENUM"
+  },
+  "PaymentMethods": {
+    "description": "Some of the payment methods used in Shopify.",
+    "kind": "ENUM"
+  },
+  "PaymentReminderSendUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PaymentReminderSendUserError`.",
+    "kind": "ENUM"
+  },
+  "PaymentTermsCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PaymentTermsCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "PaymentTermsDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PaymentTermsDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "PaymentTermsType": {
+    "description": "The type of a payment terms or a payment terms template.",
+    "kind": "ENUM"
+  },
+  "PaymentTermsUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PaymentTermsUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "PayoutSortKeys": {
+    "description": "The set of valid sort keys for the Payout query.",
+    "kind": "ENUM"
+  },
+  "PaypalExpressSubscriptionsGatewayStatus": {
+    "description": "Represents a valid PayPal Express subscriptions gateway status.",
+    "kind": "ENUM"
+  },
+  "PriceCalculationType": {
+    "description": "How to calculate the parent product variant's price while bulk updating variant relationships.",
+    "kind": "ENUM"
+  },
+  "PriceListAdjustmentType": {
+    "description": "Represents a percentage price adjustment type.",
+    "kind": "ENUM"
+  },
+  "PriceListCompareAtMode": {
+    "description": "Represents how the compare at price will be determined for a price list.",
+    "kind": "ENUM"
+  },
+  "PriceListFixedPricesByProductBulkUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PriceListFixedPricesByProductBulkUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "PriceListPriceOriginType": {
+    "description": "Represents the origin of a price, either fixed (defined on the price list) or relative (calculated using a price list adjustment configuration). For examples, refer to [PriceList](https://shopify.dev/",
+    "kind": "ENUM"
+  },
+  "PriceListPriceUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PriceListPriceUserError`.",
+    "kind": "ENUM"
+  },
+  "PriceListSortKeys": {
+    "description": "The set of valid sort keys for the PriceList query.",
+    "kind": "ENUM"
+  },
+  "PriceListUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PriceListUserError`.",
+    "kind": "ENUM"
+  },
+  "PriceRuleAllocationMethod": {
+    "description": "The method by which the price rule's value is allocated to its entitled items.",
+    "kind": "ENUM"
+  },
+  "PriceRuleFeature": {
+    "description": "The list of features that can be supported by a price rule.",
+    "kind": "ENUM"
+  },
+  "PriceRuleShareableUrlTargetType": {
+    "description": "The type of page where a shareable price rule URL lands.",
+    "kind": "ENUM"
+  },
+  "PriceRuleStatus": {
+    "description": "The status of the price rule.",
+    "kind": "ENUM"
+  },
+  "PriceRuleTarget": {
+    "description": "The type of lines (line_item or shipping_line) to which the price rule applies.",
+    "kind": "ENUM"
+  },
+  "PriceRuleTrait": {
+    "description": "The list of features that can be supported by a price rule.",
+    "kind": "ENUM"
+  },
+  "PrivacyCountryCode": {
+    "description": "A country code from the `ISO 3166` standard. e.g. `CA` for Canada.",
+    "kind": "ENUM"
+  },
+  "PrivacyFeaturesDisableUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PrivacyFeaturesDisableUserError`.",
+    "kind": "ENUM"
+  },
+  "PrivacyFeaturesEnum": {
+    "description": "The input fields for a shop's privacy settings.",
+    "kind": "ENUM"
+  },
+  "ProductBundleComponentOptionSelectionStatus": {
+    "description": "The status of a component option value related to a bundle.",
+    "kind": "ENUM"
+  },
+  "ProductBundleMutationUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductBundleMutationUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductChangeStatusUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductChangeStatusUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductCollectionSortKeys": {
+    "description": "The set of valid sort keys for products belonging to a collection.",
+    "kind": "ENUM"
+  },
+  "ProductFeedCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductFeedCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductFeedDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductFeedDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductFeedStatus": {
+    "description": "The valid values for the status of product feed.",
+    "kind": "ENUM"
+  },
+  "ProductFullSyncUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductFullSyncUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductImageSortKeys": {
+    "description": "The set of valid sort keys for the ProductImage query.",
+    "kind": "ENUM"
+  },
+  "ProductMediaSortKeys": {
+    "description": "The set of valid sort keys for the ProductMedia query.",
+    "kind": "ENUM"
+  },
+  "ProductOperationStatus": {
+    "description": "Represents the state of this product operation.",
+    "kind": "ENUM"
+  },
+  "ProductOptionCreateVariantStrategy": {
+    "description": "The set of variant strategies available for use in the `productOptionsCreate` mutation.",
+    "kind": "ENUM"
+  },
+  "ProductOptionDeleteStrategy": {
+    "description": "The set of strategies available for use on the `productOptionDelete` mutation.",
+    "kind": "ENUM"
+  },
+  "ProductOptionUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductOptionUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductOptionUpdateVariantStrategy": {
+    "description": "The set of variant strategies available for use in the `productOptionUpdate` mutation.",
+    "kind": "ENUM"
+  },
+  "ProductOptionsCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductOptionsCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductOptionsDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductOptionsDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductOptionsReorderUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductOptionsReorderUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductSetUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductSetUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductSortKeys": {
+    "description": "The set of valid sort keys for the Product query.",
+    "kind": "ENUM"
+  },
+  "ProductStatus": {
+    "description": "The possible product statuses.",
+    "kind": "ENUM"
+  },
+  "ProductVariantInventoryPolicy": {
+    "description": "The valid values for the inventory policy of a product variant once it is out of stock.",
+    "kind": "ENUM"
+  },
+  "ProductVariantRelationshipBulkUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductVariantRelationshipBulkUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductVariantSortKeys": {
+    "description": "The set of valid sort keys for the ProductVariant query.",
+    "kind": "ENUM"
+  },
+  "ProductVariantsBulkCreateStrategy": {
+    "description": "The set of strategies available for use on the `productVariantsBulkCreate` mutation.",
+    "kind": "ENUM"
+  },
+  "ProductVariantsBulkCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductVariantsBulkCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductVariantsBulkDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductVariantsBulkDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductVariantsBulkReorderUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductVariantsBulkReorderUserError`.",
+    "kind": "ENUM"
+  },
+  "ProductVariantsBulkUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ProductVariantsBulkUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "ProfileItemSortKeys": {
+    "description": "The set of valid sort keys for the ProfileItem query.",
+    "kind": "ENUM"
+  },
+  "PubSubWebhookSubscriptionCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PubSubWebhookSubscriptionCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "PubSubWebhookSubscriptionUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PubSubWebhookSubscriptionUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "PublicationCreateInputPublicationDefaultState": {
+    "description": "The input fields for the possible values for the default state of a publication.",
+    "kind": "ENUM"
+  },
+  "PublicationUserErrorCode": {
+    "description": "Possible error codes that can be returned by `PublicationUserError`.",
+    "kind": "ENUM"
+  },
+  "QuantityPriceBreakSortKeys": {
+    "description": "The set of valid sort keys for the QuantityPriceBreak query.",
+    "kind": "ENUM"
+  },
+  "QuantityPricingByVariantUserErrorCode": {
+    "description": "Possible error codes that can be returned by `QuantityPricingByVariantUserError`.",
+    "kind": "ENUM"
+  },
+  "QuantityRuleOriginType": {
+    "description": "The origin of quantity rule on a price list.",
+    "kind": "ENUM"
+  },
+  "QuantityRuleUserErrorCode": {
+    "description": "Possible error codes that can be returned by `QuantityRuleUserError`.",
+    "kind": "ENUM"
+  },
+  "RefundDutyRefundType": {
+    "description": "The type of refund to perform for a particular refund duty.",
+    "kind": "ENUM"
+  },
+  "RefundLineItemRestockType": {
+    "description": "The type of restock performed for a particular refund line item.",
+    "kind": "ENUM"
+  },
+  "RefundMethodAllocation": {
+    "description": "The different methods that a refund amount can be allocated to.",
+    "kind": "ENUM"
+  },
+  "ResourceAlertIcon": {
+    "description": "The available icons for resource alerts.",
+    "kind": "ENUM"
+  },
+  "ResourceAlertSeverity": {
+    "description": "The possible severity levels for a resource alert.",
+    "kind": "ENUM"
+  },
+  "ResourceFeedbackState": {
+    "description": "The state of the resource feedback.",
+    "kind": "ENUM"
+  },
+  "ResourceOperationStatus": {
+    "description": "Represents the state of this catalog operation.",
+    "kind": "ENUM"
+  },
+  "ReturnDeclineReason": {
+    "description": "The reason why the merchant declined a customer's return request.",
+    "kind": "ENUM"
+  },
+  "ReturnErrorCode": {
+    "description": "Possible error codes that can be returned by `ReturnUserError`.",
+    "kind": "ENUM"
+  },
+  "ReturnProcessingStatusFilterInput": {
+    "description": "Filter line items based on processing status.",
+    "kind": "ENUM"
+  },
+  "ReturnReason": {
+    "description": "The reason for returning the return line item.",
+    "kind": "ENUM"
+  },
+  "ReturnReasonDefinitionSortKeys": {
+    "description": "The set of valid sort keys for the ReturnReasonDefinition query.",
+    "kind": "ENUM"
+  },
+  "ReturnStatus": {
+    "description": "The status of a return.",
+    "kind": "ENUM"
+  },
+  "ReverseFulfillmentOrderDispositionType": {
+    "description": "The final arrangement of an item from a reverse fulfillment order.",
+    "kind": "ENUM"
+  },
+  "ReverseFulfillmentOrderStatus": {
+    "description": "The status of a reverse fulfillment order.",
+    "kind": "ENUM"
+  },
+  "ReverseFulfillmentOrderThirdPartyConfirmationStatus": {
+    "description": "The status of a reverse fulfillment order third-party confirmation.",
+    "kind": "ENUM"
+  },
+  "RiskAssessmentResult": {
+    "description": "List of possible values for a RiskAssessment result.",
+    "kind": "ENUM"
+  },
+  "RiskFactSentiment": {
+    "description": "List of possible values for a RiskFact sentiment.",
+    "kind": "ENUM"
+  },
+  "SaleActionType": {
+    "description": "The possible order action types for a sale.",
+    "kind": "ENUM"
+  },
+  "SaleLineType": {
+    "description": "The possible line types for a sale record. One of the possible order line types for a sale is an adjustment. Sales adjustments occur when a refund is issued for a line item that is either more or less",
+    "kind": "ENUM"
+  },
+  "ScheduledChangeSortKeys": {
+    "description": "The set of valid sort keys for the ScheduledChange query.",
+    "kind": "ENUM"
+  },
+  "ScriptTagDisplayScope": {
+    "description": "The page or pages on the online store where the script should be included.",
+    "kind": "ENUM"
+  },
+  "SearchResultType": {
+    "description": "Specifies the type of resources to be returned from a search.",
+    "kind": "ENUM"
+  },
+  "SegmentSortKeys": {
+    "description": "The set of valid sort keys for the Segment query.",
+    "kind": "ENUM"
+  },
+  "SellingPlanAnchorType": {
+    "description": "Represents the anchor type.",
+    "kind": "ENUM"
+  },
+  "SellingPlanCategory": {
+    "description": "The category of the selling plan. For the `OTHER` category,",
+    "kind": "ENUM"
+  },
+  "SellingPlanCheckoutChargeType": {
+    "description": "The checkout charge when the full amount isn't charged at checkout.",
+    "kind": "ENUM"
+  },
+  "SellingPlanFixedDeliveryPolicyIntent": {
+    "description": "Possible intentions of a Delivery Policy.",
+    "kind": "ENUM"
+  },
+  "SellingPlanFixedDeliveryPolicyPreAnchorBehavior": {
+    "description": "The fulfillment or delivery behavior of the first fulfillment when the orderis placed before the anchor.",
+    "kind": "ENUM"
+  },
+  "SellingPlanFulfillmentTrigger": {
+    "description": "Describes what triggers fulfillment.",
+    "kind": "ENUM"
+  },
+  "SellingPlanGroupSortKeys": {
+    "description": "The set of valid sort keys for the SellingPlanGroup query.",
+    "kind": "ENUM"
+  },
+  "SellingPlanGroupUserErrorCode": {
+    "description": "Possible error codes that can be returned by `SellingPlanGroupUserError`.",
+    "kind": "ENUM"
+  },
+  "SellingPlanInterval": {
+    "description": "Represents valid selling plan interval.",
+    "kind": "ENUM"
+  },
+  "SellingPlanPricingPolicyAdjustmentType": {
+    "description": "Represents a selling plan pricing policy adjustment type.",
+    "kind": "ENUM"
+  },
+  "SellingPlanRecurringDeliveryPolicyIntent": {
+    "description": "Whether the delivery policy is merchant or buyer-centric.",
+    "kind": "ENUM"
+  },
+  "SellingPlanRecurringDeliveryPolicyPreAnchorBehavior": {
+    "description": "The fulfillment or delivery behaviors of the first fulfillment when the orderis placed before the anchor.",
+    "kind": "ENUM"
+  },
+  "SellingPlanRemainingBalanceChargeTrigger": {
+    "description": "When to capture the payment for the remaining amount due.",
+    "kind": "ENUM"
+  },
+  "SellingPlanReserve": {
+    "description": "When to reserve inventory for a selling plan.",
+    "kind": "ENUM"
+  },
+  "ServerPixelStatus": {
+    "description": "The current state of a server pixel.",
+    "kind": "ENUM"
+  },
+  "ShipmentLineItemSortKeys": {
+    "description": "The set of valid sort keys for the ShipmentLineItem query.",
+    "kind": "ENUM"
+  },
+  "ShippingDiscountClass": {
+    "description": "The [discount class](https://help.shopify.com/manual/discounts/combining-discounts/discount-combinations)",
+    "kind": "ENUM"
+  },
+  "ShippingPackageType": {
+    "description": "Type of a shipping package.",
+    "kind": "ENUM"
+  },
+  "ShopBranding": {
+    "description": "Possible branding of a shop.",
+    "kind": "ENUM"
+  },
+  "ShopCustomerAccountsSetting": {
+    "description": "Represents the shop's customer account requirement preference.",
+    "kind": "ENUM"
+  },
+  "ShopPayPaymentRequestDeliveryMethodType": {
+    "description": "Represents the delivery method type for a Shop Pay payment request.",
+    "kind": "ENUM"
+  },
+  "ShopPayPaymentRequestReceiptProcessingStatusErrorCode": {
+    "description": "A standardized error code, independent of the payment provider.",
+    "kind": "ENUM"
+  },
+  "ShopPayPaymentRequestReceiptProcessingStatusState": {
+    "description": "The state of the payment request receipt.",
+    "kind": "ENUM"
+  },
+  "ShopPayPaymentRequestReceiptsSortKeys": {
+    "description": "The set of valid sort keys for the ShopPayPaymentRequestReceipts query.",
+    "kind": "ENUM"
+  },
+  "ShopPolicyErrorCode": {
+    "description": "Possible error codes that can be returned by `ShopPolicyUserError`.",
+    "kind": "ENUM"
+  },
+  "ShopPolicyType": {
+    "description": "Available shop policy types.",
+    "kind": "ENUM"
+  },
+  "ShopResourceFeedbackCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ShopResourceFeedbackCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "ShopTagSort": {
+    "description": "Possible sort of tags.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsBalanceTransactionPayoutStatus": {
+    "description": "The payout status of the balance transaction.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsBankAccountStatus": {
+    "description": "The bank account status.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsBusinessType": {
+    "description": "The business type of a Shopify Payments account.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsDisputeEvidenceFileType": {
+    "description": "The possible dispute evidence file types.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsDisputeReason": {
+    "description": "The reason for the dispute provided by the cardholder's bank.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsPayoutAlternateCurrencyCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ShopifyPaymentsPayoutAlternateCurrencyCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsPayoutInterval": {
+    "description": "The interval at which payouts are sent to the connected bank account.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsPayoutStatus": {
+    "description": "The transfer status of the payout.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsPayoutTransactionType": {
+    "description": "The possible transaction types for a payout.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsSourceType": {
+    "description": "The possible source types for a balance transaction.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsTaxIdentificationType": {
+    "description": "The type of tax identification field.",
+    "kind": "ENUM"
+  },
+  "ShopifyPaymentsTransactionType": {
+    "description": "The possible types of transactions.",
+    "kind": "ENUM"
+  },
+  "ShopifyProtectEligibilityStatus": {
+    "description": "The status of an order's eligibility for protection against fraudulent chargebacks by Shopify Protect.",
+    "kind": "ENUM"
+  },
+  "ShopifyProtectStatus": {
+    "description": "The status of an order's protection with Shopify Protect.",
+    "kind": "ENUM"
+  },
+  "StaffMemberDefaultImage": {
+    "description": "Represents the fallback avatar image for a staff member. This is used only if the staff member has no avatar image.",
+    "kind": "ENUM"
+  },
+  "StaffMemberPermission": {
+    "description": "Represents access permissions for a staff member.",
+    "kind": "ENUM"
+  },
+  "StaffMembersSortKeys": {
+    "description": "The set of valid sort keys for the StaffMembers query.",
+    "kind": "ENUM"
+  },
+  "StagedUploadHttpMethodType": {
+    "description": "The possible HTTP methods that can be used when sending a request to upload a file using information from a",
+    "kind": "ENUM"
+  },
+  "StagedUploadTargetGenerateUploadResource": {
+    "description": "The resource type to receive.",
+    "kind": "ENUM"
+  },
+  "StandardMetafieldDefinitionEnableUserErrorCode": {
+    "description": "Possible error codes that can be returned by `StandardMetafieldDefinitionEnableUserError`.",
+    "kind": "ENUM"
+  },
+  "StoreCreditAccountCreditUserErrorCode": {
+    "description": "Possible error codes that can be returned by `StoreCreditAccountCreditUserError`.",
+    "kind": "ENUM"
+  },
+  "StoreCreditAccountDebitUserErrorCode": {
+    "description": "Possible error codes that can be returned by `StoreCreditAccountDebitUserError`.",
+    "kind": "ENUM"
+  },
+  "StoreCreditSystemEvent": {
+    "description": "The event that caused the store credit account transaction.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingAttemptErrorCode": {
+    "description": "The possible error codes associated with making billing attempts. The error codes supplement the",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingAttemptInventoryPolicy": {
+    "description": "The inventory policy for a billing attempt.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingAttemptsSortKeys": {
+    "description": "The set of valid sort keys for the SubscriptionBillingAttempts query.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingCycleBillingAttemptStatus": {
+    "description": "The presence of billing attempts on Billing Cycles.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingCycleBillingCycleStatus": {
+    "description": "The possible status values of a subscription billing cycle.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingCycleBulkUserErrorCode": {
+    "description": "Possible error codes that can be returned by `SubscriptionBillingCycleBulkUserError`.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingCycleErrorCode": {
+    "description": "Possible error codes that can be returned by `SubscriptionBillingCycleUserError`.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingCycleScheduleEditInputScheduleEditReason": {
+    "description": "The input fields for possible reasons for editing the billing cycle's schedule.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingCycleSkipUserErrorCode": {
+    "description": "Possible error codes that can be returned by `SubscriptionBillingCycleSkipUserError`.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingCycleUnskipUserErrorCode": {
+    "description": "Possible error codes that can be returned by `SubscriptionBillingCycleUnskipUserError`.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingCyclesSortKeys": {
+    "description": "The set of valid sort keys for the SubscriptionBillingCycles query.",
+    "kind": "ENUM"
+  },
+  "SubscriptionBillingCyclesTargetSelection": {
+    "description": "Select subscription billing cycles to be targeted.",
+    "kind": "ENUM"
+  },
+  "SubscriptionContractErrorCode": {
+    "description": "Possible error codes that can be returned by `SubscriptionContractUserError`.",
+    "kind": "ENUM"
+  },
+  "SubscriptionContractLastBillingErrorType": {
+    "description": "The possible values of the last billing error on a subscription contract.",
+    "kind": "ENUM"
+  },
+  "SubscriptionContractLastPaymentStatus": {
+    "description": "The possible status values of the last payment on a subscription contract.",
+    "kind": "ENUM"
+  },
+  "SubscriptionContractStatusUpdateErrorCode": {
+    "description": "Possible error codes that can be returned by `SubscriptionContractStatusUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "SubscriptionContractSubscriptionStatus": {
+    "description": "The possible status values of a subscription.",
+    "kind": "ENUM"
+  },
+  "SubscriptionContractsSortKeys": {
+    "description": "The set of valid sort keys for the SubscriptionContracts query.",
+    "kind": "ENUM"
+  },
+  "SubscriptionDiscountRejectionReason": {
+    "description": "The reason a discount on a subscription draft was rejected.",
+    "kind": "ENUM"
+  },
+  "SubscriptionDraftErrorCode": {
+    "description": "Possible error codes that can be returned by `SubscriptionDraftUserError`.",
+    "kind": "ENUM"
+  },
+  "SuggestedOrderTransactionKind": {
+    "description": "Specifies the kind of the suggested order transaction.",
+    "kind": "ENUM"
+  },
+  "TaxAppConfigureUserErrorCode": {
+    "description": "Possible error codes that can be returned by `TaxAppConfigureUserError`.",
+    "kind": "ENUM"
+  },
+  "TaxExemption": {
+    "description": "Available customer tax exemptions.",
+    "kind": "ENUM"
+  },
+  "TaxPartnerState": {
+    "description": "State of the tax app configuration.",
+    "kind": "ENUM"
+  },
+  "TaxSummaryCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `TaxSummaryCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "ThemeCreateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ThemeCreateUserError`.",
+    "kind": "ENUM"
+  },
+  "ThemeDeleteUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ThemeDeleteUserError`.",
+    "kind": "ENUM"
+  },
+  "ThemeDuplicateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ThemeDuplicateUserError`.",
+    "kind": "ENUM"
+  },
+  "ThemePublishUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ThemePublishUserError`.",
+    "kind": "ENUM"
+  },
+  "ThemeRole": {
+    "description": "The role of the theme.",
+    "kind": "ENUM"
+  },
+  "ThemeUpdateUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ThemeUpdateUserError`.",
+    "kind": "ENUM"
+  },
+  "TransactionSortKeys": {
+    "description": "The set of valid sort keys for the Transaction query.",
+    "kind": "ENUM"
+  },
+  "TransactionVoidUserErrorCode": {
+    "description": "Possible error codes that can be returned by `TransactionVoidUserError`.",
+    "kind": "ENUM"
+  },
+  "TransferSortKeys": {
+    "description": "The set of valid sort keys for the Transfer query.",
+    "kind": "ENUM"
+  },
+  "TranslatableResourceType": {
+    "description": "Specifies the type of resources that are translatable.",
+    "kind": "ENUM"
+  },
+  "TranslationErrorCode": {
+    "description": "Possible error codes that can be returned by `TranslationUserError`.",
+    "kind": "ENUM"
+  },
+  "UnitPriceMeasurementMeasuredType": {
+    "description": "The accepted types of unit of measurement.",
+    "kind": "ENUM"
+  },
+  "UnitPriceMeasurementMeasuredUnit": {
+    "description": "The valid units of measurement for a unit price measurement.",
+    "kind": "ENUM"
+  },
+  "UnitSystem": {
+    "description": "Systems of weights and measures.",
+    "kind": "ENUM"
+  },
+  "UrlRedirectBulkDeleteByIdsUserErrorCode": {
+    "description": "Possible error codes that can be returned by `UrlRedirectBulkDeleteByIdsUserError`.",
+    "kind": "ENUM"
+  },
+  "UrlRedirectBulkDeleteBySavedSearchUserErrorCode": {
+    "description": "Possible error codes that can be returned by `UrlRedirectBulkDeleteBySavedSearchUserError`.",
+    "kind": "ENUM"
+  },
+  "UrlRedirectBulkDeleteBySearchUserErrorCode": {
+    "description": "Possible error codes that can be returned by `UrlRedirectBulkDeleteBySearchUserError`.",
+    "kind": "ENUM"
+  },
+  "UrlRedirectErrorCode": {
+    "description": "Possible error codes that can be returned by `UrlRedirectUserError`.",
+    "kind": "ENUM"
+  },
+  "UrlRedirectImportErrorCode": {
+    "description": "Possible error codes that can be returned by `UrlRedirectImportUserError`.",
+    "kind": "ENUM"
+  },
+  "UrlRedirectSortKeys": {
+    "description": "The set of valid sort keys for the UrlRedirect query.",
+    "kind": "ENUM"
+  },
+  "ValidationSortKeys": {
+    "description": "The set of valid sort keys for the Validation query.",
+    "kind": "ENUM"
+  },
+  "ValidationUserErrorCode": {
+    "description": "Possible error codes that can be returned by `ValidationUserError`.",
+    "kind": "ENUM"
+  },
+  "WebhookSubscriptionFormat": {
+    "description": "The supported formats for webhook subscriptions.",
+    "kind": "ENUM"
+  },
+  "WebhookSubscriptionSortKeys": {
+    "description": "The set of valid sort keys for the WebhookSubscription query.",
+    "kind": "ENUM"
+  },
+  "WebhookSubscriptionTopic": {
+    "description": "The supported topics for webhook subscriptions. You can use webhook subscriptions to receive",
+    "kind": "ENUM"
+  },
+  "WeightUnit": {
+    "description": "Units of measurement for weight.",
+    "kind": "ENUM"
+  }
+}

@@ -1,0 +1,135 @@
+# Object: `Shop`
+
+The central configuration and settings hub for a Shopify store. Access business information, operational preferences, feature availability, and store-wide settings that control how the shop operates.
+
+Includes core business details like the shop name, contact emails, billing address, and currency settings. The shop configuration determines customer account requirements, available sales channels, enabled features, payment settings, and policy documents. Also provides access to shop-level resources such as staff members, fulfillment services, navigation settings, and storefront access tokens.
+
+**Implements:** `HasMetafieldDefinitions`, `HasMetafields`, `HasPublishedTranslations`, `Node`
+
+## Fields
+
+- `accountOwner`: `StaffMember!` — Account owner information.
+- `alerts`: `[ShopAlert!]!` — A list of the shop's active alert messages that appear in the Shopify admin.
+- `allProductCategories`: `[ProductCategory!]!` *(deprecated)* — A list of the shop's product categories. Limit: 1000 product categories.
+- `allProductCategoriesList`: `[TaxonomyCategory!]!` — A list of the shop's product categories. Limit: 1000 product categories.
+- `analyticsToken`: `String!` *(deprecated)* — The token required to query the shop's reports or dashboards.
+- `assignedFulfillmentOrders` `(assignmentStatus, locationIds, first, after, last, before, reverse, sortKey)`: `FulfillmentOrderConnection!` *(deprecated)* — The paginated list of fulfillment orders assigned to the shop locations owned by the app.
+- `availableChannelApps` `(first, after, last, before, reverse)`: `AppConnection!` — The list of sales channels not currently installed on the shop.
+- `billingAddress`: `ShopAddress!` *(deprecated)* — The shop's billing address information.
+- `channelDefinitionsForInstalledChannels`: `[AvailableChannelDefinitionsByChannel!]!` — List of all channel definitions associated with a shop.
+- `channels` `(first, after, last, before, reverse)`: `ChannelConnection!` *(deprecated)* — List of the shop's active sales channels.
+- `checkoutApiSupported`: `Boolean!` — Specifies whether the shop supports checkouts via Checkout API.
+- `collections` `(first, after, last, before, reverse, sortKey, query, savedSearchId)`: `CollectionConnection!` *(deprecated)* — List of the shop's collections.
+- `contactEmail`: `String!` — The public-facing contact email address for the shop.
+- `countriesInShippingZones`: `CountriesInShippingZones!` — Countries that have been defined in shipping zones for the shop.
+- `createdAt`: `DateTime!` — The date and time when the shop was created.
+- `currencyCode`: `CurrencyCode!` — The three letter code for the currency that the shop sells in.
+- `currencyFormats`: `CurrencyFormats!` — How currencies are displayed on your store.
+- `currencySettings` `(first, after, last, before, reverse)`: `CurrencySettingConnection!` — The presentment currency settings for the shop excluding the shop's own currency.
+- `customerAccounts`: `ShopCustomerAccountsSetting!` — Whether customer accounts are required, optional, or disabled for the shop.
+- `customerAccountsV2`: `CustomerAccountsV2!` — Information about the shop's customer accounts.
+- `customerTags` `(first)`: `StringConnection!` — A list of tags that have been added to customer accounts.
+- `customers` `(first, after, last, before, reverse, sortKey, query)`: `CustomerConnection!` *(deprecated)* — Customer accounts associated to the shop.
+- `description`: `String` — The shop's meta description used in search engine results.
+- `domains`: `[Domain!]!` *(deprecated)* — The domains configured for the shop.
+- `draftOrderTags` `(first)`: `StringConnection!` — A list of tags that have been added to draft orders.
+- `email`: `String!` — The shop owner's email address.
+- `enabledPresentmentCurrencies`: `[CurrencyCode!]!` — The presentment currencies enabled for the shop.
+- `entitlements`: `EntitlementsType!` — The entitlements for a shop.
+- `features`: `ShopFeatures!` — The set of features enabled for the shop.
+- `fulfillmentOrders` `(includeClosed, first, after, last, before, reverse, sortKey, query)`: `FulfillmentOrderConnection!` *(deprecated)* — The paginated list of merchant-managed and third-party fulfillment orders.
+- `fulfillmentServices`: `[FulfillmentService!]!` — List of the shop's installed fulfillment services.
+- `ianaTimezone`: `String!` — The shop's time zone as defined by the IANA.
+- `id`: `ID!` — A globally-unique ID.
+- `inventoryItems` `(first, after, last, before, reverse, query)`: `InventoryItemConnection!` *(deprecated)* — List of the shop's inventory items.
+- `limitedPendingOrderCount`: `LimitedPendingOrderCount!` *(deprecated)* — The number of pendings orders on the shop.
+- `locations` `(first, after, last, before, reverse, sortKey, query, includeLegacy, includeInactive)`: `LocationConnection!` *(deprecated)* — List of active locations of the shop.
+- `marketingSmsConsentEnabledAtCheckout`: `Boolean!` — Whether SMS marketing has been enabled on the shop's checkout configuration settings.
+- `merchantApprovalSignals`: `MerchantApprovalSignals` — The approval signals for a shop to support onboarding to channel apps.
+- `metafield` `(namespace, key)`: `Metafield` — A [custom field](https://shopify.dev/docs/apps/build/custom-data),
+- `metafieldDefinitions` `(namespace, pinnedStatus, first, after, last, before, reverse, sortKey, query)`: `MetafieldDefinitionConnection!` *(deprecated)* — List of metafield definitions.
+- `metafields` `(namespace, keys, first, after, last, before, reverse)`: `MetafieldConnection!` — A list of [custom fields](https://shopify.dev/docs/apps/build/custom-data)
+- `myshopifyDomain`: `String!` — The shop's .myshopify.com domain name.
+- `name`: `String!` — The shop's name.
+- `navigationSettings`: `[NavigationItem!]!` — The shop's settings related to navigation.
+- `orderNumberFormatPrefix`: `String!` — The prefix that appears before order numbers.
+- `orderNumberFormatSuffix`: `String!` — The suffix that appears after order numbers.
+- `orderTags` `(first, sort)`: `StringConnection!` — A list of tags that have been added to orders.
+- `orders` `(first, after, last, before, reverse, sortKey, query)`: `OrderConnection!` *(deprecated)* — A list of the shop's orders.
+- `paymentSettings`: `PaymentSettings!` — The shop's settings related to payments.
+- `plan`: `ShopPlan!` — The shop's billing plan.
+- `primaryDomain`: `Domain!` — The primary domain of the shop's online store.
+- `productImages` `(first, after, last, before, reverse, sortKey)`: `ImageConnection!` *(deprecated)* — The list of all images of all products for the shop.
+- `productTags` `(first)`: `StringConnection!` *(deprecated)* — A list of tags that have been added to products.
+- `productTypes` `(first)`: `StringConnection!` *(deprecated)* — The list of types added to products.
+- `productVariants` `(first, after, last, before, reverse, sortKey, query)`: `ProductVariantConnection!` *(deprecated)* — List of the shop's product variants.
+- `productVendors` `(first)`: `StringConnection!` *(deprecated)* — The list of vendors added to products.
+- `products` `(first, after, last, before, reverse, sortKey, query, savedSearchId)`: `ProductConnection!` *(deprecated)* — List of the shop's products.
+- `publicationCount`: `Int!` *(deprecated)* — The number of publications for the shop.
+- `resourceLimits`: `ShopResourceLimits!` — The shop's limits for specific resources. For example, the maximum number ofvariants allowed per product, or the maximum number of locations allowed.
+- `richTextEditorUrl`: `URL!` — The URL of the rich text editor that can be used for mobile devices.
+- `search` `(query, types, first, after)`: `SearchResultConnection!` — Fetches a list of admin search results by a specified query.
+- `searchFilters`: `SearchFilterOptions!` — The list of search filter options for the shop. These can be used to filter productvisibility for the shop.
+- `setupRequired`: `Boolean!` — Whether the shop has outstanding setup steps.
+- `shipsToCountries`: `[CountryCode!]!` — The list of countries that the shop ships to.
+- `shopAddress`: `ShopAddress!` — The shop's address information as it will appear to buyers.
+- `shopOwnerName`: `String!` — The name of the shop owner.
+- `shopPolicies`: `[ShopPolicy!]!` — The list of all legal policies associated with a shop.
+- `staffMembers` `(first, after, last, before, reverse)`: `StaffMemberConnection!` *(deprecated)* — The paginated list of the shop's staff members.
+- `storefrontAccessTokens` `(first, after, last, before, reverse)`: `StorefrontAccessTokenConnection!` — The storefront access token of a private application. These are scoped per-application.
+- `storefrontUrl`: `URL!` *(deprecated)* — The URL of the shop's storefront.
+- `taxShipping`: `Boolean!` — Whether the shop charges taxes for shipping.
+- `taxesIncluded`: `Boolean!` — Whether applicable taxes are included in the shop's product prices.
+- `timezoneAbbreviation`: `String!` — The shop's time zone abbreviation.
+- `timezoneOffset`: `String!` — The shop's time zone offset.
+- `timezoneOffsetMinutes`: `Int!` — The shop's time zone offset expressed as a number of minutes.
+- `transactionalSmsDisabled`: `Boolean!` — Whether transactional SMS sent by Shopify have been disabled for a shop.
+- `translations` `(locale, marketId)`: `[Translation!]!` — The published translations associated with the resource.
+- `unitSystem`: `UnitSystem!` — The shop's unit system for weights and measures.
+- `updatedAt`: `DateTime!` — The date and time when the shop was last updated.
+- `url`: `URL!` — The URL of the shop's online store.
+- `weightUnit`: `WeightUnit!` — The shop's primary unit of weight for products and shipping.
+
+## Related Types
+
+- [AvailableChannelDefinitionsByChannel](../../types/objects/AvailableChannelDefinitionsByChannel.md)
+- [CollectionSortKeys](../../types/enums/CollectionSortKeys.md)
+- [CountriesInShippingZones](../../types/objects/CountriesInShippingZones.md)
+- [CountryCode](../../types/enums/CountryCode.md)
+- [CurrencyCode](../../types/enums/CurrencyCode.md)
+- [CurrencyFormats](../../types/objects/CurrencyFormats.md)
+- [CustomerAccountsV2](../../types/objects/CustomerAccountsV2.md)
+- [CustomerSortKeys](../../types/enums/CustomerSortKeys.md)
+- [Domain](../../types/objects/Domain.md)
+- [EntitlementsType](../../types/objects/EntitlementsType.md)
+- [FulfillmentOrderAssignmentStatus](../../types/enums/FulfillmentOrderAssignmentStatus.md)
+- [FulfillmentOrderSortKeys](../../types/enums/FulfillmentOrderSortKeys.md)
+- [FulfillmentService](../../types/objects/FulfillmentService.md)
+- [LimitedPendingOrderCount](../../types/objects/LimitedPendingOrderCount.md)
+- [LocationSortKeys](../../types/enums/LocationSortKeys.md)
+- [MerchantApprovalSignals](../../types/objects/MerchantApprovalSignals.md)
+- [Metafield](../../types/objects/Metafield.md)
+- [MetafieldDefinitionPinnedStatus](../../types/enums/MetafieldDefinitionPinnedStatus.md)
+- [MetafieldDefinitionSortKeys](../../types/enums/MetafieldDefinitionSortKeys.md)
+- [NavigationItem](../../types/objects/NavigationItem.md)
+- [OrderSortKeys](../../types/enums/OrderSortKeys.md)
+- [PaymentSettings](../../types/objects/PaymentSettings.md)
+- [ProductCategory](../../types/objects/ProductCategory.md)
+- [ProductImageSortKeys](../../types/enums/ProductImageSortKeys.md)
+- [ProductSortKeys](../../types/enums/ProductSortKeys.md)
+- [ProductVariantSortKeys](../../types/enums/ProductVariantSortKeys.md)
+- [SearchFilterOptions](../../types/objects/SearchFilterOptions.md)
+- [SearchResultType](../../types/enums/SearchResultType.md)
+- [ShopAddress](../../types/objects/ShopAddress.md)
+- [ShopAlert](../../types/objects/ShopAlert.md)
+- [ShopCustomerAccountsSetting](../../types/enums/ShopCustomerAccountsSetting.md)
+- [ShopFeatures](../../types/objects/ShopFeatures.md)
+- [ShopPlan](../../types/objects/ShopPlan.md)
+- [ShopPolicy](../../types/objects/ShopPolicy.md)
+- [ShopResourceLimits](../../types/objects/ShopResourceLimits.md)
+- [ShopTagSort](../../types/enums/ShopTagSort.md)
+- [StaffMember](../../types/objects/StaffMember.md)
+- [TaxonomyCategory](../../types/objects/TaxonomyCategory.md)
+- [Translation](../../types/objects/Translation.md)
+- [UnitSystem](../../types/enums/UnitSystem.md)
+- [WeightUnit](../../types/enums/WeightUnit.md)

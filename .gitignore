@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+.codex/
+.wrangler/
+.env
+.dev.vars
+dist/
+*.log
+assets/generated/
+.generated/

@@ -1,0 +1,34 @@
+# Object: `ProductDuplicateOperation`
+
+An entity that represents details of an asynchronous
+[ProductDuplicate](https://shopify.dev/api/admin-graphql/current/mutations/productDuplicate) mutation.
+
+By querying this entity with the
+[productOperation](https://shopify.dev/api/admin-graphql/current/queries/productOperation) query
+using the ID that was returned
+[when the product was duplicated](https://shopify.dev/api/admin/migrate/new-product-model/sync-data#create-a-product-with-variants-and-options-asynchronously),
+this can be used to check the status of an operation.
+
+The `status` field indicates whether the operation is `CREATED`, `ACTIVE`, or `COMPLETE`.
+
+The `product` field provides the details of the original product.
+
+The `newProduct` field provides the details of the new duplicate of the product.
+
+The `userErrors` field provides mutation errors that occurred during the operation.
+
+**Implements:** `Node`, `ProductOperation`
+
+## Fields
+
+- `id`: `ID!` — A globally-unique ID.
+- `newProduct`: `Product` — The newly created duplicate of the original product.
+- `product`: `Product` — The product on which the operation is being performed.
+- `status`: `ProductOperationStatus!` — The status of this operation.
+- `userErrors`: `[UserError!]!` — Returns mutation errors occurred during background mutation processing.
+
+## Related Types
+
+- [Product](../../types/objects/Product.md)
+- [ProductOperationStatus](../../types/enums/ProductOperationStatus.md)
+- [UserError](../../types/objects/UserError.md)

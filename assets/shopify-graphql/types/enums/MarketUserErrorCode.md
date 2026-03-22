@@ -1,0 +1,86 @@
+# Enum: `MarketUserErrorCode`
+
+Possible error codes that can be returned by `MarketUserError`.
+
+## Values
+
+- `INVALID` — The input value is invalid.
+- `TAKEN` — The input value is already taken.
+- `TOO_LONG` — The input value is too long.
+- `TOO_SHORT` — The input value is too short.
+- `BLANK` — The input value is blank.
+- `INCLUSION` — The input value isn't included in the list.
+- `MARKET_NOT_FOUND` — The market wasn't found.
+- `REGION_NOT_FOUND` — The market region wasn't found.
+- `PROVINCE_DOES_NOT_EXIST` — The province doesn't exist.
+- `WEB_PRESENCE_NOT_FOUND` — The market web presence wasn't found.
+- `CANNOT_ADD_REGIONS_TO_PRIMARY_MARKET` *(deprecated)* — Can't add regions to the primary market.
+- `CANNOT_DELETE_ONLY_REGION` — Can't delete the only region in a market.
+- `REQUIRES_EXACTLY_ONE_OPTION` *(deprecated)* — Exactly one input option is required.
+- `CANNOT_DELETE_PRIMARY_MARKET` — Can't delete the primary market.
+- `EXCEEDS_MAX_MULTI_CONTEXT_MARKETS` — Exceeds max multi-context markets.
+- `DOMAIN_NOT_FOUND` — Domain was not found.
+- `SUBFOLDER_SUFFIX_MUST_CONTAIN_ONLY_LETTERS` *(deprecated)* — The subfolder suffix must contain only letters.
+- `SUBFOLDER_SUFFIX_MUST_BE_AT_LEAST_2_LETTERS` — The subfolder suffix must be at least 2 letters.
+- `SUBFOLDER_SUFFIX_CANNOT_BE_SCRIPT_CODE` — The subfolder suffix is invalid, please provide a different value.
+- `NO_LANGUAGES` — No languages selected.
+- `NO_LOCAL_CURRENCIES_ON_SINGLE_COUNTRY_MARKET` *(deprecated)* — Can't enable or disable local currencies on a single country market.
+- `NO_ROUNDING_ON_LEGACY_MARKET` *(deprecated)* — Rounding is not supported if unified markets are not enabled.
+- `DUPLICATE_LANGUAGES` — Duplicates found in languages.
+- `DUPLICATE_REGION_MARKET` — Duplicate region market.
+- `DUPLICATE_UNIQUE_MARKET` — Duplicate unique market.
+- `REGION_SPECIFIC_LANGUAGE` — Cannot add region-specific language.
+- `CANNOT_HAVE_SUBFOLDER_AND_DOMAIN` — Can't pass both `subfolderSuffix` and `domainId`.
+- `CANNOT_ADD_WEB_PRESENCE_TO_PRIMARY_MARKET` *(deprecated)* — Can't add the web presence to the primary market.
+- `MARKET_REACHED_WEB_PRESENCE_LIMIT` — Can't add another web presence to the market.
+- `MARKET_NOT_COMPATIBLE_WITH_CONDITION_TYPES` *(deprecated)* — Market and condition types are not compatible with each other.
+- `MISSING_COUNTRY_CODE` — The country code is missing.
+- `MISSING_PROVINCE_CODE` — The province code is missing.
+- `CANNOT_HAVE_MULTIPLE_SUBFOLDERS_PER_MARKET` — Can't have multiple subfolder web presences per market.
+- `CANNOT_HAVE_BOTH_SUBFOLDER_AND_DOMAIN_WEB_PRESENCES` — Can't have both subfolder and domain web presences.
+- `REQUIRES_DOMAIN_OR_SUBFOLDER` — One of `subfolderSuffix` or `domainId` is required.
+- `PRIMARY_MARKET_MUST_USE_PRIMARY_DOMAIN` *(deprecated)* — The primary market must use the primary domain.
+- `CANNOT_DELETE_PRIMARY_MARKET_WEB_PRESENCE` *(deprecated)* — Can't delete the primary market's web presence.
+- `SHOP_REACHED_MARKETS_LIMIT` *(deprecated)* — Can't have more than 50 markets.
+- `CANNOT_DISABLE_PRIMARY_MARKET` — Can't disable the primary market.
+- `UNPUBLISHED_LANGUAGE` — The language isn't published to the store.
+- `DISABLED_LANGUAGE` — The language isn't enabled on the store.
+- `CANNOT_SET_DEFAULT_LOCALE_TO_NULL` — Can't set default locale to null.
+- `UNSUPPORTED_COUNTRY_REGION` — Can't add unsupported country or region.
+- `CANNOT_ADD_CUSTOMER_DOMAIN` — Can't add customer account domain to a market.
+- `GENERIC_ERROR` — An error occurred. See the message for details.
+- `INVALID_STATUS_AND_ENABLED_COMBINATION` — Invalid combination of status and enabled.
+- `INVALID_PROVINCE_FORMAT` — The province format is invalid.
+- `CONDITIONS_NOT_FOUND` — One or more condition IDs were not found.
+- `SPECIFIED_CONDITIONS_CANNOT_BE_EMPTY` — Specified conditions cannot be empty.
+- `CUSTOMIZATIONS_NOT_FOUND` — One or more customizations were not found.
+- `WILDCARD_NOT_SUPPORTED` — Matching ALL or NONE isn't supported for this driver type.
+- `SPECIFIED_NOT_VALID_FOR_INPUT` — With an ID list in input, SPECIFIED is not needed.
+- `WEB_PRESENCE_NOT_COMPATIBLE_WITH_CONDITION_TYPES` — Web presences and condition types are not compatible with each other.
+- `CATALOG_NOT_COMPATIBLE_WITH_CONDITION_TYPES` — Catalogs and condition types are not compatible with each other.
+- `CATALOG_TYPE_NOT_SUPPORTED` — A market can only have market catalogs.
+- `INCLUSIVE_PRICING_NOT_COMPATIBLE_WITH_CONDITION_TYPES` — Inclusive pricing cannot be added to a market with the specified condition types.
+- `INCOMPATIBLE_CONDITIONS` — The specified conditions are not compatible with each other.
+- `MANAGED_MARKET` — The currency settings of the given market cannot be changed because the market manager has exclusive control of pricing.
+- `MULTIPLE_CURRENCIES_NOT_SUPPORTED` — The shop's payment gateway does not support enabling more than one currency.
+- `UNSUPPORTED_CURRENCY` — The specified currency is not supported.
+- `SHOP_MUST_HAVE_PRIMARY_DOMAIN_WEB_PRESENCE` — The shop must have a web presence that uses the primary domain.
+- `MUST_HAVE_AT_LEAST_ONE_ACTIVE_REGION_MARKET` — Can’t delete, disable, or change the type of the last region market.
+- `USER_LACKS_PERMISSION` — The user doesn't have permission access to create or edit markets.
+- `CONTAINS_REGIONS_THAT_CANNOT_BE_MANAGED` — Contains regions that cannot be managed.
+- `UNIFIED_MARKETS_NOT_ENABLED` *(deprecated)* — Unified markets are not enabled.
+- `WEB_PRESENCE_REACHED_MARKETS_LIMIT` — Can't add web presence to the another market.
+- `WEB_PRESENCE_RETAIL_LOCATION` *(deprecated)* — A web presence cannot be added to a market with type retail location.
+- `CATALOG_CONDITION_TYPES_MUST_BE_THE_SAME` — Catalog condition types must be the same for all conditions on a catalog.
+- `MARKET_CANT_HAVE_DIRECT_CONNECTION_CATALOG` — A direct connection catalog can't be attached to a market.
+- `NOT_ENTITLED_TO_ACTIVATE_MARKET` — Your shop is not entitled to activate markets of this type.
+- `B2B_MARKET_MUST_BE_MERCHANT_MANAGED` — B2B markets must be merchant managed.
+- `POS_LOCATION_MARKET_MUST_BE_MERCHANT_MANAGED` — POS location markets must be merchant managed.
+- `MANAGED_MARKETS_CATALOG_NOT_ALLOWED` — Catalogs created by Managed Markets cannot be added to a market.
+- `RETAIL_LOCATION_CURRENCY_MUST_BE_LOCAL` — Retail location currency must be local.
+- `CATALOGS_WITH_VOLUME_PRICING_OR_QUANTITY_RULES_NOT_SUPPORTED` — Catalogs with volume pricing or quantity rules are not supported for the specified condition types.
+- `MIXED_COUNTRY_LOCATIONS_NOT_ALLOWED` — All retail locations in a market must be in the same country.
+- `LOCATION_MATCH_ALL_REQUIRES_ONE_SPECIFIC_REGION` — Location match all is only valid with one non-match all region.
+- `LOCATION_REGION_COUNTRY_MISMATCH` — A location's country does not match the region's country.
+- `UNPERMITTED_ENTITLEMENTS_MARKET_CATALOGS` — Managing this catalog is not supported by your plan.
+- `INVALID_RESPONDER_FOR_PROVINCE_DRIVEN_MARKET` *(deprecated)* — Can't add selected responders to a province driven market.

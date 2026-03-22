@@ -1,0 +1,99 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "shopify-admin-mcp-dev",
+	"account_id": "6886250e2aff0047919a1ed731a55c64",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-01-12",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"observability": {
+		"logs": {
+			"enabled": true
+		},
+		"traces": {
+			"enabled": true
+		}
+	},
+	"vars": {
+		"SHOPIFY_SHOP_DOMAIN": "example.myshopify.com",
+		"SHOPIFY_ADMIN_API_VERSION": "2026-01",
+		"SHOPIFY_ADMIN_ACCESS_TOKEN": "replace-me"
+	},
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./assets"
+	},
+	"worker_loaders": [
+		{
+			"binding": "LOADER"
+		}
+	],
+	"services": [
+		{
+			"binding": "GLOBAL_OUTBOUND",
+			"service": "shopify-admin-mcp-dev",
+			"entrypoint": "GlobalOutbound"
+		}
+	],
+	"dev": {
+		"port": 2529
+	},
+	"env": {
+		"staging": {
+			"name": "shopify-admin-mcp-staging",
+			"worker_loaders": [
+				{
+					"binding": "LOADER"
+				}
+			],
+			"services": [
+				{
+					"binding": "GLOBAL_OUTBOUND",
+					"service": "shopify-admin-mcp-staging",
+					"entrypoint": "GlobalOutbound"
+				}
+			],
+			"vars": {
+				"SHOPIFY_SHOP_DOMAIN": "example.myshopify.com",
+				"SHOPIFY_ADMIN_API_VERSION": "2026-01",
+				"SHOPIFY_ADMIN_ACCESS_TOKEN": "replace-me"
+			}
+		},
+		"production": {
+			"name": "shopify-admin-mcp",
+			"worker_loaders": [
+				{
+					"binding": "LOADER"
+				}
+			],
+			"services": [
+				{
+					"binding": "GLOBAL_OUTBOUND",
+					"service": "shopify-admin-mcp",
+					"entrypoint": "GlobalOutbound"
+				}
+			],
+			"vars": {
+				"SHOPIFY_SHOP_DOMAIN": "example.myshopify.com",
+				"SHOPIFY_ADMIN_API_VERSION": "2026-01",
+				"SHOPIFY_ADMIN_ACCESS_TOKEN": "replace-me"
+			}
+		},
+		"beynar": {
+			"name": "mcp-shopify-test",
+			"worker_loaders": [
+				{
+					"binding": "LOADER"
+				}
+			],
+			"services": [
+				{
+					"binding": "GLOBAL_OUTBOUND",
+					"service": "mcp-shopify-test",
+					"entrypoint": "GlobalOutbound"
+				}
+			]
+		}
+	}
+}

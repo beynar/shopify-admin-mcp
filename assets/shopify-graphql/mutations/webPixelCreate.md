@@ -1,0 +1,43 @@
+# Mutation: `webPixelCreate`
+
+**Returns:** `WebPixelCreatePayload`
+
+Activate a [web pixel extension](https://shopify.dev/docs/apps/build/marketing-analytics/build-web-pixels)
+by creating a web pixel record on the store where you installed your app.
+
+When you run the `webPixelCreate` mutation, Shopify validates it
+against the settings definition in `shopify.extension.toml`. If the `settings` input field doesn't match
+the schema that you defined, then the mutation fails. Learn how to
+define [web pixel settings](https://shopify.dev/docs/apps/build/marketing-analytics/build-web-pixels#step-2-define-your-web-pixel-settings).
+
+## Arguments
+
+- **`webPixel`**: `WebPixelInput!` — The web pixel settings in JSON format.
+
+## Payload Fields
+
+- `userErrors`: `[ErrorsWebPixelUserError!]!` — The list of errors that occurred from executing the mutation.
+- `webPixel`: `WebPixel` — The created web pixel settings.
+
+## Related Types
+
+- [ErrorsWebPixelUserError](../types/objects/ErrorsWebPixelUserError.md)
+- [WebPixel](../types/objects/WebPixel.md)
+- [WebPixelCreatePayload](../types/objects/WebPixelCreatePayload.md)
+- [WebPixelInput](../types/inputs/WebPixelInput.md)
+
+## Example Mutation
+
+```graphql
+mutation WebPixelCreate($webPixel: WebPixelInput!) {
+  webPixelCreate(webPixel: $webPixel) {
+    userErrors {
+      field
+      message
+    }
+    webPixel {
+      id
+    }
+  }
+}
+```

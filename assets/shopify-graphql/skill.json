@@ -1,0 +1,98 @@
+{
+  "name": "Shopify Admin GraphQL API",
+  "version": "2025-01 (introspection-derived)",
+  "description": "Navigable skill tree for the Shopify Admin GraphQL API. Load individual query, mutation, or type files as needed \u2014 do NOT load the entire tree.",
+  "usage": {
+    "how_to_use": [
+      "1. Start here to understand API patterns and conventions.",
+      "2. Use the indexes (_index.json) in queries/, mutations/, types/ to discover available operations.",
+      "3. Load ONLY the specific query/mutation/type .md file you need.",
+      "4. Follow 'Related Types' links in each file to load dependent type definitions.",
+      "5. Build your GraphQL query using the example skeleton and field definitions."
+    ],
+    "endpoint": "https://{store}.myshopify.com/admin/api/2025-01/graphql.json",
+    "authentication": "X-Shopify-Access-Token header with Admin API access token"
+  },
+  "conventions": {
+    "pagination": {
+      "pattern": "Relay-style cursor-based pagination using Connection/Edge types",
+      "description": "All list fields return a Connection type. Use `first`/`after` for forward pagination, `last`/`before` for backward pagination.",
+      "standard_args": {
+        "first": "Int \u2014 Number of items to return from the beginning",
+        "after": "String \u2014 Cursor to paginate forward from",
+        "last": "Int \u2014 Number of items to return from the end",
+        "before": "String \u2014 Cursor to paginate backward from",
+        "reverse": "Boolean \u2014 Reverse the underlying list order (default: false)",
+        "sortKey": "Enum \u2014 Field to sort by (type-specific)",
+        "query": "String \u2014 Filter query string (Shopify search syntax)"
+      },
+      "connection_shape": {
+        "edges": [
+          {
+            "cursor": "String",
+            "node": "The actual object"
+          }
+        ],
+        "nodes": [
+          "Direct access to objects (shortcut, skips edges)"
+        ],
+        "pageInfo": {
+          "hasNextPage": "Boolean",
+          "hasPreviousPage": "Boolean",
+          "startCursor": "String",
+          "endCursor": "String"
+        }
+      },
+      "example": "query { products(first: 10, after: \"cursor\") { nodes { id title } pageInfo { hasNextPage endCursor } } }",
+      "max_page_size": 250
+    },
+    "ids": {
+      "format": "Global IDs in the format gid://shopify/ResourceType/numeric_id",
+      "example": "gid://shopify/Product/1234567890",
+      "note": "Always use the full GID, not just the numeric part."
+    },
+    "mutations": {
+      "pattern": "Mutations return a Payload type containing the mutated object and userErrors.",
+      "error_handling": "Always query `userErrors { field message }` in mutation payloads to check for validation errors.",
+      "example": "mutation { productCreate(product: {title: \"New\"}) { product { id } userErrors { field message } } }"
+    },
+    "cost_and_rate_limits": {
+      "model": "Query cost-based throttling. Each field has a cost; connections cost more.",
+      "max_cost": 1000,
+      "tip": "Request only fields you need. Avoid deeply nested connections."
+    },
+    "scalars": {
+      "ARN": null,
+      "BigInt": null,
+      "Boolean": null,
+      "Color": null,
+      "Date": null,
+      "DateTime": null,
+      "Decimal": null,
+      "Float": null,
+      "FormattedString": null,
+      "HTML": null,
+      "ID": null,
+      "Int": null,
+      "JSON": null,
+      "Money": null,
+      "StorefrontID": null,
+      "String": null,
+      "URL": null,
+      "UnsignedInt64": null,
+      "UtcOffset": null
+    }
+  },
+  "tree_structure": {
+    "queries": "270 queries \u2014 see queries/_index.json",
+    "mutations": "495 mutations \u2014 see mutations/_index.json",
+    "types": {
+      "objects": "1430 types \u2014 see types/objects/_index.json",
+      "inputs": "525 types \u2014 see types/inputs/_index.json",
+      "enums": "567 types \u2014 see types/enums/_index.json",
+      "interfaces": "44 types \u2014 see types/interfaces/_index.json",
+      "unions": "50 types \u2014 see types/unions/_index.json"
+    },
+    "total_connections": "177 Connection types (pattern-documented, no individual files)"
+  }
+}

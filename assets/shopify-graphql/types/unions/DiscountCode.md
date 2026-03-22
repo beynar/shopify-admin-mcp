@@ -1,0 +1,10 @@
+# Union: `DiscountCode`
+
+The type of discount associated with the discount code. For example, the discount code might offer a basic discount of a fixed percentage, or a fixed amount, on specific products or the order. Alternatively, the discount might offer the customer free shipping on their order. A third option is a Buy X, Get Y (BXGY) discount, which offers a customer discounts on select products if they add a specific product to their order.
+
+## Possible Types
+
+- [DiscountCodeApp](../../types/objects/DiscountCodeApp.md)
+- [DiscountCodeBasic](../../types/objects/DiscountCodeBasic.md)
+- [DiscountCodeBxgy](../../types/objects/DiscountCodeBxgy.md)
+- [DiscountCodeFreeShipping](../../types/objects/DiscountCodeFreeShipping.md)

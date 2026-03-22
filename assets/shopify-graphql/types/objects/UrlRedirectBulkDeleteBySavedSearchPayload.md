@@ -1,0 +1,13 @@
+# Object: `UrlRedirectBulkDeleteBySavedSearchPayload`
+
+Return type for `urlRedirectBulkDeleteBySavedSearch` mutation.
+
+## Fields
+
+- `job`: `Job` — The asynchronous job removing the redirects.
+- `userErrors`: `[UrlRedirectBulkDeleteBySavedSearchUserError!]!` — The list of errors that occurred from executing the mutation.
+
+## Related Types
+
+- [Job](../../types/objects/Job.md)
+- [UrlRedirectBulkDeleteBySavedSearchUserError](../../types/objects/UrlRedirectBulkDeleteBySavedSearchUserError.md)

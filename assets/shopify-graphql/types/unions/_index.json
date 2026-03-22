@@ -1,0 +1,202 @@
+{
+  "AppPricingDetails": {
+    "description": "The information about the price that's charged to a shop every plan period.",
+    "kind": "UNION"
+  },
+  "AppSubscriptionDiscountValue": {
+    "description": "The value of the discount.",
+    "kind": "UNION"
+  },
+  "CollectionRuleConditionObject": {
+    "description": "Specifies object for the condition of the rule.",
+    "kind": "UNION"
+  },
+  "CollectionRuleConditionsRuleObject": {
+    "description": "Specifies object with additional rule attributes.",
+    "kind": "UNION"
+  },
+  "CommentEventEmbed": {
+    "description": "The main embed of a comment event.",
+    "kind": "UNION"
+  },
+  "CustomerPaymentInstrument": {
+    "description": "All possible instruments for CustomerPaymentMethods.",
+    "kind": "UNION"
+  },
+  "DeliveryConditionCriteria": {
+    "description": "The value (weight or price) that the condition field is compared to.",
+    "kind": "UNION"
+  },
+  "DeliveryPromiseParticipantOwner": {
+    "description": "The object that the participant references.",
+    "kind": "UNION"
+  },
+  "DeliveryRateProvider": {
+    "description": "A rate provided by a merchant-defined rate or a participant.",
+    "kind": "UNION"
+  },
+  "DepositConfiguration": {
+    "description": "Configuration of the deposit.",
+    "kind": "UNION"
+  },
+  "Discount": {
+    "description": "A discount offers promotional value and can be applied by entering a code or automatically when conditions are met. Discounts can provide fixed amounts, percentage reductions, free shipping, or Buy X ",
+    "kind": "UNION"
+  },
+  "DiscountAutomatic": {
+    "description": "The types of automatic discounts applied in the cart and at checkout when an order meets specific criteria.",
+    "kind": "UNION"
+  },
+  "DiscountCode": {
+    "description": "The type of discount associated with the discount code. For example, the discount code might offer a basic discount of a fixed percentage, or a fixed amount, on specific products or the order. Alterna",
+    "kind": "UNION"
+  },
+  "DiscountContext": {
+    "description": "The type used to define which buyers can use the discount.",
+    "kind": "UNION"
+  },
+  "DiscountCustomerBuysValue": {
+    "description": "The prerequisite for the discount to be applicable. For example, the discount might require a customer to buy a minimum quantity of select items. Alternatively, the discount might require a customer t",
+    "kind": "UNION"
+  },
+  "DiscountCustomerGetsValue": {
+    "description": "The type of the discount value and how it will be applied. For example, it might be a percentage discount on a fixed number of items. Alternatively, it might be a fixed amount evenly distributed acros",
+    "kind": "UNION"
+  },
+  "DiscountCustomerSelection": {
+    "description": "The type used for targeting a set of customers who are eligible for the discount. For example, the discount might be available to all customers or it might only be available to a specific set of custo",
+    "kind": "UNION"
+  },
+  "DiscountEffect": {
+    "description": "The type of discount that will be applied. Currently, only a percentage discount is supported.",
+    "kind": "UNION"
+  },
+  "DiscountItems": {
+    "description": "The type used to target the items required for discount eligibility, or the items to which the application of a discount might apply. For example, for a customer to be eligible for a discount, they're",
+    "kind": "UNION"
+  },
+  "DiscountMinimumRequirement": {
+    "description": "The type of minimum requirement that must be met for the discount to be applied. For example, a customer must spend a minimum subtotal to be eligible for the discount. Alternatively, a customer must p",
+    "kind": "UNION"
+  },
+  "DiscountShippingDestinationSelection": {
+    "description": "The type used to target the eligible countries of an order's shipping destination for which the discount applies. For example, the discount might be applicable when shipping to all countries, or only ",
+    "kind": "UNION"
+  },
+  "DraftOrderPlatformDiscountAllocationTarget": {
+    "description": "The element of the draft being discounted.",
+    "kind": "UNION"
+  },
+  "MetafieldReference": {
+    "description": "The resource referenced by the metafield value.",
+    "kind": "UNION"
+  },
+  "MetafieldReferencer": {
+    "description": "Types of resources that may use metafields to reference other resources.",
+    "kind": "UNION"
+  },
+  "MobilePlatformApplication": {
+    "description": "You can use the `MobilePlatformApplication` resource to enable",
+    "kind": "UNION"
+  },
+  "OnlineStoreThemeFileBody": {
+    "description": "Represents the body of a theme file.",
+    "kind": "UNION"
+  },
+  "OrderStagedChange": {
+    "description": "A change that has been applied to an order.",
+    "kind": "UNION"
+  },
+  "PaymentDetails": {
+    "description": "Payment details related to a transaction.",
+    "kind": "UNION"
+  },
+  "PaymentInstrument": {
+    "description": "All possible instrument outputs for Payment Mandates.",
+    "kind": "UNION"
+  },
+  "PriceRuleValue": {
+    "description": "The type of the price rule value. The price rule value might be a percentage value, or a fixed amount.",
+    "kind": "UNION"
+  },
+  "PricingValue": {
+    "description": "The type of value given to a customer when a discount is applied to an order. For example, the application of the discount might give the customer a percentage off a specified item. Alternatively, the",
+    "kind": "UNION"
+  },
+  "PublicationOperation": {
+    "description": "The possible types of publication operations.",
+    "kind": "UNION"
+  },
+  "PurchasingEntity": {
+    "description": "Represents information about the purchasing entity for the order or draft order.",
+    "kind": "UNION"
+  },
+  "ReturnOutcomeFinancialTransfer": {
+    "description": "The financial transfer details for the return outcome.",
+    "kind": "UNION"
+  },
+  "ReverseDeliveryDeliverable": {
+    "description": "The delivery method and artifacts associated with a reverse delivery.",
+    "kind": "UNION"
+  },
+  "SellingPlanBillingPolicy": {
+    "description": "Represents the billing frequency associated to the selling plan (for example, bill every week, or bill every",
+    "kind": "UNION"
+  },
+  "SellingPlanCheckoutChargeValue": {
+    "description": "The portion of the price to be charged at checkout.",
+    "kind": "UNION"
+  },
+  "SellingPlanDeliveryPolicy": {
+    "description": "Represents the delivery frequency associated to the selling plan (for example, deliver every month, or deliver",
+    "kind": "UNION"
+  },
+  "SellingPlanPricingPolicy": {
+    "description": "Represents the type of pricing associated to the selling plan (for example, a $10 or 20% discount that is set",
+    "kind": "UNION"
+  },
+  "SellingPlanPricingPolicyAdjustmentValue": {
+    "description": "Represents a selling plan pricing policy adjustment value type.",
+    "kind": "UNION"
+  },
+  "StoreCreditAccountTransactionOrigin": {
+    "description": "The origin of a store credit account transaction.",
+    "kind": "UNION"
+  },
+  "SubscriptionDeliveryMethod": {
+    "description": "Describes the delivery method to use to get the physical goods to the customer.",
+    "kind": "UNION"
+  },
+  "SubscriptionDeliveryOption": {
+    "description": "The delivery option for a subscription contract.",
+    "kind": "UNION"
+  },
+  "SubscriptionDeliveryOptionResult": {
+    "description": "The result of the query to fetch delivery options for the subscription contract.",
+    "kind": "UNION"
+  },
+  "SubscriptionDiscount": {
+    "description": "Subscription draft discount types.",
+    "kind": "UNION"
+  },
+  "SubscriptionDiscountValue": {
+    "description": "The value of the discount and how it will be applied.",
+    "kind": "UNION"
+  },
+  "SubscriptionShippingOptionResult": {
+    "description": "The result of the query to fetch shipping options for the subscription contract.",
+    "kind": "UNION"
+  },
+  "TaxonomyCategoryAttribute": {
+    "description": "A product taxonomy attribute interface.",
+    "kind": "UNION"
+  },
+  "TenderTransactionDetails": {
+    "description": "Information about the payment instrument used for this transaction.",
+    "kind": "UNION"
+  },
+  "WebhookSubscriptionEndpoint": {
+    "description": "An endpoint to which webhook subscriptions send webhooks events.",
+    "kind": "UNION"
+  }
+}
