@@ -29,7 +29,7 @@ The server exposes only two MCP tools:
 - `SHOPIFY_ADMIN_API_VERSION`
 - `SHOPIFY_ADMIN_ACCESS_TOKEN`
 
-For local development, put real values in [`.dev.vars`](/Users/arnaud/code/shopify-mcp/.dev.vars).
+For local development, create a local `.dev.vars` file with real values for those three variables.
 
 ## Local Development
 
@@ -146,7 +146,7 @@ Important:
 
 - This project depends on the `worker_loader` binding for dynamic code execution.
 - Deployments only succeed on Cloudflare accounts that have Dynamic Worker Loaders enabled.
-- You still need to provide real Shopify credentials during setup:
+- You still need to provide real Shopify credentials during setup or immediately after deploy:
   - `SHOPIFY_SHOP_DOMAIN`
   - `SHOPIFY_ADMIN_API_VERSION`
   - `SHOPIFY_ADMIN_ACCESS_TOKEN`
