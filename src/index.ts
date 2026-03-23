@@ -6,6 +6,37 @@ import { createServer } from './server'
 type GlobalOutboundProps = { accessToken: string }
 type WorkerExecutionContext = ExecutionContext<unknown>
 
+function getConfiguredApiKey(env: Env): string | undefined {
+  const value = (env as Env & { MCP_API_KEY?: string }).MCP_API_KEY
+  const trimmed = value?.trim()
+  return trimmed ? trimmed : undefined
+}
+
+function getRequestApiKey(request: Request): string | undefined {
+  const authorization = request.headers.get('authorization')
+  if (authorization) {
+    const match = authorization.match(/^Bearer\s+(.+)$/i)
+    if (match?.[1]) {
+      const bearerToken = match[1].trim()
+      if (bearerToken) {
+        return bearerToken
+      }
+    }
+  }
+
+  const queryToken = new URL(request.url).searchParams.get('api_key')?.trim()
+  return queryToken || undefined
+}
+
+function createUnauthorizedResponse(): Response {
+  return new Response('Unauthorized', {
+    status: 401,
+    headers: {
+      'WWW-Authenticate': 'Bearer'
+    }
+  })
+}
+
 export class GlobalOutbound extends WorkerEntrypoint<Env, GlobalOutboundProps> {
   async fetch(request: Request): Promise<Response> {
     const allowedHost = new URL(
@@ -52,9 +83,17 @@ async function createMcpResponse(
 
 const app = new Hono<AppContext>()
 
-app.post('/mcp', async (c) =>
-  createMcpResponse(c.req.raw, c.env, c.executionCtx as WorkerExecutionContext)
-)
+app.post('/mcp', async (c) => {
+  const configuredApiKey = getConfiguredApiKey(c.env)
+  if (configuredApiKey) {
+    const requestApiKey = getRequestApiKey(c.req.raw)
+    if (requestApiKey !== configuredApiKey) {
+      return createUnauthorizedResponse()
+    }
+  }
+
+  return createMcpResponse(c.req.raw, c.env, c.executionCtx as WorkerExecutionContext)
+})
 
 app.all('*', () => new Response('Not Found', { status: 404 }))
 

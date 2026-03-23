@@ -18,6 +18,11 @@
         "type": "secret_text",
         "name": "SHOPIFY_ADMIN_ACCESS_TOKEN",
         "description": "A Shopify Admin API access token with the scopes required by your MCP usage"
+      },
+      {
+        "type": "secret_text",
+        "name": "MCP_API_KEY",
+        "description": "Optional API key required to access the /mcp endpoint"
       }
     ]
   },

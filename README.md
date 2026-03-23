@@ -29,6 +29,12 @@ The server exposes only two MCP tools:
 - `SHOPIFY_ADMIN_API_VERSION`
 - `SHOPIFY_ADMIN_ACCESS_TOKEN`
 
+Optional:
+
+- `MCP_API_KEY`
+  - when set, `/mcp` requires either `Authorization: Bearer <key>` or `?api_key=<key>`
+  - bearer auth is the preferred transport; query-param auth is only a compatibility fallback
+
 For local development, create a local `.dev.vars` file with real values for those three variables.
 
 ## Local Development
@@ -123,7 +129,6 @@ src/
   executor.ts        Dynamic Worker execution and Shopify API bridge
   asset-loader.ts    Static asset access and manifest loading
   search-catalog.ts  Shopify doc catalog construction and related-doc expansion
-  truncate.ts        Response truncation
 
 assets/shopify-graphql/
   references/
