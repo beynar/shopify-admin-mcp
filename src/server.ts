@@ -1,7 +1,6 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js'
 import { z } from 'zod'
 import { createCodeExecutor, createSearchExecutor } from './executor'
-import { truncateResponse } from './truncate'
 
 type WorkerExecutionContext = ExecutionContext<unknown>
 
@@ -211,7 +210,7 @@ async () => {
     async ({ code }) => {
       try {
         const result = await executeCode(code)
-        return { content: [{ type: 'text', text: truncateResponse(result) }] }
+        return { content: [{ type: 'text', text: JSON.stringify(result, null, 2) }] }
       } catch (error) {
         return {
           content: [{ type: 'text', text: `Error: ${formatError(error)}` }],
