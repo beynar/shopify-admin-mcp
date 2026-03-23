@@ -3,28 +3,20 @@
   "version": "0.1.0",
   "description": "MCP server for the Shopify Admin GraphQL API using asset-backed code mode",
   "cloudflare": {
-    "bindings": [
-      {
-        "type": "secret_text",
-        "name": "SHOPIFY_SHOP_DOMAIN",
+    "bindings": {
+      "SHOPIFY_SHOP_DOMAIN": {
         "description": "Your Shopify store domain, for example store-name.myshopify.com"
       },
-      {
-        "type": "secret_text",
-        "name": "SHOPIFY_ADMIN_API_VERSION",
+      "SHOPIFY_ADMIN_API_VERSION": {
         "description": "The Shopify Admin API version to call, for example 2026-01"
       },
-      {
-        "type": "secret_text",
-        "name": "SHOPIFY_ADMIN_ACCESS_TOKEN",
+      "SHOPIFY_ADMIN_ACCESS_TOKEN": {
         "description": "A Shopify Admin API access token with the scopes required by your MCP usage"
       },
-      {
-        "type": "secret_text",
-        "name": "MCP_API_KEY",
+      "MCP_API_KEY": {
         "description": "Optional API key required to access the /mcp endpoint"
       }
-    ]
+    }
   },
   "type": "module",
   "scripts": {
