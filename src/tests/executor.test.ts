@@ -46,8 +46,6 @@ describe('Shopify executor', () => {
 
     expect(workerCode).toContain('const shopify = {')
     expect(workerCode).toContain('async graphql(options)')
-    expect(workerCode).toContain('async query(options)')
-    expect(workerCode).toContain('async mutation(options)')
     expect(workerCode).toContain('https://example.myshopify.com/admin/api/2026-01/graphql.json')
   })
 

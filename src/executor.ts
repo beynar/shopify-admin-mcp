@@ -103,16 +103,6 @@ export default class CodeExecutor extends WorkerEntrypoint {
         }
 
         return normalized;
-      },
-      async query(options) {
-        return this.graphql(options);
-      },
-      async mutation(options) {
-        return this.graphql({
-          query: options.mutation,
-          variables: options.variables,
-          operationName: options.operationName
-        });
       }
     };
 

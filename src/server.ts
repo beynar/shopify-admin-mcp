@@ -27,8 +27,6 @@ interface ShopifyGraphQLResponse<T = unknown> {
 
 declare const shopify: {
   graphql<T = unknown>(options: ShopifyGraphQLOptions): Promise<ShopifyGraphQLResponse<T>>;
-  query<T = unknown>(options: Omit<ShopifyGraphQLOptions, "query"> & { query: string }): Promise<ShopifyGraphQLResponse<T>>;
-  mutation<T = unknown>(options: Omit<ShopifyGraphQLOptions, "query"> & { mutation: string; variables?: Record<string, unknown>; operationName?: string }): Promise<ShopifyGraphQLResponse<T>>;
 };
 `
 
@@ -170,7 +168,7 @@ Your code must be an async arrow function that returns the result.
 
 Example query:
 async () => {
-  return shopify.query({
+  return shopify.graphql({
     query: \`query Products($first: Int!) {
       products(first: $first) {
         nodes {
@@ -185,8 +183,8 @@ async () => {
 
 Example mutation:
 async () => {
-  return shopify.mutation({
-    mutation: \`mutation ProductCreate($product: ProductCreateInput) {
+  return shopify.graphql({
+    query: \`mutation ProductCreate($product: ProductCreateInput) {
       productCreate(product: $product) {
         product {
           id

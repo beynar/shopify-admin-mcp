@@ -20,7 +20,7 @@ The server exposes only two MCP tools:
   - returns matched Markdown docs plus one-hop related type docs
 - `execute`
   - runs JavaScript in a dynamic Worker isolate
-  - injects `shopify.graphql`, `shopify.query`, and `shopify.mutation`
+  - injects `shopify.graphql`
   - restricts outbound requests to the configured Shopify Admin GraphQL endpoint
 
 ## Required Environment Variables
@@ -84,7 +84,7 @@ Query example:
 
 ```js
 async () => {
-  return shopify.query({
+  return shopify.graphql({
     query: `query ShopName {
       shop {
         name
@@ -98,8 +98,8 @@ Mutation example:
 
 ```js
 async () => {
-  return shopify.mutation({
-    mutation: `mutation ProductCreate($product: ProductCreateInput!) {
+  return shopify.graphql({
+    query: `mutation ProductCreate($product: ProductCreateInput!) {
       productCreate(product: $product) {
         product {
           id
