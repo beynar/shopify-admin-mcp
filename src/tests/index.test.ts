@@ -88,11 +88,10 @@ describe('GlobalOutbound', () => {
     const outbound = new GlobalOutbound(
       {
         SHOPIFY_SHOP_DOMAIN: 'example.myshopify.com',
-        SHOPIFY_ADMIN_API_VERSION: '2026-01'
+        SHOPIFY_ADMIN_API_VERSION: '2026-01',
+        SHOPIFY_ADMIN_ACCESS_TOKEN: 'shpat_test'
       } as Env,
-      {
-        props: { accessToken: 'shpat_test' }
-      } as ExecutionContext & { props: { accessToken: string } }
+      {} as ExecutionContext
     )
 
     const response = await outbound.fetch(new Request('https://evil.example.com/graphql'))

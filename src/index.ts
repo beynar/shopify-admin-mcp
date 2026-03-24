@@ -3,7 +3,6 @@ import { WorkerEntrypoint } from 'cloudflare:workers'
 import { WebStandardStreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js'
 import { createServer } from './server'
 
-type GlobalOutboundProps = { accessToken: string }
 type WorkerExecutionContext = ExecutionContext<unknown>
 
 function getConfiguredApiKey(env: Env): string | undefined {
@@ -37,7 +36,7 @@ function createUnauthorizedResponse(): Response {
   })
 }
 
-export class GlobalOutbound extends WorkerEntrypoint<Env, GlobalOutboundProps> {
+export class GlobalOutbound extends WorkerEntrypoint<Env> {
   async fetch(request: Request): Promise<Response> {
     const allowedHost = new URL(
       `https://${this.env.SHOPIFY_SHOP_DOMAIN}/admin/api/${this.env.SHOPIFY_ADMIN_API_VERSION}/graphql.json`
@@ -51,7 +50,7 @@ export class GlobalOutbound extends WorkerEntrypoint<Env, GlobalOutboundProps> {
     }
 
     const headers = new Headers(request.headers)
-    headers.set('X-Shopify-Access-Token', this.ctx.props.accessToken)
+    headers.set('X-Shopify-Access-Token', this.env.SHOPIFY_ADMIN_ACCESS_TOKEN)
 
     const authedRequest = new Request(request, { headers })
     return fetch(authedRequest)

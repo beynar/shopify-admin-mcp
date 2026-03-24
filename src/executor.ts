@@ -1,39 +1,40 @@
-import { readJsonAsset, readTextAsset } from './asset-loader'
-import { hydrateSearchResult, loadCatalog } from './search-catalog'
+import { readJsonAsset, readTextAsset } from "./asset-loader";
+import { hydrateSearchResult, loadCatalog } from "./search-catalog";
 import {
   GENERATED_ORAMA_RUNTIME_ASSET_PATH,
   GENERATED_SEARCH_RECORDS_ASSET_PATH,
-  type SearchRecord
-} from './search-index'
+  type SearchRecord,
+} from "./search-index";
 
 interface CodeExecutorEntrypoint {
-  evaluate(): Promise<{ result: unknown; err?: string; stack?: string }>
+  evaluate(): Promise<{ result: unknown; err?: string; stack?: string }>;
 }
 
 interface SearchExecutorEntrypoint {
-  evaluate(): Promise<{ result: unknown; err?: string; stack?: string }>
+  evaluate(): Promise<{ result: unknown; err?: string; stack?: string }>;
 }
 
 function escapeForModuleSource(code: string): string {
-  return code.replaceAll('\\', '\\\\').replaceAll('`', '\\`').replaceAll('${', '\\${')
+  return code
+    .replaceAll("\\", "\\\\")
+    .replaceAll("`", "\\`")
+    .replaceAll("${", "\\${");
 }
 
-export function createCodeExecutor(env: Env, ctx: ExecutionContext) {
-  const graphqlUrl = `https://${env.SHOPIFY_SHOP_DOMAIN}/admin/api/${env.SHOPIFY_ADMIN_API_VERSION}/graphql.json`
+export function createCodeExecutor(env: Env) {
+  const graphqlUrl = `https://${env.SHOPIFY_SHOP_DOMAIN}/admin/api/${env.SHOPIFY_ADMIN_API_VERSION}/graphql.json`;
 
   return async (code: string): Promise<unknown> => {
-    const workerId = `shopify-admin-${crypto.randomUUID()}`
+    const workerId = `shopify-admin-${crypto.randomUUID()}`;
 
-    const embeddedCode = escapeForModuleSource(code)
+    const embeddedCode = escapeForModuleSource(code);
 
     const worker = env.LOADER.get(workerId, () => ({
-      compatibilityDate: '2026-01-12',
-      globalOutbound: ctx.exports.GlobalOutbound({
-        props: { accessToken: env.SHOPIFY_ADMIN_ACCESS_TOKEN }
-      }),
-      mainModule: 'worker.js',
+      compatibilityDate: "2026-01-12",
+      globalOutbound: env.GLOBAL_OUTBOUND,
+      mainModule: "worker.js",
       modules: {
-        'worker.js': `
+        "worker.js": `
 import { WorkerEntrypoint } from "cloudflare:workers";
 
 const graphqlUrl = ${JSON.stringify(graphqlUrl)};
@@ -115,19 +116,21 @@ export default class CodeExecutor extends WorkerEntrypoint {
     }
   }
 }
-        `
-      }
-    }))
+        `,
+      },
+    }));
 
-    const entrypoint = worker.getEntrypoint() as unknown as CodeExecutorEntrypoint
-    const response = await entrypoint.evaluate()
+    const entrypoint =
+      worker.getEntrypoint() as unknown as CodeExecutorEntrypoint;
+    const response = await entrypoint.evaluate();
 
     if (response.err) {
-      throw new Error(response.err)
+      console.error(response);
+      throw new Error(response.err);
     }
 
-    return response.result
-  }
+    return response.result;
+  };
 }
 
 export function createSearchExecutor(env: Env) {
@@ -135,19 +138,19 @@ export function createSearchExecutor(env: Env) {
     const [catalog, searchRecords, runtimeModule] = await Promise.all([
       loadCatalog(env),
       readJsonAsset<SearchRecord[]>(env, GENERATED_SEARCH_RECORDS_ASSET_PATH),
-      readTextAsset(env, GENERATED_ORAMA_RUNTIME_ASSET_PATH)
-    ])
-    const workerId = `shopify-search-${crypto.randomUUID()}`
+      readTextAsset(env, GENERATED_ORAMA_RUNTIME_ASSET_PATH),
+    ]);
+    const workerId = `shopify-search-${crypto.randomUUID()}`;
 
-    const embeddedCode = escapeForModuleSource(code)
+    const embeddedCode = escapeForModuleSource(code);
 
     const worker = env.LOADER.get(workerId, () => ({
-      compatibilityDate: '2026-01-12',
+      compatibilityDate: "2026-01-12",
       globalOutbound: null,
-      mainModule: 'worker.js',
+      mainModule: "worker.js",
       modules: {
-        'orama-runtime.js': runtimeModule,
-        'worker.js': `
+        "orama-runtime.js": runtimeModule,
+        "worker.js": `
 import { WorkerEntrypoint } from "cloudflare:workers";
 import { createCatalogRuntime } from "./orama-runtime.js";
 
@@ -166,17 +169,18 @@ export default class SearchExecutor extends WorkerEntrypoint {
     }
   }
 }
-        `
-      }
-    }))
+        `,
+      },
+    }));
 
-    const entrypoint = worker.getEntrypoint() as unknown as SearchExecutorEntrypoint
-    const response = await entrypoint.evaluate()
+    const entrypoint =
+      worker.getEntrypoint() as unknown as SearchExecutorEntrypoint;
+    const response = await entrypoint.evaluate();
 
     if (response.err) {
-      throw new Error(response.err)
+      throw new Error(response.err);
     }
 
-    return hydrateSearchResult(env, response.result)
-  }
+    return hydrateSearchResult(env, response.result);
+  };
 }
