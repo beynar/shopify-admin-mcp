@@ -79,7 +79,7 @@ export async function createServer(env: Env, ctx: WorkerExecutionContext): Promi
     version: '0.1.0'
   })
 
-  const executeCode = createCodeExecutor(env)
+  const executeCode = createCodeExecutor(env, ctx)
   const executeSearch = createSearchExecutor(env)
 
   server.registerTool(

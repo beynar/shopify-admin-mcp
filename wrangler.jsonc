@@ -24,13 +24,6 @@
 			"binding": "LOADER"
 		}
 	],
-	"services": [
-		{
-			"binding": "GLOBAL_OUTBOUND",
-			"service": "shopify-admin-mcp-dev",
-			"entrypoint": "GlobalOutbound"
-		}
-	],
 	"dev": {
 		"port": 2529
 	},
@@ -41,13 +34,6 @@
 				{
 					"binding": "LOADER"
 				}
-			],
-			"services": [
-				{
-					"binding": "GLOBAL_OUTBOUND",
-					"service": "shopify-admin-mcp-staging",
-					"entrypoint": "GlobalOutbound"
-				}
 			]
 		},
 		"production": {
@@ -56,13 +42,6 @@
 				{
 					"binding": "LOADER"
 				}
-			],
-			"services": [
-				{
-					"binding": "GLOBAL_OUTBOUND",
-					"service": "shopify-admin-mcp",
-					"entrypoint": "GlobalOutbound"
-				}
 			]
 		},
 		"beynar": {
@@ -70,13 +49,6 @@
 			"worker_loaders": [
 				{
 					"binding": "LOADER"
-				}
-			],
-			"services": [
-				{
-					"binding": "GLOBAL_OUTBOUND",
-					"service": "mcp-shopify-test",
-					"entrypoint": "GlobalOutbound"
 				}
 			]
 		}

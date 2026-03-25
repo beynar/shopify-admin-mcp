@@ -3,6 +3,11 @@ import { createCodeExecutor, createSearchExecutor } from '../executor'
 
 describe('Shopify executor', () => {
   let mockEnv: Env
+  let mockCtx: ExecutionContext & {
+    exports: {
+      GlobalOutbound: ReturnType<typeof vi.fn>
+    }
+  }
   let mockEntrypoint: { evaluate: ReturnType<typeof vi.fn> }
 
   beforeEach(() => {
@@ -14,7 +19,6 @@ describe('Shopify executor', () => {
       SHOPIFY_SHOP_DOMAIN: 'example.myshopify.com',
       SHOPIFY_ADMIN_API_VERSION: '2026-01',
       SHOPIFY_ADMIN_ACCESS_TOKEN: 'shpat_test',
-      GLOBAL_OUTBOUND: { fetch: vi.fn() },
       LOADER: {
         get: vi.fn((_id: string, factory: () => unknown) => {
           factory()
@@ -25,10 +29,15 @@ describe('Shopify executor', () => {
       }
     } as unknown as Env
 
+    mockCtx = {
+      exports: {
+        GlobalOutbound: vi.fn(() => ({ fetch: vi.fn() }))
+      }
+    } as unknown as typeof mockCtx
   })
 
   it('injects the Shopify helper into worker code', async () => {
-    const executor = createCodeExecutor(mockEnv)
+    const executor = createCodeExecutor(mockEnv, mockCtx)
     await executor('async () => ({ ok: true })')
 
     const loader = mockEnv.LOADER.get as unknown as ReturnType<typeof vi.fn>
@@ -40,13 +49,17 @@ describe('Shopify executor', () => {
     expect(workerCode).toContain('https://example.myshopify.com/admin/api/2026-01/graphql.json')
   })
 
-  it('wires the global outbound service binding into the worker loader', async () => {
-    const executor = createCodeExecutor(mockEnv)
+  it('wires the local GlobalOutbound entrypoint into the worker loader', async () => {
+    const outboundBinding = { fetch: vi.fn() }
+    mockCtx.exports.GlobalOutbound.mockReturnValue(outboundBinding)
+
+    const executor = createCodeExecutor(mockEnv, mockCtx)
     await executor('async () => ({ ok: true })')
 
     const loader = mockEnv.LOADER.get as unknown as ReturnType<typeof vi.fn>
     const workerConfig = loader.mock.calls[0][1]()
-    expect(workerConfig.globalOutbound).toBe(mockEnv.GLOBAL_OUTBOUND)
+    expect(mockCtx.exports.GlobalOutbound).toHaveBeenCalledWith({})
+    expect(workerConfig.globalOutbound).toBe(outboundBinding)
   })
 })
 

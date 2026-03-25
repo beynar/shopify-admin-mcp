@@ -21,7 +21,7 @@ function escapeForModuleSource(code: string): string {
     .replaceAll("${", "\\${");
 }
 
-export function createCodeExecutor(env: Env) {
+export function createCodeExecutor(env: Env, ctx: ExecutionContext) {
   const graphqlUrl = `https://${env.SHOPIFY_SHOP_DOMAIN}/admin/api/${env.SHOPIFY_ADMIN_API_VERSION}/graphql.json`;
 
   return async (code: string): Promise<unknown> => {
@@ -31,7 +31,7 @@ export function createCodeExecutor(env: Env) {
 
     const worker = env.LOADER.get(workerId, () => ({
       compatibilityDate: "2026-01-12",
-      globalOutbound: env.GLOBAL_OUTBOUND,
+      globalOutbound: ctx.exports.GlobalOutbound({}),
       mainModule: "worker.js",
       modules: {
         "worker.js": `
